@@ -1,0 +1,22 @@
+version: 1.0.{build}
+
+deploy:
+  - provider: NuGet
+    server:                  # remove to push to NuGet.org
+    api_key:
+      secure: cKpWZvlfFA7EfagAXc/mZfTGHXxfoKNOYTQd6v4ImalbNV1mtNR55M2HMJJ4jCAo
+    skip_symbols: false
+    symbol_server:           # remove to push symbols to SymbolSource.org
+    artifact: /.*\.nupkg/
+
+
+deploy:
+  provider: AzureBlob
+  storage_account_name: siteserverweb
+  storage_access_key:
+    secure: FupvHOwNOF6z2ejMhSvOnVka29MQwsz2zrznZEqEru642xEpJG6z3Ag5G7m4+6QcfuhlZ1+3IdsrzIod9iKC93X9XFxN9mtk7IUJGyktdWgokMFhovtEkThODGGBv05S
+  container: docs
+  folder: $(APPVEYOR_PROJECT_SLUG)\$(APPVEYOR_BUILD_VERSION)
+  artifact: myapp
+  unzip: false
+  set_content_type: true
