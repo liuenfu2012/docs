@@ -1,2 +1,2 @@
 # docs
-SiteServer CMS 文档中心
+SiteServer CMS 文档仓库
