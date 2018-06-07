@@ -1,5 +1,7 @@
 version: 1.0.{build}
 
+build: off
+
 deploy:
   provider: AzureBlob
   storage_account_name: siteserverweb
