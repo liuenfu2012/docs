@@ -2,6 +2,10 @@ version: 1.0.{build}
 
 build: off
 
+artifacts: 
+  - path: '**\*.*'
+    name: docs
+
 deploy:
   provider: AzureBlob
   storage_account_name: siteserverweb
@@ -9,6 +13,6 @@ deploy:
     secure: FupvHOwNOF6z2ejMhSvOnVka29MQwsz2zrznZEqEru642xEpJG6z3Ag5G7m4+6QcfuhlZ1+3IdsrzIod9iKC93X9XFxN9mtk7IUJGyktdWgokMFhovtEkThODGGBv05S
   container: docs
   folder: 
-  artifact: ./
+  artifact: docs
   unzip: false
   set_content_type: true
