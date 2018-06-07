@@ -9,6 +9,6 @@ deploy:
     secure: FupvHOwNOF6z2ejMhSvOnVka29MQwsz2zrznZEqEru642xEpJG6z3Ag5G7m4+6QcfuhlZ1+3IdsrzIod9iKC93X9XFxN9mtk7IUJGyktdWgokMFhovtEkThODGGBv05S
   container: docs
   folder: 
-  artifact: 
+  artifact: ./
   unzip: false
   set_content_type: true
