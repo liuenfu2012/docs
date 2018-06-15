@@ -22,20 +22,9 @@
     window.$docsify = {
       loadSidebar: true,
       subMaxLevel: 2,
-      auto2top: true,
       search: {
         placeholder: '搜索',
-      },
-      plugins: [
-        function (hook, vm) {
-          hook.beforeEach(function (html) {
-            return html
-              + '\n\n----\n\n'
-              + ':memo:<a href="https://github.com/siteserver/docs/blob/master/introduction/' + vm.route.file + '" style="color: inherit; font-weight: normal; text-decoration: none;">编辑此文档</a>'
-              + '<a href="https://docs.siteserver.cn" style="color: inherit; font-weight: normal; text-decoration: none; margin-left: 15px">返回文档中心</a>'
-          })
-        }
-      ]
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
