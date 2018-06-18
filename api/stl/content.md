@@ -1,42 +1,46 @@
 # 获取内容值
 
-### 简要描述
-
 获取内容值，系统将根据参数计算出对应的内容值
 
-### 请求URL
+使用`GET`发起请求，请求地址为`/api/v1/stl/content`
 
-`
-/api/v1/stl/content
-`
+```http
+GET /api/v1/stl/content HTTP/1.1
+```
 
-### 请求方式
+## 请求 URI
 
-GET
-
-### 请求参数说明
-
-参数名  | 类型  | 说明
-------  | ------  | ------  | ------
-apiKey | 字符串 | API 密钥
-siteId | 字符串 | 站点Id
-siteDir | 字符串 | 站点文件夹
-channelId | 字符串 | 栏目Id
-contentId | 字符串 | 内容Id
-channelIndex | 字符串 | 内容索引
-channelName | 字符串 | 内容名称
+参数名 | 类型 | 必填 | 说明
+------ | ------ | ------ | ------ | ------
+siteId | 字符串 | 否 | 站点Id
+siteDir | 字符串 | 否 | 站点文件夹
+channelId | 字符串 | 否 | 栏目Id
+channelIndex | 字符串 | 否 | 栏目索引
+channelName | 字符串 | 否 | 栏目名称
+apiKey | 字符串 | 否 | API 密钥，请参考[身份认证](authentication.md)
 
 `/api/v1/stl/content`的其他参数与`<stl:content>`标签一致。
 
+## 返回
+
+名称 | 类型 | 说明
+------ | ------ | ------
+200 OK | [Content](/stl/README?id=content) | 内容
+401 Unauthorized | [Error](/error?id=error) | 认证错误
+400 BadRequest | [Error](/error?id=error) | 参数错误
+
+## 示例
+
 ### 请求示例
 
-`
+```http
 GET /api/v1/stl/content?siteId=1&channelId=134&contentId=1525
-`
+X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+```
 
 ### 返回示例
 
-`
+```json
 {
   "value": {
     "id": 1525,
@@ -68,16 +72,4 @@ GET /api/v1/stl/content?siteId=1&channelId=134&contentId=1525
     "settingsXml": "comments=0&photos=0&freereadings=&paidreadings=&fullreadingprice=&paperprice=&titleformatstring=False_False_False_&check_isadmin=True&check_username=admin&check_checkdate=2018-05-21 10:13&check_reasons="
   }
 }
-`
-
-### 返回参数说明
-
-参数名  | 类型  | 说明
-------  | ------  | ------  | ------
-value | 对象 | 根据type参数的不同，返回不同的value值，如果不传type参数，将返回整个内容对象
-
-详细字段请参考 [内容表](https://docs.siteserver.cn/model#/model_Content)
-
-### 备注
-
-更多返回错误代码请参考错误代码描述
+```

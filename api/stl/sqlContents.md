@@ -1,37 +1,42 @@
 # 获取数据库列表
 
-### 简要描述
-
 获取数据库列表接口
 
-### 请求URL
+使用`GET`发起请求，请求地址为`/api/v1/stl/sqlContents`
 
-`
-/api/v1/stl/sqlContents
-`
+```http
+GET /api/v1/stl/sqlContents HTTP/1.1
+```
 
-### 请求方式
+## 请求 URI
 
-GET
-
-### 请求参数说明
-
-参数名  | 类型  | 说明
-------  | ------  | ------  | ------
-apiKey | 字符串 | API 密钥
-queryString | 字符串 | SQL 语句
+参数名 | 类型 | 必填 | 说明
+------ | ------ | ------ | ------ | ------
+queryString | 字符串 | 是 | SQL 语句
+apiKey | 字符串 | 否 | API 密钥，请参考[身份认证](authentication.md)
 
 `/api/v1/stl/sqlContents`的其他参数与`<stl:sqlContents>`标签一致。
 
+## 返回
+
+名称 | 类型 | 说明
+------ | ------ | ------
+200 OK | 对象列表 | 返回数据库对象列表
+401 Unauthorized | [Error](/error?id=error) | 认证错误
+400 BadRequest | [Error](/error?id=error) | 参数错误
+
+## 示例
+
 ### 请求示例
 
-`
+```http
 GET /api/v1/stl/sqlContents?queryString=SELECT * FROM siteserver_Site
-`
+X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+```
 
 ### 返回示例
 
-`
+```json
 {
     "value": [
         {
@@ -66,14 +71,4 @@ GET /api/v1/stl/sqlContents?queryString=SELECT * FROM siteserver_Site
         }
     ]
 }
-`
-
-### 返回参数说明
-
-参数名  | 类型  | 说明
-------  | ------  | ------  | ------
-value | 数组 | 返回数据库数组
-
-### 备注
-
-更多返回错误代码请看首页的错误代码描述
+```

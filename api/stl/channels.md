@@ -1,41 +1,46 @@
 # 获取栏目列表
 
-### 简要描述
-
 获取栏目列表接口
 
-### 请求URL
+使用`GET`发起请求，请求地址为`/api/v1/stl/channels`
 
-`
-/api/v1/stl/channels
-`
+```http
+GET /api/v1/stl/channels HTTP/1.1
+```
 
-### 请求方式
+## 请求 URI
 
-GET
-
-### 请求参数说明
-
-参数名  | 类型  | 说明
-------  | ------  | ------  | ------
-apiKey | 字符串 | API 密钥
-siteId | 字符串 | 站点Id
-siteDir | 字符串 | 站点文件夹
-channelId | 字符串 | 栏目Id
-channelIndex | 字符串 | 栏目索引
-channelName | 字符串 | 栏目名称
+参数名 | 类型 | 必填 | 说明
+------ | ------ | ------ | ------ | ------
+siteId | 字符串 | 否 | 站点Id
+siteDir | 字符串 | 否 | 站点文件夹
+channelId | 字符串 | 否 | 栏目Id
+channelIndex | 字符串 | 否 | 栏目索引
+channelName | 字符串 | 否 | 栏目名称
+apiKey | 字符串 | 否 | API 密钥，请参考[身份认证](authentication.md)
 
 `/api/v1/stl/channels`的其他参数与`<stl:channels>`标签一致。
 
+## 返回
+
+名称 | 类型 | 说明
+------ | ------ | ------
+200 OK | [Channel](/stl/README?id=channel) 列表 | 栏目列表
+401 Unauthorized | [Error](/error?id=error) | 认证错误
+400 BadRequest | [Error](/error?id=error) | 参数错误
+
+## 示例
+
 ### 请求示例
 
-`
+```http
 GET /api/v1/stl/channels?siteId=1
-`
+X-SS-API-KEY: 7cd22002-27a7-4c5d-ba4d-a1c108a20eaf
+```
 
 ### 返回示例
 
-`
+```json
 {
   "value": [
     {
@@ -130,16 +135,4 @@ GET /api/v1/stl/channels?siteId=1
     }
   ]
 }
-`
-
-### 返回参数说明
-
-参数名  | 类型  | 说明
-------  | ------  | ------  | ------
-value | 数组 | 返回栏目数组
-
-详细字段请参考 [栏目表](https://docs.siteserver.cn/model#/siteserver_Channel)
-
-### 备注
-
-更多返回错误代码请看首页的错误代码描述
+```
