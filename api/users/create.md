@@ -17,7 +17,7 @@ apiKey | query | 字符串 | 否 | API 密钥，请参考[身份认证](authenti
 参数名 | 类型 | 必填 | 说明
 ------ | ------ | ------
 userName | 字符串 | 是 | 用户账号
-password | 字符串 | 否 | 用户密码
+password | 字符串 | 是 | 用户密码
 passwordFormat | 字符串 | 否 | 密码加密格式，有`Clear`及`Encrypt`两种，分别代表不加密以及可逆加密。
 isChecked | 字符串 | 否 | 是否已审核用户
 isLockedOut | 字符串 | 否 | 是否被锁定

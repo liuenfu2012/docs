@@ -17,7 +17,7 @@ password | 字符串 | 是 | 用户密码，需要MD5加密后传输
 
 名称 | 类型 | 说明
 ------ | ------ | ------
-200 OK | [User](/users/README?id=user) | 用户
+200 OK | [User](/users/README?id=user)，AccessToken | 用户，用户登录Token
 401 Unauthorized | [Error](/error?id=error) | 认证错误
 400 BadRequest | [Error](/error?id=error) | 参数错误
 
@@ -40,36 +40,39 @@ Content-Type: application/json
 ```json
 {
   "value": {
-    "id": 1,
-    "userName": "demo",
-    "password": "3CPlhZ8UAus=",
-    "passwordFormat": "Encrypted",
-    "passwordSalt": "VohMFwNz4s006ZytezfUxg==",
-    "createDate": "2018-06-17 14:18:45",
-    "lastResetPasswordDate": "2018-06-17 14:18:45",
-    "lastActivityDate": "2018-06-17 14:18:45",
-    "countOfLogin": 0,
-    "countOfFailedLogin": 0,
-    "countOfWriting": 0,
-    "isChecked": true,
-    "isLockedOut": false,
-    "displayName": "演示",
-    "email": "demo@sample.com",
-    "mobile": "13888888888",
-    "avatarUrl": "",
-    "organization": "",
-    "department": "",
-    "position": "",
-    "gender": "",
-    "birthday": "",
-    "education": "",
-    "graduation": "",
-    "address": "",
-    "weiXin": "",
-    "qq": "",
-    "weiBo": "",
-    "interests": "",
-    "signature": ""
+    "user": {
+        "id": 1,
+        "userName": "demo",
+        "password": "nOC/NuzOXrX95ZVeeluoeg==",
+        "passwordFormat": "Encrypted",
+        "passwordSalt": "ymeDeiU/CPzislPYxsx1MQ==",
+        "createDate": "2018-06-17 16:42:03",
+        "lastResetPasswordDate": "2018-06-18 09:51:37",
+        "lastActivityDate": "2018-06-19 08:17:54",
+        "countOfLogin": 0,
+        "countOfFailedLogin": 0,
+        "countOfWriting": 0,
+        "isChecked": true,
+        "isLockedOut": false,
+        "displayName": "演示",
+        "email": "demo@sample.com",
+        "mobile": "13888888888",
+        "avatarUrl": "",
+        "organization": "",
+        "department": "",
+        "position": "",
+        "gender": "",
+        "birthday": "",
+        "education": "",
+        "graduation": "",
+        "address": "",
+        "weiXin": "",
+        "qq": "",
+        "weiBo": "",
+        "interests": "",
+        "signature": ""
+    },
+    "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJVc2VyTmFtZSI6ImRlbW8iLCJBZGREYXRlIjoiXC9EYXRlKDE1MjkzNjc0NzQxNjUpXC8ifQ.1Ka9OgcwEseeo2igDuPxdk_H7Mb1trzOxEVwj_VEJZc"
   }
 }
 ```
