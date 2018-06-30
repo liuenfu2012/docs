@@ -14,6 +14,7 @@
 [上传用户头像](users/updateAvatar.md) | POST | v1/users/{id}/avatar | 上传用户头像图片
 [获取用户列表](users/list.md) | GET | v1/users | 获取用户列表
 [用户登录](users/login.md) | POST | v1/users/actions/login | 用户登录操作
+[退出登录](users/logout.md) | POST | v1/users/actions/logout | 用户退出登录
 [修改密码](users/resetPassword.md) | POST | v1/users/actions/resetPassword | 修改用户登录密码
 [新增用户操作日志](users/createLog.md) | POST | v1/users/actions/{id}/logs | 新增用户操作日志
 [获取用户操作日志](users/getLogs.md) | GET | v1/users/{id}/logs | 获取用户操作日志

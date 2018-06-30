@@ -1,5 +1,7 @@
 * [SiteServer REST API 参考手册](README.md)
 
+* [Administrators 管理员API](administrators/README.md)
+
 * [Users 用户API](users/README.md)
 
 * [STL 模板语言API](stl/README.md)
@@ -13,3 +15,5 @@
   * [stl/sites 获取站点列表](stl/sites.md)
   * [stl/sqlContent 获取数据库值](stl/sqlContent.md)
   * [stl/sqlContents 获取数据库列表](stl/sqlContents.md)
+
+* [Captcha 验证码API](captcha/README.md)

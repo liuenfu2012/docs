@@ -1,5 +1,7 @@
 * [SiteServer REST API 参考手册](README.md)
 
+* [Administrators 管理员API](administrators/README.md)
+
 * [Users 用户API](users/README.md)
 
   * [新增用户](users/create.md)
@@ -10,8 +12,11 @@
   * [上传用户头像](users/updateAvatar.md)
   * [获取用户列表](users/list.md)
   * [用户登录](users/login.md)
+  * [退出登录](users/logout.md)
   * [修改密码](users/resetPassword.md)
   * [新增用户操作日志](users/createLog.md)
   * [获取用户操作日志](users/getLogs.md)
 
 * [STL 模板语言API](stl/README.md)
+
+* [Captcha 验证码API](captcha/README.md)
