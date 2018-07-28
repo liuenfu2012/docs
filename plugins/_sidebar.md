@@ -1,8 +1,8 @@
-* 开始  Getting Started
+* [SiteServer CMS 插件开发参考手册](README.md)
 
-  * [开始使用](README.md)
-  * [一个简单插件实例（附代码）](simple-example.md)
+  * [插件开发概述](intro.md)
+  * [开发第一个插件](hello-world.md)
 
-* 故障排除  Troubleshooting
+* [插件开发基础](basic/README.md)
 
-  * [为什么插件不起作用](why-isnt-working.md)
+* [SDK 参考](sdk/README.md)

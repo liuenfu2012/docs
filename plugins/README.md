@@ -1,4 +1,6 @@
-# SiteServer CMS 插件开发文档
+# SiteServer CMS 插件开发参考手册
+
+欢迎来到 SiteServer CMS 插件开发参考手册，在此我们将涵盖插件开发的各个方面，让你能够从零开始开发一个完整的插件。
 
 SiteServer CMS 插件是扩展 SiteServer CMS 产品核心功能的代码包，SiteServer CMS 插件由.NET代码和其他文件(如图片、CSS和JavaScript等)组成。
 
@@ -6,20 +8,4 @@ SiteServer CMS 插件是扩展 SiteServer CMS 产品核心功能的代码包，S
 
 一个插件必须有的文件是：一个主文件（插件Id.dll）以及一个插件配置文件（插件Id.nuspec）。
 
-## SiteServer CMS
-
-SiteServer CMS 是基于.NET平台的一款免费，[开源](https://github.com/siteserver/cms)的内容管理系统，能够以最低的成本、最少的人力投入在最短的时间内架设一个功能齐全、性能优异、规模庞大并易于维护的网站平台。
-
-## Status
-
-稳定版 `(master)` ：
-
-[![Build status](https://ci.appveyor.com/api/projects/status/dv89ciqao5u9fjgv/branch/master?svg=true)](https://ci.appveyor.com/project/starlying/siteserver-plugin/branch/master)
-
-[![NuGet](https://img.shields.io/nuget/v/SiteServer.Plugin.svg)](https://www.nuget.org/packages/SiteServer.Plugin)
-
-开发版 `(dev)` ：
-
-[![Build status](https://ci.appveyor.com/api/projects/status/dv89ciqao5u9fjgv/branch/dev?svg=true)](https://ci.appveyor.com/project/starlying/siteserver-plugin/branch/dev)
-
-[![MyGet](https://img.shields.io/myget/siteserver/vpre/SiteServer.Plugin.svg)](https://myget.org/feed/siteserver/package/nuget/SiteServer.Plugin)
+插件开发基于.NET环境，使用Visual Studio开发工具，同时需要在项目中引用 SiteServer.Plugin 开发包（SDK）。
