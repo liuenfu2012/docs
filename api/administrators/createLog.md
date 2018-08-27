@@ -8,26 +8,26 @@ POST /api/v1/administrators/{id}/logs HTTP/1.1
 
 ## 请求 URI
 
-参数名 | 位置 | 类型 | 必填 | 说明
------- | ------ | ------ | ------ | ------
-id | path | 整数 | 是 | 管理员Id
-apiKey | query | 字符串 | 否 | API 密钥，请参考[身份认证](authentication.md)
+| 参数名 | 位置  | 类型   | 必填   | 说明                                          |
+| ------ | ----- | ------ | ------ | --------------------------------------------- |
+| id     | path  | 整数   | **是** | 管理员Id                                      |
+| apiKey | query | 字符串 | 否     | API 密钥，请参考[身份认证](authentication.md) |
 
 ## 请求 Body
 
-参数名 | 类型 | 必填 | 说明
------- | ------ | ------
-action | 字符串 | 是 | 动作
-summary | 字符串 | 是 | 描述
+| 参数名  | 类型   | 必填   | 说明 |
+| ------- | ------ | ------ |
+| action  | 字符串 | **是** | 动作 |
+| summary | 字符串 | **是** | 描述 |
 
 ## 返回
 
-名称 | 类型 | 说明
------- | ------ | ------
-200 OK | [UserLog](/administrators/README?id=administratorLog) | 管理员操作日志
-401 Unauthorized | [Error](/error?id=error) | 认证错误
-404 NotFound | [Error](/error?id=error) | 管理员Id不存在错误
-400 BadRequest | [Error](/error?id=error) | 参数错误
+| 名称             | 类型                                                  | 说明               |
+| ---------------- | ----------------------------------------------------- | ------------------ |
+| 200 OK           | [UserLog](/administrators/README?id=administratorLog) | 管理员操作日志     |
+| 401 Unauthorized | [Error](/error?id=error)                              | 认证错误           |
+| 404 NotFound     | [Error](/error?id=error)                              | 管理员Id不存在错误 |
+| 400 BadRequest   | [Error](/error?id=error)                              | 参数错误           |
 
 ## 示例
 

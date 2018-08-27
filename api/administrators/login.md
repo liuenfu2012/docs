@@ -8,18 +8,18 @@ POST /api/v1/administrators/actions/login HTTP/1.1
 
 ## 请求 Body
 
-参数名 | 类型 | 必填 | 说明
------- | ------ | ------
-account | 字符串 | 是 | 管理员账号，可以是管理员名、邮箱或者手机号
-password | 字符串 | 是 | 管理员密码，需要MD5加密后传输
+| 参数名   | 类型   | 必填   | 说明                                       |
+| -------- | ------ | ------ |
+| account  | 字符串 | **是** | 管理员账号，可以是管理员名、邮箱或者手机号 |
+| password | 字符串 | **是** | 管理员密码，需要MD5加密后传输              |
 
 ## 返回
 
-名称 | 类型 | 说明
------- | ------ | ------
-200 OK | [Administrator](/administrators/README?id=administrator)，AccessToken | 管理员，管理员登录Token
-401 Unauthorized | [Error](/error?id=error) | 认证错误
-400 BadRequest | [Error](/error?id=error) | 参数错误
+| 名称             | 类型                                                                  | 说明                    |
+| ---------------- | --------------------------------------------------------------------- | ----------------------- |
+| 200 OK           | [Administrator](/administrators/README?id=administrator)，AccessToken | 管理员，管理员登录Token |
+| 401 Unauthorized | [Error](/error?id=error)                                              | 认证错误                |
+| 400 BadRequest   | [Error](/error?id=error)                                              | 参数错误                |
 
 ## 示例
 

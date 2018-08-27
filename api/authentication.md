@@ -65,7 +65,7 @@ GET https://example.com/api/v1/sites?apiKey=5c32ea3a-adbb-4434-aa3f-dc49a40d07e8
 
 ### 无需认证的API接口
 
-操作 | 请求 | 地址 | 说明
------- | ------ | ------ | ------
-[获取用户头像](users/getAvatar.md) | GET | v1/users/{id}/avatar | 获取用户头像地址
-[用户登录](users/login.md) | POST | v1/users/actions/login | 用户登录操作
+| 操作                               | 请求 | 地址                   | 说明             |
+| ---------------------------------- | ---- | ---------------------- | ---------------- |
+| [获取用户头像](users/getAvatar.md) | GET  | v1/users/{id}/avatar   | 获取用户头像地址 |
+| [用户登录](users/login.md)         | POST | v1/users/actions/login | 用户登录操作     |

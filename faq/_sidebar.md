@@ -16,4 +16,4 @@
   * [安装时提示数据库连接失败怎么办？](connect-db-error.md)
   * [报错：未能写入输出文件](temporary-permissions.md)
   * [报错：数据库的事务日志已满](database-log-full.md)
-
+  * [报错：对象名 'siteserver_Table' 无效](siteserver-table.md)

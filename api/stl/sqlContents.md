@@ -12,7 +12,7 @@ GET /api/v1/stl/sqlContents HTTP/1.1
 
 参数名 | 类型 | 必填 | 说明
 ------ | ------ | ------ | ------ | ------
-queryString | 字符串 | 是 | SQL 语句
+queryString | 字符串 | **是** | SQL 语句
 apiKey | 字符串 | 否 | API 密钥，请参考[身份认证](authentication.md)
 
 `/api/v1/stl/sqlContents`的其他参数与`<stl:sqlContents>`标签一致。

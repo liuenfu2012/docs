@@ -1,122 +1,118 @@
-# STL 语言
+# SiteServer STL 语言参考手册
 
-### 定义
+STL 语言，全称为 SiteServer Template Language（SiteServer 模版语言），是用于 SiteServer CMS 模版使用的类 HTML 语言。
 
-STL 语言全称称为 SiteServer 模版语言（SiteServer Template Language），是一种您可以用来创建显示模版的服务器端语言。
+> **小提示** 页面左上角搜索框可以快速寻找对应的STL 标签。
 
-STL 语言由百容千域创建，用来克服 HTML 语言的局限。和 HTML 语言一样，STL 语言也是一种标准通用标记语言（SGML），采用与HTML 语言一致的语法和规则。STL 通过标记符号（元素及实体）来标记要调取并显示的各种网站数据及功能，通过SiteServer 解析引擎将对应标记转换为HTML 语言并在服务器中生成对应的静态页面文件。
+## 内容标签
 
-### 语言特色
+内容标签包含获取内容列表以及内容属性相关的标签。
 
-SiteServer 模版语言制作并不复杂，但功能强大，其主要特点如下：
+| STL元素                                               | 说明                                              |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| [stl:contents 内容列表](a/attributes?id=channelindex) | 通过 stl:contents 标签在模板中显示内容列表        |
+| [stl:content 获取内容值](a/attributes?id=queryString) | 通过 stl:content 标签在模板中显示指定内容的属性值 |
 
-1、 简易性：STL 语言版本升级采用超集方式，从而更加灵活方便。
+## 栏目标签
 
-2 、可扩展性： STL 语言的广泛应用带来了加强功能，增加标识符等要求，STL 语言采取子类元素的方式，为系统扩展带来保证。
+栏目标签包含获取栏目列表以及栏目属性的相关标签。
 
-3 、易学性：和HTML 语言规则保持一致确保了STL 语言易于学习，便于使用。
+| STL元素                                               | 说明                                              |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| [stl:channels 栏目列表](a/attributes?id=channelindex) | 通过 stl:channels 标签在模板中显示栏目列表        |
+| [stl:channel 获取栏目值](a/attributes?id=queryString) | 通过 stl:channel 标签在模板中显示指定栏目的属性值 |
 
-### 书写方式
+## 站点标签
 
-STL 语言其实是文本，它需要SiteServer 软件进行解析，它的编辑方式可以分为三种：
+站点标签包含获取网站列表以及网站属性相关的标签。
 
-1、 基本文本、文档编辑软件：使用微软自带的记事本或写字板即可编写，当然，通常采用Dreamweaver等HTML编辑软件进行编辑。
+| STL元素                                            | 说明                                    |
+| -------------------------------------------------- | --------------------------------------- |
+| [stl:sites 站点列表](a/attributes?id=channelindex) | 通过 stl:sites 标签在模板中显示站点列表 |
+| [stl:site 获取站点值](a/attributes?id=queryString) | 通过 stl:site 标签在模板中显示站点值    |
 
-2 、SiteServer 软件的模板编辑器：SiteServer 软件中集成了STL 模板编辑器，能够显示行数、高亮、颜色标示以及对格式化代码等功能。
+## 翻页标签
 
-3 、所见即所得模板插件：这是我们推荐的方式，同时也是使用最广的方式，可以在无需记住STL 语言细节的情况下以最快速便捷的方式编写STL 语言，我们根据用户的习惯提供两款模板插件，包括Dreamweaver 模板插件以及Sublime Text 模板插件。采用模板插件方式，开发速度更快，效率更高，且直观的表现更强。
+翻页标签包含所有涉及翻页时所需要用到的标签，包括翻页元素、栏目翻页列表、内容翻页列表等。
 
-### STL 标签与 STL 实体
+| STL元素                                                           | 说明                                                                                 |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [stl:pageItems 翻页项容器](a/attributes?id=channelindex)          | 通过 stl:pageItems 标签在模板中插入翻页项的容器，当不需要翻页时容器内的内容不显示    |
+| [stl:pageItem 翻页项](a/attributes?id=queryString)                | 通过 stl:pageItem 标签在模板中显示翻页项（上一页、下一页、当前页、页跳转、页导航等） |
+| [stl:pageChannels 翻页栏目列表](a/attributes?id=queryString)      | 通过 stl:pageChannels 标签在模板中显示翻页栏目列表                                   |
+| [stl:pageContents 翻页内容列表](a/attributes?id=queryString)      | 通过 stl:pageContents 标签在模板中显示翻页内容列表                                   |
+| [stl:pageSqlContents 翻页数据库列表](a/attributes?id=queryString) | 通过 stl:pageSqlContents 标签在模板中显示能够翻页的数据库列表                        |
 
-有两个通用术语用来描述 STL 语言的组成部分：STL标签 和 STL实体。
+## 导航标签
 
-STL 标签的作用是在模板页面中插入各种标签，如栏目属性（<stl:channel>）、内容列表（<stl:contents>）等，STL 实体的作用是在HTML 标签或STL 标签的属性中插入信息。
+导航标签包含所有与页面导航相关的标签，包括链接、当前位置、导航、以及下拉菜单等。
 
-STL 标签是左尖括号（<）和右尖括号（>）以及位于二者之间的所有内容。有开始标记（例如 <stl:a>）和结束标记（例如 </stl:a>）。STL 标签与HTML 标签的区别在于所有标记都以stl:作为名称空间开头。
+| STL元素                                                | 说明                                                              |
+| ------------------------------------------------------ | ----------------------------------------------------------------- |
+| [stl:a 获取链接](a/attributes?id=channelindex)         | 通过 stl:a 标签在模板中创建链接，系统将根据所处上下文计算链接地址 |
+| [stl:location 当前位置](a/attributes?id=queryString)   | 通过 stl:location 标签在模板中插入页面的当前位置                  |
+| [stl:navigation 显示导航](a/attributes?id=queryString) | 通过 stl:navigation 标签在模板中显示链接导航                      |
+| [stl:tree 树状导航](a/attributes?id=queryString)       | 通过 stl:tree 标签在模板中显示树状导航                            |
+| [stl:menu 下拉菜单](a/attributes?id=queryString)       | 通过 stl:menu 标签在模板中显示栏目下拉菜单                        |
 
-STL 实体是左大括号（{）和右大括号（}）以及位于二者之间的所有内容。有开始标记和结束标记（例如 {Stl.SiteName}）
+## 图片及多媒体标签
 
-STL 实体能够嵌入到HTML 语言或STL 语言的任何位置，（例如内容模版中 <stl:a title="{Content.Title}"></stl:a>）
+图片标签包含所有涉及到显示图片以及组织图片显示样式的相关标签。
 
-STL 标签示例：<stl:a channelName="栏目名称"><stl:channel type="Title"></stl:channel></stl:a>
+| STL元素                                                   | 说明                                                             |
+| --------------------------------------------------------- | ---------------------------------------------------------------- |
+| [stl:image 显示图片](a/attributes?id=channelindex)        | 通过 stl:image 标签在模板中显示栏目或内容的图片                  |
+| [stl:file 文件下载链接](a/attributes?id=queryString)      | 通过 stl:file 标签在模板中显示文件下载链接                       |
+| [stl:focusViewer 滚动焦点图](a/attributes?id=queryString) | 通过 stl:focusviewer 标签在模板中实现由 FLASH 显示的图片轮播效果 |
+| [stl:flash 显示Flash](a/attributes?id=queryString)        | 通过 stl:flash 标签在模板中获取并显示栏目或内容的Flash           |
+| [stl:slide 图片幻灯片](a/attributes?id=queryString)       | 通过 stl:slide 标签在模板中显示图片幻灯片                        |
+| [stl:photo 相册图片](a/attributes?id=queryString)         | 通过 stl:photo 标签在模板中显示内容的相册图片                    |
+| [stl:player 播放视频](a/attributes?id=queryString)        | 通过 stl:player 标签在模板中播放视频                             |
+| [stl:video 播放视频](a/attributes?id=queryString)         | 通过 stl:video 标签在模板中显示视频播放器                        |
+| [stl:audio 播放音频](a/attributes?id=queryString)         | 通过 stl:audio 标签在模板中显示并播放音频文件                    |
 
-STL 实体示例：{Stl.SiteName}
+## 判断标签
 
-### STL 模板语言规则
+判断标签用于根据条件判断显示内容，包含通用的if标签以及用于列表的itemTemplate标签。
 
-一、STL 语言不区分大小写
-STL 语言是不区分大小写的。和 HTML 语言一样，<stl:a> 和 <STL:A> 是相同的。
+| STL元素                                                | 说明                                                               |
+| ------------------------------------------------------ | ------------------------------------------------------------------ |
+| [stl:if 条件判断](a/attributes?id=channelindex)        | 通过 stl:if 标签在模板中根据条件判断显示内容                       |
+| [stl:itemTemplate 列表项](a/attributes?id=queryString) | 通过 stl:itemTemplate 标签在模板中控制列表中每一项的显示内容及样式 |
+| [stl:loading 载入模板](a/attributes?id=queryString)    | 通过 stl:loading 标签在模板中创建载入中显示的内容                  |
+| [stl:template 显示模板](a/attributes?id=queryString)   | 通过 stl:template 标签在模板中定义显示模板                         |
+| [stl:yes 成功模板](a/attributes?id=queryString)        | 通过 stl:yes 标签在模板中显示成功模板                              |
+| [stl:no 失败模板](a/attributes?id=queryString)         | 通过 stl:no 标签在模板中显示失败模板                               |
 
-二、属性必须有用引号括起的值
-属性是一个STL 元素的开始标记中的名称-值对。STL 文档中的属性有两个规则：
+## 数据库标签
 
-1、属性必须有值。
+数据库标签用于获取指定数据库信息，包括显示列表以及获取值所需要的标签。
 
-2、那些值必须用引号括起。
+| STL元素                                                    | 说明                                             |
+| ---------------------------------------------------------- | ------------------------------------------------ |
+| [stl:sqlContents 数据库列表](a/attributes?id=channelindex) | 通过 stl:sqlContents 标签在模板中显示数据库列表  |
+| [stl:sqlContent 数据库值](a/attributes?id=queryString)     | 通过 stl:sqlContent 标签在模板中显示数据库值     |
+| [stl:queryString SQL查询语句](a/attributes?id=queryString) | 通过 stl:queryString 标签在模板中定义SQL查询语句 |
 
-比较下面的两个示例。顶部的标记在 HTML 中是合乎规则的，但在 STL 中则不是。为了在 STL 中取得相同结果，您必须给属性赋值，而且必须把值括在引号中。
+## 其他标签
 
-不合乎规则的 STL 元素：
+其他常用的STL 标签。
 
-<stl:content type></stl:content>
-
-合乎规则的 STL 元素：
-
-<stl:content type="Title"></stl:content>
-
-您可以使用单引号，也可以使用双引号，但要始终保持一致。
-
-如果属性值包含单引号或双引号，则您可以使用另一种引号来括起该值（如 name="Doug's car"），或使用 &quot; 代表双引号，使用 &apos; 代表单引号。
-
-三、结束标记可以省略
-与HTML 一样，STL 可以省去任何结束标记。例如<stl:a></stl:a>与<stl:a />是一致的。
-
-### STL 实体说明
-
-实体说明
-STL 实体是左大括号（{）和右大括号（}）以及位于二者之间的所有内容。有开始标记和结束标记（例如 {Stl.SiteName}）。
-
-STL 实体能够嵌入到HTML 语言或STL 语言的任何位置，（例如内容模版中 <stl:a title="{Content.Title}"></stl:a>）。
-
-STL 其余实体分为通用实体（{Stl.开头）、内容实体（{Content.开头）、栏目实体（{Channel.开头）、评论实体（{Comment.开头）以及数据库实体（{Sql.开头）。
-
-通用实体与<stl:value>元素相同，<stl:value type="xyz"></stl:value>等价于{Stl.xyz}，请参考<stl:value> 标签。通用实体能在任何地方解析。
-
-内容实体与<stl:content>元素相同，<stl:content type="xyz"></stl:content>等价于{Content.xyz}，请参考<stl:content> 标签。内容实体只能在内容模板中或<stl:contents> 元素内部解析。
-
-栏目实体与<stl:channel>元素相同，<stl:channel type="xyz"></stl:channel>等价于{Channel.xyz}，请参考<stl:channel> 标签。栏目实体能在任何地方解析。
-
-评论实体与<stl:comment>元素相同，<stl:comment type="xyz"></stl:comment>等价于{Comment.xyz}，请参考<stl:comment> 标签。评论实体只能在评论上下文中解析。
-
-数据库实体与<stl:sqlContent>元素相同，<stl:sqlContent type="xyz"></stl:sqlContent>等价于{Sql.xyz}，请参考<stl:sqlContent> 标签。数据库实体只能在数据库查询上下文中解析。
-
-标签与实体
-所有STL 元素均有对应实体，将元素“<”替换为“{”，“>”替换为“}”即为对应实体，实体中属性采用单引号或者不带引号。如内容值元素：
-
-<stl:content type="Title" wordNum="20"></stl:content>
-
-对应实体为
-
-{stl:content type='Title' wordNum='20'}
-
-或
-
-{stl:content type=Title wordNum=20}
-
-### STL 翻页标签与实现
-
-组成
-翻页标签 由 <stl:pageChannels>、<stl:pageContents> 等翻页列表标签以及<stl:pageItems>、<stl:pageItem>等翻页项标签组成。
-
-翻页列表元素<stl:pageChannels>与<stl:pageContents>的作用是显示翻页的列表项，翻页项元素<stl:pageItems>、<stl:pageItem>的作用是显示翻页按钮，如下一页、下一页等。
-
-应用范围
-翻页标签可以放到任何类型的模板中使用，唯一的例外是如果在单页模板中使用，需包含在<stl:dynamic>标签中。
-
-### STL 地址通配符
-
-地址通配符
-在 STL 语言中，地址使用通配符（“~”）和（“@”）来进行存储和读取，您可以使用通配符（“~”）来表示应用程序的根目录，使用通配符（“@”）来表示当前站点的域名地址，而不需要将地址硬编码为文件相对 URL。
-
-示例
-例如，您可以使用“~/Default.aspx”表示系统根目录下的 Default.aspx 页，使用“@/index.html”表示站点根目录下的 index.html页。
+| STL元素                                                | 说明                                                             |
+| ------------------------------------------------------ | ---------------------------------------------------------------- |
+| [stl:search 搜索](a/attributes?id=channelindex)        | 通过 stl:search 标签在模板中显示搜索结果                         |
+| [stl:include 包含文件](a/attributes?id=queryString)    | 通过 stl:include 标签在模板中包含另一个文件，作为模板的一部分    |
+| [stl:dynamic 动态显示](a/attributes?id=queryString)    | 通过 stl:dynamic 标签在模板中实现动态显示功能                    |
+| [stl:each 列表项循环](a/attributes?id=queryString)     | 通过 stl:each 标签在模板中遍历指定的列表项                       |
+| [stl:value 获取值](a/attributes?id=queryString)        | 通过 stl:value 标签在模板中获取值                                |
+| [stl:count 显示数值](a/attributes?id=queryString)      | 通过 stl:count 标签在模板中显示统计数字                          |
+| [stl:marquee 无间隔滚动](a/attributes?id=queryString)  | 通过 stl:marquee 标签在模板中创建一个能够无间隔滚动的内容块      |
+| [stl:select 下拉列表](a/attributes?id=queryString)     | 通过 stl:select 标签在模板中显示栏目或内容下拉列表               |
+| [stl:analysis 显示浏览量](a/attributes?id=queryString) | 通过 stl:analysis 标签在模板中显示页面的浏览量及点击次数、点击率 |
+| [stl:tabs 页签切换](a/attributes?id=queryString)       | 通过 stl:tabs 标签在模板中显示页签切换                           |
+| [stl:zoom 文字缩放](a/attributes?id=queryString)       | 通过 stl:zoom 标签在模板中实现文字缩放功能                       |
+| [stl:printer 打印](a/attributes?id=queryString)        | 通过 stl:printer 标签在模板中实现打印功能                        |
+| [stl:action 执行动作](a/attributes?id=queryString)     | 通过 stl:action 标签在模板中创建链接，点击链接后将执行相应的动作 |
+| [stl:tags 标签](a/attributes?id=queryString)           | 通过 stl:tags 标签在模板中显示内容标签                           |
+| [stl:rss Rss订阅](a/attributes?id=queryString)         | 通过 stl:rss 标签在模板中生成Rss阅读器能够浏览的Rss订阅          |
+| [stl:container 容器](a/attributes?id=queryString)      | 通过 stl:container 标签在模板中定义容器，切换上下文              |
