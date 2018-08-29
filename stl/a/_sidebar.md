@@ -1,99 +1,94 @@
-- [SiteServer STL 语言参考手册](README.md)
+- [SiteServer STL 语言参考手册](/)
 
-- [全局属性](reference_attributes/)
-
-- [stl:a 获取链接](a/)
+- [&lt;stl:a&gt; 获取链接](a/)
 
   - [属性](a/attributes.md)
-  - [备注](a/notes.md)
   - [示例](a/samples.md)
 
-- [stl:action 执行动作](action/)
+- [&lt;stl:action&gt; 执行动作](action/)
 
-- [stl:audio 播放音频](audio/)
+- [&lt;stl:audio&gt; 播放音频](audio/)
 
-- [stl:channel 获取栏目值](channel/)
+- [&lt;stl:channel&gt; 获取栏目值](channel/)
 
-- [stl:channels 栏目列表](channels/)
+- [&lt;stl:channels&gt; 栏目列表](channels/)
 
-- [stl:container 容器](container/)
+- [&lt;stl:container&gt; 容器](container/)
 
-- [stl:content 获取内容值](content/)
+- [&lt;stl:content&gt; 获取内容值](content/)
 
-- [stl:contents 内容列表](contents/)
+- [&lt;stl:contents&gt; 内容列表](contents/)
 
-- [stl:count 显示数值](count/)
+- [&lt;stl:count&gt; 显示数值](count/)
 
-- [stl:dynamic 动态显示](dynamic/)
+- [&lt;stl:dynamic&gt; 动态显示](dynamic/)
 
-- [stl:each 列表项循环](each/)
+- [&lt;stl:each&gt; 列表项循环](each/)
 
-- [stl:file 文件下载链接](file/)
+- [&lt;stl:file&gt; 文件下载链接](file/)
 
-- [stl:flash 显示 Flash](flash/)
+- [&lt;stl:flash&gt; 显示 Flash](flash/)
 
-- [stl:focusViewer 滚动焦点图](focusViewer/)
+- [&lt;stl:focusViewer&gt; 滚动焦点图](focusViewer/)
 
-- [stl:if 条件判断](if/)
+- [&lt;stl:if&gt; 条件判断](if/)
 
-- [stl:image 显示图片](image/)
+- [&lt;stl:image&gt; 显示图片](image/)
 
-- [stl:include 包含文件](include/)
+- [&lt;stl:include&gt; 包含文件](include/)
 
-- [stl:itemTemplate 列表项](itemTemplate/)
+- [&lt;stl:itemTemplate&gt; 列表项](itemTemplate/)
 
-- [stl:loading 载入模板](loading/)
+- [&lt;stl:loading&gt; 载入模板](loading/)
 
-- [stl:location 当前位置](location/)
+- [&lt;stl:location&gt; 当前位置](location/)
 
-- [stl:marquee 无间隔滚动](marquee/)
+- [&lt;stl:marquee&gt; 无间隔滚动](marquee/)
 
-- [stl:navigation 显示导航](navigation/)
+- [&lt;stl:navigation&gt; 显示导航](navigation/)
 
-- [stl:no 失败模板](no/)
+- [&lt;stl:no&gt; 失败模板](no/)
 
-- [stl:pageChannels 翻页栏目列表](pageChannels/)
+- [&lt;stl:pageChannels&gt; 翻页栏目列表](pageChannels/)
 
-- [stl:pageContents 翻页内容列表](pageContents/)
+- [&lt;stl:pageContents&gt; 翻页内容列表](pageContents/)
 
-- [stl:pageItem 翻页项](pageItem/)
+- [&lt;stl:pageItem&gt; 翻页项](pageItem/)
 
-- [stl:pageItems 翻页项容器](pageItems/)
+- [&lt;stl:pageItems&gt; 翻页项容器](pageItems/)
 
-- [stl:pageSqlContents 翻页数据库列表](pageSqlContents/)
+- [&lt;stl:pageSqlContents&gt; 翻页数据库列表](pageSqlContents/)
 
-- [stl:player 播放视频](player/)
+- [&lt;stl:player&gt; 播放视频](player/)
 
-- [stl:printer 打印](printer/)
+- [&lt;stl:printer&gt; 打印](printer/)
 
-- [stl:queryString SQL 查询语句](queryString/)
+- [&lt;stl:queryString&gt; SQL 查询语句](queryString/)
 
-- [stl:rss Rss 订阅](rss/)
+- [&lt;stl:rss&gt; Rss 订阅](rss/)
 
-- [stl:search 搜索](search/)
+- [&lt;stl:search&gt; 搜索](search/)
 
-- [stl:select 下拉列表](select/)
+- [&lt;stl:select&gt; 下拉列表](select/)
 
-- [stl:site 获取站点值](site/)
+- [&lt;stl:site&gt; 获取站点值](site/)
 
-- [stl:sites 站点列表](sites/)
+- [&lt;stl:sites&gt; 站点列表](sites/)
 
-- [stl:sqlContent 数据库值](sqlContent/)
+- [&lt;stl:sqlContent&gt; 数据库值](sqlContent/)
 
-- [stl:sqlContents 数据库列表](sqlContents/)
+- [&lt;stl:sqlContents&gt; 数据库列表](sqlContents/)
 
-- [stl:tabs 页签切换](tabs/)
+- [&lt;stl:tags&gt; 标签](tags/)
 
-- [stl:tags 标签](tags/)
+- [&lt;stl:tree&gt; 树状导航](tree/)
 
-- [stl:tree 树状导航](tree/)
+- [&lt;stl:value&gt; 获取值](value/)
 
-- [stl:value 获取值](value/)
+- [&lt;stl:video&gt; 播放视频](video/)
 
-- [stl:video 播放视频](video/)
+- [&lt;stl:yes&gt; 成功模板](yes/)
 
-- [stl:yes 成功模板](yes/)
-
-- [stl:zoom 文字缩放](zoom/)
+- [&lt;stl:zoom&gt; 文字缩放](zoom/)
 
 - [HTML 参考](reference_html/)
