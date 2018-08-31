@@ -9,16 +9,9 @@
 - `"PreviousChannel"` 上一栏目链接
 - `"NextChannel"` 下一栏目链接
 
-## isKeyboard
-
-键盘左右键实现上一篇下一篇
-
-- `"true"` 开启
-- `"false"` 关闭
-
 ## emptyText
 
-当无内容时显示的信息
+当无内容时展示的信息
 
 ## tipText
 
@@ -26,8 +19,11 @@
 
 ## wordNum
 
-显示字符的数目，0 代表不限制字数。
+展示字符的数目，0 代表不限制字数。
 
-## target
+## isKeyboard
 
-点击链接时弹出窗口的目标
+键盘左右键实现上一篇下一篇
+
+- `"true"` 开启
+- `"false"` 关闭

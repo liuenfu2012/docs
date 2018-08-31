@@ -1,15 +1,15 @@
-# &lt;stl:action&gt; 示例
+# &lt;stl:no&gt; 示例
 
-## 简体/繁体转换
+## 自定义载入中、有搜索结果以及无搜索结果模板
 
-下面的例子实现页面的简体/繁体转换功能，如果希望所有页面均实现转换，需要把代码放到所有模板中（通常放到头部包含文件）。
-
-```html
-<stl:action type="Translate">繁体</stl:action>
-```
-
-解析后的 HTML 代码：
+下面的例子通过自定义载入中、有搜索结果以及无搜索结果模板来实现搜索页面的自定义。
 
 ```html
-<a href="javascript:;" id="translateLink">繁体</a>
+<stl:search>
+  <stl:no>
+    <div class="alert alert-danger" role="alert">
+      <strong>抱歉!</strong> 找不到和您的查询相符的项目
+    </div>
+  </stl:no>
+</stl:search>
 ```

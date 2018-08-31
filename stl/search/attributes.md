@@ -1,5 +1,12 @@
 # &lt;stl:search&gt; 属性
 
+## isAllSites
+
+是否对全部站点进行搜索
+
+- `"true"` 搜索所有站点的内容
+- `"false"` 只搜索本站内容，默认值
+
 ## siteName
 
 站点名称，设置后系统将只搜索对应站点的内容
@@ -50,11 +57,11 @@ AddDate 日期搜索字段，定义 dateFrom、dateTo 或者 since 日期过滤�
 
 ## pageNum
 
-每页显示多少条内容
+每页展示多少条内容
 
 ## isHighlight
 
-是否关键字高亮显示
+是否关键字高亮展示
 
-- `"true"` 高亮显示
-- `"false"` 正常显示
+- `"true"` 高亮展示
+- `"false"` 正常展示

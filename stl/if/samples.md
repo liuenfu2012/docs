@@ -2,41 +2,44 @@
 
 ## 判断值是否为空
 
-下面的例子判断内容副标题是否为空，如果不为空将显示带有副标题的行。
+下面的例子判断内容副标题是否为空，如果不为空将展示带有副标题的行。
 
 ```html
-<stl:if testType="SubTitle" testOperate="NotEmpty">
+<stl:if type="SubTitle" op="NotEmpty">
   <strong>副标题：</strong><stl:content type="SubTitle"></stl:content>
 </stl:if>
-```
-
-解析后的 HTML 代码：
-
-```html
-<strong>副标题：</strong>stl:if 标签示例（简单）副标题
 ```
 
 ## 判断当前栏目名称是否为"栏目 1"或"栏目 2"
 
 ```html
-<stl:if testType="ChannelName" testOperate="In" testValue="栏目1,栏目2">
+<stl:if type="ChannelName" op="In" value="栏目1,栏目2">
   <stl:yes> <p>true</p> </stl:yes>
   <stl:no> <p>false</p> </stl:no>
 </stl:if>
 ```
 
-解析后的 HTML 代码：
+## 根据模板类型展示不同内容
+
+下面的例子判断当前模板是不是内容模板。
 
 ```html
-<p>true</p>
+<stl:if type="TemplateType" op="Equals" value="ContentTemplate">
+  <stl:yes>
+      这是内容页面
+  </stl:yes>
+  <stl:no>
+      这不是内容页面
+  </stl:no>
+</stl:if>
 ```
 
-## 根据模板名称显示不同内容
+## 根据模板名称展示不同内容
 
-下面的例子根据当前模板的模板名称显示不同的内容。
+下面的例子根据当前模板的模板名称展示不同的内容。
 
 ```html
-<stl:if testType="TemplateName" testOperate="Equals" testValue="系统首页模板">
+<stl:if type="TemplateName" op="Equals" value="系统首页模板">
   <stl:yes>
       <li><A href="/" class="current">首 页</A></li>
   </stl:yes>
@@ -46,19 +49,13 @@
 </stl:if>
 ```
 
-解析后的 HTML 代码：
+## 最新 10 天内更新的内容以红色突出展示
 
-```html
-<li>我不是首页</li>
-```
-
-## 最新 10 天内更新的内容以红色突出显示
-
-下面的例子显示整个站点中最新更新的 20 篇内容，并突出显示 10 天内更新的内容。
+下面的例子展示整个站点中最新更新的 20 篇内容，并突出展示 10 天内更新的内容。
 
 ```html
 <stl:contents topLevel="0" totalNum="20" order="LastEditDate" scope="All">
-  <stl:if testType="LastEditDate" testOperate="LessThan" testValue="10d">
+  <stl:if type="LastEditDate" op="LessThan" value="10d">
       <stl:yes>
           <li><stl:a target="_blank" style="color:#F00;"></stl:a></li>
       </stl:yes>
@@ -69,9 +66,9 @@
 </stl:contents>
 ```
 
-## 根据用户是否登录显示不同的内容
+## 根据用户是否登录展示不同的内容
 
-下面的例子根据用户是否登录显示不同的内容
+下面的例子根据用户是否登录展示不同的内容
 
 ```html
 <stl:if type="IsUserLoggin">

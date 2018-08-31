@@ -1,6 +1,6 @@
 # &lt;stl:audio&gt; 属性
 
-所有属于 HTML 标签&lt;a&gt;的属性均适用于&lt;stl:audio&gt;标签，请参考：[HTML &lt;a&gt; 元素](/reference_html/a)。
+所有属于 HTML 标签&lt;audio&gt;的属性均适用于&lt;stl:audio&gt;标签，请参考：[HTML &lt;audio&gt; 元素](/reference_html/audio)。
 
 ## type
 
@@ -21,11 +21,3 @@
 ## isLoop
 
 是否循环播放。
-
-## width
-
-播放器的宽度。
-
-## height
-
-播放器的高度。

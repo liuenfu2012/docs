@@ -1,8 +1,8 @@
 # &lt;stl:zoom&gt; 示例
 
-## 显示缩放链接
+## 展示缩放链接
 
-下面的例子显示缩放链接。
+下面的例子展示缩放链接。
 
 ```html
 【<stl:zoom zoomId="artibody" fontSize="16">大</stl:zoom>

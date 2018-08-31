@@ -1,8 +1,8 @@
 # &lt;stl:contents&gt; 示例
 
-## 列表显示三列
+## 列表展示三列
 
-下面的例子显示的列表列数为三列，并仅显示带图片的内容。
+下面的例子展示的列表列数为三列，并仅展示带图片的内容。
 
 ```html
 <stl:contents channelIndex="Example" columns="3" isImage="true" width="90%" border="0" cellpadding="2">
@@ -50,9 +50,9 @@
 </table>
 ```
 
-## 仅显示带图片的内容列表
+## 仅展示带图片的内容列表
 
-下面的例子显示"新闻"栏目下的带图片的内容列表。
+下面的例子展示"新闻"栏目下的带图片的内容列表。
 
 ```html
 <stl:contents channelIndex="新闻" isImage="true">
@@ -69,9 +69,9 @@
 <a href="/news/1.html"><img src="/upload/images/2013/6/t_7164418763.jpg"></a>
 ```
 
-## 显示指定的栏目下的前 7 篇内容列表
+## 展示指定的栏目下的前 7 篇内容列表
 
-下面的例子显示栏目索引为"starting"的栏目下的所有内容的前 7 篇列表
+下面的例子展示栏目索引为"starting"的栏目下的所有内容的前 7 篇列表
 
 ```html
 <stl:contents channelIndex="starting" totalNum="7">
@@ -97,9 +97,9 @@
 <br>
 ```
 
-## 显示栏目名称为 STL 标签下的所有内容（含下级栏目）
+## 展示栏目名称为 STL 标签下的所有内容（含下级栏目）
 
-显示栏目名称为 STL 标签下的所有内容（含下级栏目），共显示 10 篇。
+展示栏目名称为 STL 标签下的所有内容（含下级栏目），共展示 10 篇。
 
 ```html
 <stl:channels upLevel="1">
@@ -115,8 +115,6 @@ stl:search 标签用法
 stl:if 标签用法
 <br>
 stl:action 标签用法
-<br>
-stl:analysis 标签用法
 <br>
 stl:marquee 标签用法
 <br>

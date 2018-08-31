@@ -1,8 +1,8 @@
 # &lt;stl:navigation&gt; 示例
 
-## 显示上一篇内容和下一篇内容的导航
+## 展示上一篇内容和下一篇内容的导航
 
-下面的例子显示上一篇内容和下一篇内容的导航。
+下面的例子展示上一篇内容和下一篇内容的导航。
 
 ```html
 <table cellpadding="0" width="95%" cellspacing="0" height="40" align="center">
@@ -32,9 +32,9 @@
  </tbody></table>
 ```
 
-## 显示上一个栏目和下一个栏目的导航
+## 展示上一个栏目和下一个栏目的导航
 
-下面的例子显示上一个栏目和下一个栏目的导航。
+下面的例子展示上一个栏目和下一个栏目的导航。
 
 ```html
 <table cellpadding="0" width="95%" cellspacing="0" height="40" align="center">
@@ -66,9 +66,9 @@
 </table>
 ```
 
-## 当上一篇/下一篇内容存在时显示对应链接
+## 当上一篇/下一篇内容存在时展示对应链接
 
-下面的例子仅当上一篇/下一篇内容存在时显示对应链接，否则不显示。
+下面的例子仅当上一篇/下一篇内容存在时展示对应链接，否则不展示。
 
 ```html
 <stl:navigation type="PreviousContent">

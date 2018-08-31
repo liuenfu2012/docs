@@ -1,8 +1,8 @@
 # &lt;stl:pageContents&gt; 示例
 
-## 显示能够翻页的内容列表
+## 展示能够翻页的内容列表
 
-下面的例子显示当前栏目下的所有内容的列表，列表下方显示翻页导航。
+下面的例子展示当前栏目下的所有内容的列表，列表下方展示翻页导航。
 
 ```html
 <stl:pageContents channelIndex="新闻" pageNum="20" cellpadding="2" cellspacing="2">

@@ -1,14 +1,13 @@
 # &lt;stl:acount&gt; 属性
 
-下表显示所有属于此标签的属性列表。
+下表展示所有属于此标签的属性列表。
 
 ## type
 
-显示类型：
+展示类型：
 
 - `"Channels"` 统计栏目数
 - `"Contents"` 统计内容数
-- `"Comments"` 统计评论数
 - `"Downloads"` 统计下载次数、下载量
 
 ## channelIndex

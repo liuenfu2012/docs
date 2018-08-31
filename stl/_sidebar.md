@@ -2,7 +2,13 @@
 
   - [STL 基础](basic.md)
   - [元素与实体](elements_and_entities.md)
-  - [翻页标签与实现](pagination.md)
+  - [包含文件](include.md)
+  - [解析上下文](context.md)
+  - [动态展示](dynamic.md)
+  - [列表循环](list.md)
+  - [展示文字](text.md)
+  - [展示日期](date.md)
+  - [插件标签](plugins.md)
   - [地址通配符](wildcard.md)
 
 - [&lt;stl:a&gt; 获取链接](a/)
@@ -21,21 +27,19 @@
 
 - [&lt;stl:contents&gt; 内容列表](contents/)
 
-- [&lt;stl:count&gt; 显示数值](count/)
+- [&lt;stl:count&gt; 展示数值](count/)
 
-- [&lt;stl:dynamic&gt; 动态显示](dynamic/)
+- [&lt;stl:dynamic&gt; 动态展示](dynamic/)
 
 - [&lt;stl:each&gt; 列表项循环](each/)
 
 - [&lt;stl:file&gt; 文件下载链接](file/)
 
-- [&lt;stl:flash&gt; 显示 Flash](flash/)
-
-- [&lt;stl:focusViewer&gt; 滚动焦点图](focusViewer/)
+- [&lt;stl:flash&gt; 展示 Flash](flash/)
 
 - [&lt;stl:if&gt; 条件判断](if/)
 
-- [&lt;stl:image&gt; 显示图片](image/)
+- [&lt;stl:image&gt; 展示图片](image/)
 
 - [&lt;stl:include&gt; 包含文件](include/)
 
@@ -47,7 +51,7 @@
 
 - [&lt;stl:marquee&gt; 无间隔滚动](marquee/)
 
-- [&lt;stl:navigation&gt; 显示导航](navigation/)
+- [&lt;stl:navigation&gt; 展示导航](navigation/)
 
 - [&lt;stl:no&gt; 失败模板](no/)
 

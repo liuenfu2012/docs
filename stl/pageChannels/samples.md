@@ -1,8 +1,8 @@
 # &lt;stl:pageChannels&gt; 示例
 
-## 显示能够翻页的栏目列表
+## 展示能够翻页的栏目列表
 
-下面的例子显示当前栏目下的所有子栏目的列表，每 10 个栏目翻一页，列表下方显示翻页导航。
+下面的例子展示当前栏目下的所有子栏目的列表，每 10 个栏目翻一页，列表下方展示翻页导航。
 
 ```html
 <stl:pageChannels channelIndex="STL基本标签" pageNum="10" cellpadding="2" cellspacing="2">

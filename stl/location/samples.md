@@ -1,8 +1,8 @@
 # &lt;stl:location&gt; 示例
 
-## 显示页面的当前位置
+## 展示页面的当前位置
 
-下面的例子显示页面的当前位置，分隔符用属性表示。
+下面的例子展示页面的当前位置，分隔符用属性表示。
 
 ```html
 <stl:location separator=" - "></stl:location>
@@ -20,9 +20,9 @@
 <a href="/location/index.html">stl:location 当前位置</a>
 ```
 
-## 显示页面的当前位置
+## 展示页面的当前位置
 
-下面的例子显示页面的当前位置，分隔符用子标签表示。
+下面的例子展示页面的当前位置，分隔符用子标签表示。
 
 ```html
 <stl:location> <span style="color:#ff0000"> >> </span> </stl:location>

@@ -8,9 +8,9 @@
 <stl:player playUrl="@/images/oceans-clip.mp4" imageUrl="@/images/oceans-clip.png" width="640" height="264" isAutoPlay="false"></stl:player>
 ```
 
-## 显示当前内容的视频文件
+## 展示当前内容的视频文件
 
-下面的例子显示当前内容的视频文件。
+下面的例子展示当前内容的视频文件。
 
 ```html
 <stl:player width="640" height="264" isAutoPlay="false"></stl:player>

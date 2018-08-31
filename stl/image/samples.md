@@ -1,8 +1,8 @@
 # &lt;stl:image&gt; 示例
 
-## 在内容列表中显示内容图片
+## 在内容列表中展示内容图片
 
-下面的例子显示栏目索引为"新闻"的栏目的内容图片列表，点击图片后新窗口打开内容页。
+下面的例子展示栏目索引为"新闻"的栏目的内容图片列表，点击图片后新窗口打开内容页。
 
 ```html
 <stl:contents channelIndex="新闻" totalNum="3" isImage="true" width="80%">
@@ -26,9 +26,9 @@
 </a>
 ```
 
-## 显示指定的图片文件
+## 展示指定的图片文件
 
-下面的例子显示文件名称为"banner.jpg"的图片文件。
+下面的例子展示文件名称为"banner.jpg"的图片文件。
 
 ```html
 <stl:image src="@/images/banner.jpg" height="100"></stl:image>
@@ -40,9 +40,9 @@
 <img src="/images/banner.jpg" height="100">
 ```
 
-## 显示当前栏目的图片
+## 展示当前栏目的图片
 
-下面的例子显示当前栏目的图片，如果栏目没有图片显示，则不显示任何信息。
+下面的例子展示当前栏目的图片，如果栏目没有图片展示，则不展示任何信息。
 
 ```html
 <stl:container context="Channel">

@@ -2,9 +2,8 @@
 
 ```html
 <stl:zoom
-  fontSize="缩放字体大小"
-  isDynamic="是否动态显示"
-  zoomId="页面HTML中缩放对象的ID属性">
+  zoomId="页面Html 中缩放对象的 Id 属性"
+  fontSize="缩放字体大小">
 </stl:zoom>
 ```
 
@@ -12,13 +11,11 @@
 
 通过 stl:zoom 标签在模板中实现文字缩放功能
 
-stl:zoom 标签将显示缩放链接，点击此链接后缩放指定文字。
-
-`<stl:zoom>` 标签对应的实体为{stl:zoom}。
+stl:zoom 标签将展示缩放链接，点击此链接后缩放指定文字。
 
 ## 属性
 
-| 属性     | 说明                       |
-| -------- | -------------------------- |
-| zoomId   | 页面HTML中缩放对象的ID属性 |
-| fontSize | 缩放字体大小               |
+| 属性                                    | 说明                          |
+| --------------------------------------- | ----------------------------- |
+| [zoomId](zoom/attributes?id=zoomId)     | 页面Html 中缩放对象的 Id 属性 |
+| [fontSize](zoom/attributes?id=fontSize) | 缩放字体大小                  |

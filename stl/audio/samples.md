@@ -1,8 +1,8 @@
 # &lt;stl:audio&gt; 示例
 
-## 显示当前内容的音频文件
+## 展示当前内容的音频文件
 
-下面的例子显示当前内容的音频文件。
+下面的例子展示当前内容的音频文件。
 
 ```html
 <stl:audio></stl:audio>
@@ -14,9 +14,9 @@
 
 ```
 
-## 显示指定地址的音频文件
+## 展示指定地址的音频文件
 
-下面的例子显示文件名为“ChasingCorporate.mp3”的音频文件。
+下面的例子展示文件名为“ChasingCorporate.mp3”的音频文件。
 
 ```html
 <stl:audio playUrl="@/images/ChasingCorporate.mp3"></stl:audio>

@@ -8,125 +8,157 @@
 
 站点文件夹
 
-## totalNum
-
-设置列表一共显示多少个站点，不设置将显示所有站点。
-
-## startNum
-
-从第几个站点开始显示，默认从第一个站点开始显示。
-
 ## scope
 
-站点显示范围。此属性只可属于以下可能的取值的一种。
+站点展示范围。此属性只可属于以下可能的取值的一种。
 
-- `"Children"` 显示下级站点的列表
-- `"Descendant"` 显示下级及下下级站点的列表
-- `"All"` 显示所有站点的列表
+- `"children"` 展示下级站点的列表
+- `"descendant"` 展示下级及下下级站点的列表
+- `"all"` 展示所有站点的列表
 
 ## order
 
 站点列表排序方式。
 
-- `"Default"` 默认排序，显示与 CMS 后台站点相同的排序
-- `"Contents"` 按站点中内容数进行排序
-- `"Hits"` 按站点中页面的点击量进行排序
-
-## since
-
-时间段，格式为"数字+日期符号"，日期符号有"y"、"m"、"d"及"h"，分别代表年、月、天及小时。
+- `"default"` 默认排序，展示与 CMS 后台站点相同的排序
+- `"contents"` 按站点中内容数进行排序
+- `"hits"` 按站点中页面的点击量进行排序
 
 ## where
 
 获取站点列表的条件判断
 
-## columns
+## totalNum
 
-列数，默认显示一列
+设置列表一共展示多少条信息，默认值为 0，代表展示所有信息。
 
-## direction
+```html
+<stl:sites totalNum="7">
+  <stl:site type="siteName"></stl:site><br />
+</stl:sites>
+```
 
-方向
+## startNum
 
-- `"Vertical"` 垂直
-- `"Horizontal"` 水平
+设置列表从第几条信息开始展示，默认值为 1，代表从第一条信息开始展示。
+
+```html
+<stl:sites startNum="3" totalNum="7">
+  <stl:site type="siteName"></stl:site><br />
+</stl:sites>
+```
 
 ## layout
 
-重复布局
+列表布局属性用于控制列表循环中每一项的展示方式，默认值为 `none`，即直接循环，不控制列表项展示。
 
-- `"Table"` 表格布局
-- `"Flow"` SPAN 标签布局
-- `"None"` 无，常用于 Div+Css 形式页面
+- `"none"` 列表不使用布局，仅循环列表项，不控制列表项展示。此值是默认的，如果没有指定属性的话。
+- `"table"` 列表使用表格布局，系统将把列表标签解析为 [HTML &lt;table&gt; 元素](/reference_html/table)，table 标签的所有属性（class、style、cellPadding、cellSpacing 等）均可用在列表标签中。
+
+```html
+<stl:sites layout="table" columns="3" width="90%" border="0" cellpadding="2">
+    <stl:site type="siteName"></stl:site>
+</stl:sites>
+```
+
+## columns
+
+columns 属性决定要展示的列的数量。比如，如果要在列表中展示四列的项，那么可以把这个属性设为 4。
+
+```html
+<stl:sites layout="table" columns="3" width="90%" border="0" cellpadding="2">
+    <stl:site type="siteName"></stl:site>
+</stl:sites>
+```
+
+!> 注意：columns 属性只有当列表布局为表格（layout="table"）时才起作用。
+
+## direction
+
+direction 属性用于确定列表是按水平方向还是或垂直方向来重复。
+
+- `"vertical"` 垂直
+- `"horizontal"` 水平
+
+如果将此属性设置为 vertical，列表中的项展示在从上到下加载的列中，然后从左到右，直到呈现所有项。例如，如果将 columns 属性设置为 3，列表中的项展示在三列中，如下表所示。
+
+<table>
+<tbody>
+<tr>
+<td>1</td>
+<td>4</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+
+如果将此属性设置为 horizontal，列表中的项以从左到右加载的行展示，然后从上到下，直到呈现所有项。例如，如果将 columns 属性设置为 3，列表的项将以每行三项的形式展示，如下表所示。
+
+<table>
+<tbody>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+</tr>
+</tbody>
+</table>
+
+注意，即使 direction 值为 vertical，还是展示为 4 个列。columns 永远是指重复的列的数量，而不是行的数量。
+
+!> 注意：direction 属性只有当列表布局为表格（layout="table"）且设置了列数（columns）时才起作用。
 
 ## itemHeight
 
-列表中每一项的高度
+列表中每一项的高度。
+
+!> 注意：itemHeight 属性只有当列表布局为表格（layout="table"）时才起作用。
 
 ## itemWidth
 
-列表中每一项的宽度
+列表中每一项的宽度。
+
+!> 注意：itemWidth 属性只有当列表布局为表格（layout="table"）时才起作用。
 
 ## itemAlign
 
-列表中每一项的水平对齐方式
+列表中每一项的水平对齐方式。
 
-- `"Center"` 居中对齐
-- `"Left"` 居左对齐
-- `"Right"` 居右对齐
-- `"Justify"` 向页面的左右边缘对齐
-- `"NotSet"` 不设置
+- `"center"` 居中对齐。
+- `"left"` 居左对齐。
+- `"right"` 居右对齐。
+- `"justify"` 向页面的左右边缘对齐。
+- `"notSet"` 不设置。此值是默认的，如果没有指定属性的话。
+
+!> 注意：itemAlign 属性只有当列表布局为表格（layout="table"）时才起作用。
 
 ## itemVerticalAlign
 
-列表中每一项的垂直对齐方式
+列表中每一项的垂直对齐方式。
 
-- `"Top"` 顶端对齐
-- `"Middle"` 居中对齐
-- `"Bottom"` 底端对齐
-- `"NotSet"` 不设置
+- `"top"` 顶端对齐。
+- `"middle"` 居中对齐。
+- `"bottom"` 底端对齐。
+- `"notSet"` 不设置。此值是默认的，如果没有指定属性的话。
 
-## itemClass
-
-项 CSS 类
-
-## isDisplayIfEmpty
-
-当项为零是是否显示。
-
-- `"true"` 列表项不存在时仍然显示
-- `"false"` 列表项不存在时不显示
-
-## class
-
-整体 CSS 类
-
-## target
-
-控制链接打开窗口的目标
-
-## height
-
-列表的整体高度
-
-## width
-
-列表的整体宽度
-
-## align
-
-列表的整体对齐方式
-
-- `"Center"` 居中对齐
-- `"Left"` 居左对齐
-- `"Right"` 居右对齐
-- `"Justify"` 向页面的左右边缘对齐
-- `"NotSet"` 不设置
-
-## cellpadding
-
-填充像素值
-
-## cellspacing
-
-间距像素值
+!> 注意：itemVerticalAlign 属性只有当列表布局为表格（layout="table"）时才起作用。

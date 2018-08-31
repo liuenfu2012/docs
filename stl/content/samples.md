@@ -1,8 +1,8 @@
 # &lt;stl:content&gt; 示例
 
-## 在内容列表中显示内容链接
+## 在内容列表中展示内容链接
 
-下面的例子显示栏目索引为"新闻"的栏目的内容列表前五条，内容链接的提示为内容标题全称。
+下面的例子展示栏目索引为"新闻"的栏目的内容列表前五条，内容链接的提示为内容标题全称。
 
 ```html
 <stl:contents channelIndex="新闻" totalNum="5" width="80%" border="0">
@@ -29,9 +29,9 @@
 </a>
 ```
 
-## 显示内容的副标题
+## 展示内容的副标题
 
-下面的例子在页面中显示内容的副标题。
+下面的例子在页面中展示内容的副标题。
 
 ```html
 <stl:content type="SubTitle"></stl:content>
@@ -43,9 +43,9 @@
 内容副标题
 ```
 
-## 显示内容的添加时间
+## 展示内容的添加时间
 
-下面的例子在页面中显示内容的添加时间，并按照"yyyy-MM-dd"格式显示。
+下面的例子在页面中展示内容的添加时间，并按照"yyyy-MM-dd"格式展示。
 
 ```html
 <stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content>
