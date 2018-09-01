@@ -24,13 +24,12 @@
 
 ## 使用说明
 
-通过 stl:content 标签在模板中展示指定内容的属性值
+通过 stl:content 标签在模板中展示指定内容的属性值。
 
-channelIndex="栏目索引"，channelName="栏目名称"，parent="展示父栏目属性"，upLevel="上级栏目的级别"以及topLevel="从首页向下的栏目级别"用于定位到具体的栏目。
 type="展示的类型"用于明确需要展示内容的具体值。
 
 &lt;stl:content&gt; 标签对应的实体为{stl:content}，可以将实体放到属性中使用，如：
-&lt;a title="{stl:content type=Title}"&gt;
+&lt;a title="{stl:content type=Title}"&gt;；如果实体标签不包含type 属性，系统将把实体解析为JSON对象。
 
 ## 备注
 

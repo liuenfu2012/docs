@@ -34,7 +34,7 @@ type="展示的类型"用于明确需要展示栏目的具体字段。
 &lt;stl:channel&gt; 元素默认展示当前栏目的值，如果希望展示指定栏目的值，请设置 [上下文切换](/context?id=通过属性切换上下文) 属性。
 
 &lt;stl:channel&gt;标签对应的实体为{stl:channel}，可以将实体放到属性中使用，如：
-&lt;a title="{stl:channel type=title}"&gt;
+&lt;a title="{stl:channel type=title}"&gt;；如果实体标签不包含type 属性，系统将把实体解析为JSON对象。
 
 ## 属性
 

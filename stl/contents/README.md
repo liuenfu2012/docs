@@ -40,28 +40,13 @@
 
 ## 使用说明
 
-通过 stl:contents 标签在模板中展示内容列表
+通过 stl:contents 标签在模板中展示内容列表。
 
-stl:contents是列表标签，用于内容列表循环。
-channelIndex="栏目索引"，channelName="栏目名称"，parent="展示父栏目属性"，upLevel="上级栏目的级别"以及topLevel="从首页向下的栏目级别"用于定位到具体的栏目。
-
-## 注意
-
-columns、direction 以及 layout 属性用于控制生成列表的HTML 标签。
-columns 控制生成列表的列数，direction 控制生成列表的方向，layout 控制生成列表的HTML标签。
-layout 为Table时系统使用 &lt;table&gt; 标签生成列表，layout 为Flow时系统使用 &lt;span&gt; 标签生成列表，默认为None，即仅循环列表项。
+&lt;stl:contents&gt; 元素默认展示当前栏目的内容列表，如果希望展示指定栏目的内容列表，请设置 [上下文切换](/context?id=通过属性切换上下文) 属性。
 
 如果需要在内容页中展示与当前内容相关的内容列表，使用 isRelatedContents="true" 属性，系统将根据标签判断是否相关内容。
 
-使用 isNoDup="true" 属性，系统将判断标题时候重复，重复标题的内容只展示一次。
-
-如果设置了 channelIndex 属性，系统将寻找对应此栏目索引的栏目并展示此栏目的内容列表。
-如果设置了 channelName 属性，系统将寻找对应此栏目名称的栏目并展示此栏目的内容列表。
-如果设置了 parent 或 upLevel 属性，系统将寻找上级或上几级的栏目并对其内容进行循环展示。
-如果设置了 topLevel 属性，系统将寻找从首页向下的栏目级别并对其内容进行循环展示。
-如果以上属性都未设置，系统将寻找当前栏目并对内容进行循环展示。
-
-&lt;stl:contents&gt; 标签对应的实体为{stl:contents}。
+&lt;stl:contents&gt; 标签对应的实体为{stl:contents}，实体标签将解析为JSON数组。
 
 ## 属性
 

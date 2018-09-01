@@ -13,12 +13,28 @@
 </head>
 
 <body>
+  <nav class="app-nav no-badge">
+    <ul>
+      <li><a href="https://www.siteserver.cn/" target="_blank">返回主站</a></li>
+      <li><a href="https://docs.siteserver.cn/" target="_blank">文档中心</a>
+        <ul>
+          <li><a href="https://docs.siteserver.cn/introduction/" target="_blank">SiteServer CMS 产品介绍</a></li>
+          <li><a href="https://docs.siteserver.cn/getting-started/" target="_blank">SiteServer CMS 新手入门</a></li>
+          <li><a href="https://docs.siteserver.cn/faq/" target="_blank">SiteServer CMS 常见问题</a></li>
+          <li><a href="https://docs.siteserver.cn/stl/" target="_blank">STL 语言参考手册</a></li>
+          <li><a href="https://docs.siteserver.cn/plugins/" target="_blank">插件开发参考手册</a></li>
+          <li><a href="https://docs.siteserver.cn/cli/" target="_blank">CLI 命令行参考手册</a></li>
+          <li><a href="https://docs.siteserver.cn/api/" target="_blank">REST API 参考手册</a></li>
+          <li><a href="https://docs.siteserver.cn/model/" target="_blank">数据结构参考手册</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
   <div id="app">载入中，请稍后...</div>
   <script>
     var githubUrl = 'https://github.com/siteserver/docs/edit/master/stl/';
     window.$docsify = {
       loadSidebar: true,
-      loadNavbar: true,
       subMaxLevel: 1,
       mergeNavbar: true,
       auto2top: true,
