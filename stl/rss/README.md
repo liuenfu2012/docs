@@ -1,28 +1,10 @@
 ﻿# &lt;stl:rss&gt; Rss订阅
 
 ```html
-<stl:rss
-  channelIndex="栏目索引"
-  channelName="栏目名称"
-  scope="内容范围"
-  groupChannel="指定展示的栏目组"
-  groupChannelNot="指定不展示的栏目组"
-  groupContent="指定展示的内容组"
-  groupContentNot="指定不展示的内容组"
-  tags="指定标签"
-  title="Rss订阅标题"
-  description="Rss订阅摘要"
-  totalNum="展示内容数目"
-  startNum="从第几条信息开始展示"
-  order="排序"
-  isTop="仅展示置顶内容"
-  isRecommend="仅展示推荐内容"
-  isHot="仅展示热点内容"
-  isColor="仅展示醒目内容">
-</stl:rss>
+<stl:rss channelIndex="栏目索引" channelName="栏目名称" scope="内容范围" groupChannel="指定展示的栏目组" groupChannelNot="指定不展示的栏目组" groupContent="指定展示的内容组" groupContentNot="指定不展示的内容组" tags="指定标签" title="Rss订阅标题" description="Rss订阅摘要" totalNum="展示内容数目" startNum="从第几条信息开始展示" order="排序" isTop="仅展示置顶内容" isRecommend="仅展示推荐内容" isHot="仅展示热点内容" isColor="仅展示醒目内容"></stl:rss>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:rss 标签在模板中生成Rss阅读器能够浏览的Rss订阅
 

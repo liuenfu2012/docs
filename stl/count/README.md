@@ -1,18 +1,10 @@
 ﻿# &lt;stl:count&gt; 展示数值
 
 ```html
-<stl:count
-  type="需要获取值的类型"
-  channelIndex="栏目索引"
-  channelName="栏目名称"
-  upLevel="上级栏目的级别"
-  topLevel="从首页向下的栏目级别"
-  scope="内容范围"
-  since="时间段">
-</stl:count>
+<stl:count type="需要获取值的类型" channelIndex="栏目索引" channelName="栏目名称" upLevel="上级栏目的级别" topLevel="从首页向下的栏目级别" scope="内容范围" since="时间段"></stl:count>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:count 标签在模板中展示统计数字
 

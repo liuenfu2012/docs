@@ -1,16 +1,10 @@
 ﻿# &lt;stl:navigation&gt; 展示导航
 
 ```html
-<stl:navigation
-  type="类型"
-  emptyText="当无内容时展示的信息"
-  tipText="导航提示信息"
-  wordNum="展示字数"
-  isKeyboard="是否开启键盘，↑↓←→键分别为上下左右">
-</stl:navigation>
+<stl:navigation type="类型" emptyText="当无内容时展示的信息" tipText="导航提示信息" wordNum="展示字数" isKeyboard="是否开启键盘，↑↓←→键分别为上下左右"></stl:navigation>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:navigation 标签在模板中展示链接导航
 

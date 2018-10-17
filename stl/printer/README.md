@@ -1,15 +1,10 @@
 ﻿# &lt;stl:printer&gt; 打印
 
 ```html
-<stl:printer
-  titleId="页面Html 中打印标题的 Id 属性"
-  bodyId="页面Html 中打印正文的 Id 属性"
-  logoId="页面Logo 的 Id 属性"
-  locationId="页面当前位置的 Id 属性">
-</stl:printer>
+<stl:printer titleId="页面Html 中打印标题的 Id 属性" bodyId="页面Html 中打印正文的 Id 属性" logoId="页面Logo 的 Id 属性" locationId="页面当前位置的 Id 属性"></stl:printer>
 ```
 
-## 使用说明
+## 说明
 
 stl:printer 用于展示打印链接，点击后弹出打印窗口
 

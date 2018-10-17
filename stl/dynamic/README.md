@@ -1,17 +1,10 @@
 ﻿# &lt;stl:dynamic&gt; 动态展示
 
 ```html
-<stl:dynamic
-  context="所处上下文"
-  isPageRefresh="翻页时是否刷新页面"
-  onBeforeSend="动态请求发送前执行的JS代码"
-  onSuccess="动态请求成功后执行的JS代码"
-  onComplete="动态请求结束后执行的JS代码"
-  onError="动态请求失败后执行的JS代码">
-</stl:dynamic>
+<stl:dynamic context="所处上下文" isPageRefresh="翻页时是否刷新页面" onBeforeSend="动态请求发送前执行的JS代码" onSuccess="动态请求成功后执行的JS代码" onComplete="动态请求结束后执行的JS代码" onError="动态请求失败后执行的JS代码"></stl:dynamic>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:dynamic 标签在模板中实现动态展示功能
 

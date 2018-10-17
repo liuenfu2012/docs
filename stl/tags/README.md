@@ -1,16 +1,10 @@
 ﻿# &lt;stl:tags&gt; 标签
 
 ```html
-<stl:tags
-  tagLevel="标签级别"
-  totalNum="展示标签数目"
-  isOrderByCount="是否按引用次数排序"
-  theme="主题样式"
-  context="所处上下文">
-</stl:tags>
+<stl:tags tagLevel="标签级别" totalNum="展示标签数目" isOrderByCount="是否按引用次数排序" theme="主题样式" context="所处上下文"></stl:tags>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:tags 标签在模板中展示内容标签
 

@@ -1,11 +1,10 @@
 ﻿# &lt;stl:loading&gt; 载入模板
 
 ```html
-<stl:loading>
-</stl:loading>
+<stl:loading></stl:loading>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:loading 标签在模板中创建载入中展示的内容
 

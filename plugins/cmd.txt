@@ -1,7 +1,7 @@
 ﻿https://ejball.com/XmlDocMarkdown/
 
 cd /github/siteserver/SiteServer.Plugin/bin/Release/net40
-XmlDocMarkdown bin/Debug/net40/SiteServer.Plugin.dll docs --clean 
+XmlDocMarkdown SiteServer.Plugin.dll docs --clean 
 
 _________________________________
 

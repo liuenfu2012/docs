@@ -1,15 +1,10 @@
 ﻿# &lt;stl:marquee&gt; 无间隔滚动
 
 ```html
-<stl:marquee
-  scrollDelay="滚动延迟时间（毫秒）"
-  direction="滚动方向"
-  width="宽度"
-  height="高度">
-</stl:marquee>
+<stl:marquee scrollDelay="滚动延迟时间（毫秒）" direction="滚动方向" width="宽度" height="高度"></stl:marquee>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:marquee 标签在模板中创建一个能够无间隔滚动的内容块
 

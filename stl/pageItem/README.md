@@ -1,21 +1,10 @@
 ﻿# &lt;stl:pageItem&gt; 翻页项
 
 ```html
-<stl:pageItem
-  type="类型"
-  text="展示的文字"
-  linkClass="链接CSS样式"
-  textClass="文字CSS样式"
-  listNum="页导航或页跳转展示链接数"
-  listEllipsis="页导航或页跳转链接太多时展示的省略号"
-  hasLr="页码导航是否包含左右字符"
-  lStr="页面左字符"
-  rStr="页面右字符"
-  alwaysA="页码总是超链接，包括无连接时">
-</stl:pageItem>
+<stl:pageItem type="类型" text="展示的文字" linkClass="链接CSS样式" textClass="文字CSS样式" listNum="页导航或页跳转展示链接数" listEllipsis="页导航或页跳转链接太多时展示的省略号" hasLr="页码导航是否包含左右字符" lStr="页面左字符" rStr="页面右字符" alwaysA="页码总是超链接，包括无连接时"></stl:pageItem>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:pageItem 标签在模板中展示翻页项（上一页、下一页、当前页、页跳转、页导航等）
 

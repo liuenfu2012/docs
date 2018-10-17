@@ -1,11 +1,10 @@
 ﻿# &lt;stl:queryString&gt; SQL 查询语句
 
 ```html
-<stl:queryString>
-</stl:queryString>
+<stl:queryString></stl:queryString>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:queryString 标签在模板中定义 SQL 查询语句
 

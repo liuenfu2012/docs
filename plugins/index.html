@@ -23,7 +23,7 @@
       margin-bottom: 18px !important;
     }
 
-    .markdown-section table{
+    .markdown-section table {
       margin-top: 20px !important;
     }
   </style>
@@ -44,15 +44,17 @@
         function (hook, vm) {
           hook.beforeEach(function (html) {
             var url = 'https://github.com/siteserver/docs/edit/master/plugins/' + vm.route.file;
-            var github = "<div  data-tooltip-title=\"Star it if you like\" data-tooltip-position=\"top\" class=\"tool-tip\"><iframe src=\"https://ghbtns.com/github-btn.html?user=siteserver&amp;repo=cms&amp;type=star&amp;count=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"110\" height=\"20\" style='margin:0 10px -6px;border: none;'></iframe></div>";
+            var github =
+              "<div  data-tooltip-title=\"Star it if you like\" data-tooltip-position=\"top\" class=\"tool-tip\"><iframe src=\"https://ghbtns.com/github-btn.html?user=siteserver&amp;repo=cms&amp;type=star&amp;count=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"110\" height=\"20\" style='margin:0 10px -6px;border: none;'></iframe></div>";
 
-            var editHtml = '<a href=' + url + ' class=\"tool-tip\" target=\"_blank\"><img class=\"emoji\" src=\"https://img.alicdn.com/tfs/TB1ica2lcLJ8KJjy0FnXXcFDpXa-128-128.png\" alt=\"Edit\"></a>';
-            return "<div class=\"tool-docs-header\">"
-              + editHtml
-              + github
-              + "</div>"
-              + '\n\n'
-              + html
+            var editHtml = '<a href=' + url +
+              ' class=\"tool-tip\" target=\"_blank\"><img class=\"emoji\" src=\"https://img.alicdn.com/tfs/TB1ica2lcLJ8KJjy0FnXXcFDpXa-128-128.png\" alt=\"Edit\"></a>';
+            return "<div class=\"tool-docs-header\">" +
+              editHtml +
+              github +
+              "</div>" +
+              '\n\n' +
+              html
           })
         }
       ]

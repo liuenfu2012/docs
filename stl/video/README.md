@@ -1,19 +1,10 @@
 ﻿# &lt;stl:video&gt; 播放视频
 
 ```html
-<stl:video
-  type="指定视频的字段"
-  playUrl="视频地址"
-  imageUrl="图片地址"
-  width="宽度"
-  height="高度"
-  isAutoPlay="是否自动播放"
-  isControls="是否展示播放控件"
-  isLoop="是否循环播放">
-</stl:video>
+<stl:video type="指定视频的字段" playUrl="视频地址" imageUrl="图片地址" width="宽度" height="高度" isAutoPlay="是否自动播放" isControls="是否展示播放控件" isLoop="是否循环播放"></stl:video>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:video 标签在模板中展示视频播放器
 

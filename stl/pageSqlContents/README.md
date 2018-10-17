@@ -1,12 +1,10 @@
 ﻿# &lt;stl:pageSqlContents&gt; 翻页数据库列表
 
 ```html
-<stl:pageSqlContents
-  pageNum="每页展示的内容数目">
-</stl:pageSqlContents>
+<stl:pageSqlContents pageNum="每页展示的内容数目"></stl:pageSqlContents>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:pageSqlContents 标签在模板中展示能够翻页的数据库列表
 

@@ -1,29 +1,10 @@
 ﻿# &lt;stl:sqlContents&gt; 数据库列表
 
 ```html
-<stl:sqlContents
-  connectionStringName="数据库链接字符串名称"
-  connectionString="数据库链接字符串"
-  queryString="数据库查询语句"
-  totalNum="展示内容数目"
-  startNum="从第几条信息开始展示"
-  order="排序"
-  where="获取内容列表的条件判断"
-  columns="列数"
-  direction="方向"
-  height="指定列表布局方式"
-  width="整体高度"
-  align="整体宽度"
-  itemHeight="整体对齐"
-  itemWidth="项高度"
-  itemAlign="项宽度"
-  itemVerticalAlign="项水平对齐"
-  itemClass="项垂直对齐"
-  layout="项Css类">
-</stl:sqlContents>
+<stl:sqlContents connectionStringName="数据库链接字符串名称" connectionString="数据库链接字符串" queryString="数据库查询语句" totalNum="展示内容数目" startNum="从第几条信息开始展示" order="排序" where="获取内容列表的条件判断" columns="列数" direction="方向" height="指定列表布局方式" width="整体高度" align="整体宽度" itemHeight="整体对齐" itemWidth="项高度" itemAlign="项宽度" itemVerticalAlign="项水平对齐" itemClass="项垂直对齐" layout="项Css类"></stl:sqlContents>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:sqlContents 标签在模板中展示数据库列表
 

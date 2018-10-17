@@ -1,15 +1,10 @@
 ﻿# &lt;stl:if&gt; 条件判断
 
 ```html
-<stl:if
-  type="测试类型"
-  op="测试操作"
-  value="测试值"
-  context="所处上下文">
-</stl:if>
+<stl:if type="测试类型" op="测试操作" value="测试值" context="所处上下文"></stl:if>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:if 标签在模板中根据条件判断展示内容
 

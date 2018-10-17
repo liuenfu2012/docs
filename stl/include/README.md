@@ -1,12 +1,10 @@
 ﻿# &lt;stl:include&gt; 包含文件
 
 ```html
-<stl:include
-  file="文件路径">
-</stl:include>
+<stl:include file="文件路径"></stl:include>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:include 标签在模板中包含另一个文件，作为模板的一部分。
 

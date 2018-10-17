@@ -1,49 +1,37 @@
 ﻿# &lt;stl:content&gt; 获取内容值
 
 ```html
-<stl:content
- type="展示的类型"
- leftText="展示在信息前的文字"
- rightText="展示在信息后的文字"
- formatString="展示的格式"
- no="展示第几项"
- separator="展示多项时的分割字符串"
- startIndex="字符开始位置"
- length="指定字符长度"
- wordNum="展示字符的数目"
- ellipsis="文字超出部分展示的文字"
- replace="需要替换的文字，可以是正则表达式"
- to="替换replace的文字信息"
- isClearTags="是否清除HTML标签"
- isReturnToBr="是否将回车替换为HTML换行标签"
- isLower="是否转换为小写"
- isUpper="是否转换为大写"
- isOriginal="如果是引用内容，是否获取所引用内容的值">
-</stl:content>
+<stl:content type="展示的类型" leftText="展示在信息前的文字" rightText="展示在信息后的文字" formatString="展示的格式" no="展示第几项" separator="展示多项时的分割字符串" startIndex="字符开始位置" length="指定字符长度" wordNum="展示字符的数目" ellipsis="文字超出部分展示的文字" replace="需要替换的文字，可以是正则表达式" to="替换replace的文字信息" isClearTags="是否清除HTML标签" isReturnToBr="是否将回车替换为HTML换行标签" isLower="是否转换为小写" isUpper="是否转换为大写" isOriginal="如果是引用内容，是否获取所引用内容的值"></stl:content>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:content 标签在模板中展示指定内容的属性值。
 
-type="展示的类型"用于明确需要展示内容的具体值。
+&lt;stl:content&gt; 标签在内容模板中单独使用时，系统默认将展示当前内容的值。
 
-&lt;stl:content&gt; 标签对应的实体为{stl:content}，可以将实体放到属性中使用，如：
-&lt;a title="{stl:content type=Title}"&gt;；如果实体标签不包含type 属性，系统将把实体解析为JSON对象。
+如果 &lt;stl:content&gt; 标签嵌套在 &lt;stl:contents&gt;以及&lt;stl:pageContents&gt; 内容列表标签内，系统将获取内容列表项并解析为相应的值。
 
-## 备注
+stl:content 标签只能放在内容模版中或者作为 &lt;stl:contents&gt;以及&lt;stl:pageContents&gt; 等内容列表标签的子标签。
 
-stl:content 标签只能在内容模版中或者作为 stl:contents 等内容列表标签的子标签。
+type 属性用于明确需要展示内容的具体字段，如果未设置，系统将展示内容标题。
 
-stl:content 标签与STL 内容实体的作用基本相同，但如果type等于ImageUrl、LinkUrl或FileUrl， stl:content 标签将展示图片或链接，而内容实体只展示地址字符串。
+如果需要对返回的文字进行截字或者其他处理，请设置 [展示文字](/text) 属性。
 
-type属性是可选属性。如果没有设置type属性，系统默认使用Title即内容标题作为type的取值。
-如果 type为ImageUrl，系统将展示内容的图片。
-如果 type为LinkUrl，系统将展示内容的链接。
-如果 type为FileUrl，系统将展示内容附件的链接。
-如果系统内容正文能够翻页展示，需要使用type="PageContent"，同时配合 stl:pageItem标签实现翻页效果。
+如果需要展示日期/时间类型的内容字段，可以通过 formatString 属性 [格式化日期](/date)。
 
-如果需要对文字进行截字处理，可以使用startIndex、length或者wordNum属性，其中wordNum属性将区分中文和英文，两个英文算一个字符。
+如果希望将内容的属性值放到 HTML 元素或者 STL 元素的属性中使用，请使用{stl:content} 实体写法，如：`<a title="{stl:content type=title}">`。
+
+如果需要获取内容正文并翻页展示，请设置type属性为 `pageContent`，同时配合 stl:pageItem 标签实现翻页效果。
+
+## 解析
+
+如果使用 &lt;stl:content&gt; 元素，系统将根据内容字段的类型解析为不同的值（通常为字符串，如果字段类型为图片系统将解析为&lt;img&gt;标签）。
+
+如果使用 {stl:content} 实体，系统将根据是否设置type 属性，解析为不同的结果：
+
+- 设置了type属性，系统将实体解析为内容的具体字段值。
+- 未设置type属性，系统将实体解析为内容的JSON对象。
 
 ## 属性
 
@@ -66,3 +54,5 @@ type属性是可选属性。如果没有设置type属性，系统默认使用Tit
 | [isLower](content/attributes?id=isLower)           | 是否转换为小写                         |
 | [isUpper](content/attributes?id=isUpper)           | 是否转换为大写                         |
 | [isOriginal](content/attributes?id=isOriginal)     | 如果是引用内容，是否获取所引用内容的值 |
+
+<!-- done -->

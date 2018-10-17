@@ -1,18 +1,10 @@
 ﻿# &lt;stl:player&gt; 播放视频
 
 ```html
-<stl:player
-  type="指定存储媒体的字段"
-  playUrl="视频地址"
-  imageUrl="图片地址"
-  playBy="指定播放器"
-  width="宽度"
-  height="高度"
-  isAutoPlay="是否自动播放">
-</stl:player>
+<stl:player type="指定存储媒体的字段" playUrl="视频地址" imageUrl="图片地址" playBy="指定播放器" width="宽度" height="高度" isAutoPlay="是否自动播放"></stl:player>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:player 标签在模板中播放视频
 

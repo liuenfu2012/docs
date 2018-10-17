@@ -10,39 +10,37 @@ public interface IRequest
 
 | name | description |
 | --- | --- |
-| [AdminInfo](sdk/IRequest/AdminInfo.md) { get; } | 如果管理员已登录，则返回登录管理员的管理员实体；否则返回 null。 |
-| [AdminName](sdk/IRequest/AdminName.md) { get; } | 如果管理员已登录，则返回登录管理员的用户名；否则返回空。 |
-| [IsAdminLoggin](sdk/IRequest/IsAdminLoggin.md) { get; } | 判断管理员是否登录。 |
-| [IsApiAuthenticated](sdk/IRequest/IsApiAuthenticated.md) { get; } | 是否针对此插件的REST Api访问包含Api认证Token。 |
-| [IsApiAuthorized](sdk/IRequest/IsApiAuthorized.md) { get; } | 是否针对当前插件的REST Api访问包含Api认证Token且此Token拥有当前插件的授权。 |
-| [IsUserLoggin](sdk/IRequest/IsUserLoggin.md) { get; } | 判断用户是否登录。 |
-| [UserInfo](sdk/IRequest/UserInfo.md) { get; } | 如果用户已登录，则返回登录用户的用户实体；否则返回 null。 |
-| [UserName](sdk/IRequest/UserName.md) { get; } | 如果用户已登录，则返回登录用户的用户名；否则返回空。 |
-| [AdminLogin](sdk/IRequest/AdminLogin.md)(…) | 管理员登录，调用此方法后系统将计算此管理员的Token并存储在cookie中，同时此方法将返回管理员Token，用于REST Api以及其他场景中。 |
-| [AdminLogout](sdk/IRequest/AdminLogout.md)() | 管理员退出登录，调用此方法后系统将清除登录cookie。 |
-| [GetAdminNameByToken](sdk/IRequest/GetAdminNameByToken.md)(…) | 根据管理员Token获取管理员用户名。 |
-| [GetAdminTokenByAdminName](sdk/IRequest/GetAdminTokenByAdminName.md)(…) | 根据管理员用户名获取管理员Token，7天内可用。 |
-| [GetCookie](sdk/IRequest/GetCookie.md)(…) | 获取cookie。 |
-| [GetPostBool](sdk/IRequest/GetPostBool.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为布尔值。 |
-| [GetPostDecimal](sdk/IRequest/GetPostDecimal.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为小数。 |
-| [GetPostInt](sdk/IRequest/GetPostInt.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为整数。 |
-| [GetPostObject&lt;T&gt;](sdk/IRequest/GetPostObject.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为对应的类型。 |
-| [GetPostString](sdk/IRequest/GetPostString.md)(…) | 获取JSON方式提交的Body中的指定键的值。 |
-| [GetQueryBool](sdk/IRequest/GetQueryBool.md)(…) | 获取访问地址中的指定查询字符串并转换为布尔值。 |
-| [GetQueryDecimal](sdk/IRequest/GetQueryDecimal.md)(…) | 获取访问地址中的指定查询字符串并转换为小数。 |
-| [GetQueryInt](sdk/IRequest/GetQueryInt.md)(…) | 获取访问地址中的指定查询字符串并转换为整数。 |
-| [GetQueryString](sdk/IRequest/GetQueryString.md)(…) | 获取访问地址中的指定查询字符串。 |
-| [GetUserNameByToken](sdk/IRequest/GetUserNameByToken.md)(…) | 根据用户Token获取用户名。 |
-| [GetUserTokenByUserName](sdk/IRequest/GetUserTokenByUserName.md)(…) | 根据用户名获取用户Token，7天内可用。 |
-| [IsCookieExists](sdk/IRequest/IsCookieExists.md)(…) | 判断指定的cookie是否存在。 |
-| [IsPostExists](sdk/IRequest/IsPostExists.md)(…) | JSON方式提交的Body中是否包含指定的键/值对。 |
-| [IsQueryExists](sdk/IRequest/IsQueryExists.md)(…) | 访问地址是否包含指定的查询字符串。 |
-| [SetCookie](sdk/IRequest/SetCookie.md)(…) | 设置cookie。 此cookie将随着浏览器的关闭而删除。 (2 methods) |
-| [UserLogin](sdk/IRequest/UserLogin.md)(…) | 用户登录，调用此方法后系统将计算此用户的Token并存储在cookie中，同时此方法将返回用户Token，用于REST Api以及其他场景中。 |
-| [UserLogout](sdk/IRequest/UserLogout.md)() | 用户退出登录，调用此方法后系统将清除登录cookie。 |
+| [AdminId](IRequest/AdminId.md) { get; } | 如果管理员已登录，则返回登录管理员的Id；否则返回 0。 |
+| [AdminName](IRequest/AdminName.md) { get; } | 如果管理员已登录，则返回登录管理员的用户名；否则返回空。 |
+| [AdminPermissions](IRequest/AdminPermissions.md) { get; } |  |
+| [IsAdminLoggin](IRequest/IsAdminLoggin.md) { get; } | 判断管理员是否登录。 |
+| [IsApiAuthenticated](IRequest/IsApiAuthenticated.md) { get; } | 是否针对此插件的REST Api访问包含Api认证Token。 |
+| [IsApiAuthorized](IRequest/IsApiAuthorized.md) { get; } | 是否针对当前插件的REST Api访问包含Api认证Token且此Token拥有当前插件的授权。 |
+| [IsUserLoggin](IRequest/IsUserLoggin.md) { get; } | 判断用户是否登录。 |
+| [UserId](IRequest/UserId.md) { get; } | 如果用户已登录，则返回登录用户的Id；否则返回 0。 |
+| [UserName](IRequest/UserName.md) { get; } | 如果用户已登录，则返回登录用户的用户名；否则返回空。 |
+| [UserPermissions](IRequest/UserPermissions.md) { get; } |  |
+| [AdminLogin](IRequest/AdminLogin.md)(…) | 管理员登录，调用此方法后系统将计算此管理员的Token并存储在cookie中，同时此方法将返回管理员Token，用于REST Api以及其他场景中。 |
+| [AdminLogout](IRequest/AdminLogout.md)() | 管理员退出登录，调用此方法后系统将清除登录cookie。 |
+| [GetCookie](IRequest/GetCookie.md)(…) | 获取cookie。 |
+| [GetPostBool](IRequest/GetPostBool.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为布尔值。 |
+| [GetPostDecimal](IRequest/GetPostDecimal.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为小数。 |
+| [GetPostInt](IRequest/GetPostInt.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为整数。 |
+| [GetPostObject&lt;T&gt;](IRequest/GetPostObject.md)(…) | 获取JSON方式提交的Body中的指定键的值并转换为对应的类型。 |
+| [GetPostString](IRequest/GetPostString.md)(…) | 获取JSON方式提交的Body中的指定键的值。 |
+| [GetQueryBool](IRequest/GetQueryBool.md)(…) | 获取访问地址中的指定查询字符串并转换为布尔值。 |
+| [GetQueryDecimal](IRequest/GetQueryDecimal.md)(…) | 获取访问地址中的指定查询字符串并转换为小数。 |
+| [GetQueryInt](IRequest/GetQueryInt.md)(…) | 获取访问地址中的指定查询字符串并转换为整数。 |
+| [GetQueryString](IRequest/GetQueryString.md)(…) | 获取访问地址中的指定查询字符串。 |
+| [IsCookieExists](IRequest/IsCookieExists.md)(…) | 判断指定的cookie是否存在。 |
+| [IsPostExists](IRequest/IsPostExists.md)(…) | JSON方式提交的Body中是否包含指定的键/值对。 |
+| [IsQueryExists](IRequest/IsQueryExists.md)(…) | 访问地址是否包含指定的查询字符串。 |
+| [SetCookie](IRequest/SetCookie.md)(…) | 设置cookie。 此cookie将随着浏览器的关闭而删除。 (2 methods) |
+| [UserLogin](IRequest/UserLogin.md)(…) | 用户登录，调用此方法后系统将计算此用户的Token并存储在cookie中，同时此方法将返回用户Token，用于REST Api以及其他场景中。 |
+| [UserLogout](IRequest/UserLogout.md)() | 用户退出登录，调用此方法后系统将清除登录cookie。 |
 
 ## See Also
 
-* namespace [SiteServer.Plugin](sdk/README.md)
+* namespace [SiteServer.Plugin](../SiteServer.Plugin.md)
 
 <!-- DO NOT EDIT: generated by xmldocmd for SiteServer.Plugin.dll -->

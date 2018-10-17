@@ -1,13 +1,10 @@
 ﻿# &lt;stl:pageContents&gt; 翻页内容列表
 
 ```html
-<stl:pageContents
-  pageNum="每页展示的内容数目"
-  maxPage="翻页中生成的静态页面最大数，剩余页面将动态获取">
-</stl:pageContents>
+<stl:pageContents pageNum="每页展示的内容数目" maxPage="翻页中生成的静态页面最大数，剩余页面将动态获取"></stl:pageContents>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:pageContents 标签在模板中展示翻页内容列表
 

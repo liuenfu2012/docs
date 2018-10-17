@@ -1,23 +1,10 @@
 ﻿# &lt;stl:tree&gt; 树状导航
 
 ```html
-<stl:tree
-  channelIndex="栏目索引"
-  channelName="栏目名称"
-  upLevel="上级栏目的级别"
-  topLevel="从首页向下的栏目级别"
-  groupChannel="指定展示的栏目组"
-  groupChannelNot="指定不展示的栏目组"
-  title="根节点展示名称"
-  isLoading="是否AJAX方式即时载入"
-  isShowContentNum="是否展示栏目内容数"
-  isShowTreeLine="是否展示树状线"
-  currentFormatString="当前项格式化字符串"
-  target="打开窗口目标">
-</stl:tree>
+<stl:tree channelIndex="栏目索引" channelName="栏目名称" upLevel="上级栏目的级别" topLevel="从首页向下的栏目级别" groupChannel="指定展示的栏目组" groupChannelNot="指定不展示的栏目组" title="根节点展示名称" isLoading="是否AJAX方式即时载入" isShowContentNum="是否展示栏目内容数" isShowTreeLine="是否展示树状线" currentFormatString="当前项格式化字符串" target="打开窗口目标"></stl:tree>
 ```
 
-## 使用说明
+## 说明
 
 以资源管理器树状列表的方式展示栏目列表。
 

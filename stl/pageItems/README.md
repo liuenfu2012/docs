@@ -1,12 +1,10 @@
 ﻿# &lt;stl:pageItems&gt; 翻页项容器
 
 ```html
-<stl:pageItems
-  context="所处上下文">
-</stl:pageItems>
+<stl:pageItems context="所处上下文"></stl:pageItems>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:pageItems 标签在模板中插入翻页项的容器，当不需要翻页时容器内的内容不展示
 

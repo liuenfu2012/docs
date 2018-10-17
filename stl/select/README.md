@@ -1,33 +1,10 @@
 ﻿# &lt;stl:select&gt; 下拉列表
 
 ```html
-<stl:select
-  isChannel="是否展示栏目下拉列表"
-  channelIndex="栏目索引"
-  channelName="栏目名称"
-  upLevel="上级栏目的级别"
-  topLevel="从首页向下的栏目级别"
-  scope="选择的范围"
-  groupChannel="指定展示的栏目组"
-  groupChannelNot="指定不展示的栏目组"
-  groupContent="指定展示的内容组"
-  groupContentNot="指定不展示的内容组"
-  tags="指定标签"
-  order="排序"
-  totalNum="展示数目"
-  titleWordNum="标题文字数量"
-  where="获取下拉列表的条件判断"
-  queryString="链接参数"
-  isTop="仅展示置顶内容"
-  isRecommend="仅展示推荐内容"
-  isHot="仅展示热点内容"
-  isColor="仅展示醒目内容"
-  title="下拉列表提示标题"
-  openWin="选择是否新窗口打开链接">
-</stl:select>
+<stl:select isChannel="是否展示栏目下拉列表" channelIndex="栏目索引" channelName="栏目名称" upLevel="上级栏目的级别" topLevel="从首页向下的栏目级别" scope="选择的范围" groupChannel="指定展示的栏目组" groupChannelNot="指定不展示的栏目组" groupContent="指定展示的内容组" groupContentNot="指定不展示的内容组" tags="指定标签" order="排序" totalNum="展示数目" titleWordNum="标题文字数量" where="获取下拉列表的条件判断" queryString="链接参数" isTop="仅展示置顶内容" isRecommend="仅展示推荐内容" isHot="仅展示热点内容" isColor="仅展示醒目内容" title="下拉列表提示标题" openWin="选择是否新窗口打开链接"></stl:select>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:select 标签在模板中展示栏目或内容下拉列表
 

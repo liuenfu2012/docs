@@ -1,18 +1,10 @@
 # &lt;stl:file&gt; 文件下载链接
 
 ```html
-<stl:file
-  type="指定存储附件的字段"
-  no="展示字段的顺序"
-  src="需要下载的文件地址"
-  isFileSize="展示文件大小"
-  isCount="是否记录文件下载次数"
-  leftText="展示在信息前的文字"
-  rightText="展示在信息后的文字">
-</stl:file>
+<stl:file type="指定存储附件的字段" no="展示字段的顺序" src="需要下载的文件地址" isFileSize="展示文件大小" isCount="是否记录文件下载次数" leftText="展示在信息前的文字" rightText="展示在信息后的文字"></stl:file>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:file 标签在模板中展示文件下载链接
 

@@ -1,12 +1,10 @@
 ﻿# &lt;stl:pageChannels&gt; 翻页栏目列表
 
 ```html
-<stl:pageChannels
- pageNum="每页展示的栏目数目">
-</stl:pageChannels>
+<stl:pageChannels pageNum="每页展示的栏目数目"></stl:pageChannels>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:pageChannels 标签在模板中展示翻页栏目列表
 

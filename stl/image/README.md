@@ -1,21 +1,10 @@
 ﻿# &lt;stl:image&gt; 展示图片
 
 ```html
-<stl:image
-  channelIndex="栏目索引"
-  channelName="栏目名称"
-  parent="展示父栏目"
-  upLevel="上级栏目的级别"
-  topLevel="从首页向下的栏目级别"
-  type="指定存储图片的字段"
-  no="展示字段存储的第几幅图片，默认为 1"
-  isOriginal="如果是引用内容，是否获取所引用内容的值"
-  src="展示的图片地址"
-  altSrc="当指定的图片不存在时展示的图片地址">
-</stl:image>
+<stl:image channelIndex="栏目索引" channelName="栏目名称" parent="展示父栏目" upLevel="上级栏目的级别" topLevel="从首页向下的栏目级别" type="指定存储图片的字段" no="展示字段存储的第几幅图片，默认为 1" isOriginal="如果是引用内容，是否获取所引用内容的值" src="展示的图片地址" altSrc="当指定的图片不存在时展示的图片地址"></stl:image>
 ```
 
-## 使用说明
+## 说明
 
 通过 stl:image 标签在模板中展示栏目或内容的图片
 
