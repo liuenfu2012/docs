@@ -5,33 +5,33 @@
 
 1、点击开始→控制面板，然后再点击程序，勿点击卸载程序，否则到不了目标系统界面。
 
-![](/assets/254.jpeg)
+![](./images/254.jpeg)
 
 2、然后在程序和功能下面，点击打开和关闭windows功能。
 
-![](/assets/255.jpeg)
+![](./images/255.jpeg)
 
 3、进入Windows功能窗口，然后看到internet信息服务选项，然后按照图中设置即可。
 
-![](/assets/256.jpeg)
+![](./images/256.jpeg)
 
-![](/assets/257.jpeg)
+![](./images/257.jpeg)
 
-![](/assets/258.png)
+![](./images/258.png)
 
 注意：打√的选项下面为全选，方圈的下面按照图中打√的选择即可。
 
 4、然后确定，会进入系统安装设置，此时可能需要等待两三分钟的样子。
 
-![](/assets/259.jpeg)
+![](./images/259.jpeg)
 
 5、再打开控制面板---系统和安全---管理工具。
 
-![](/assets/260.png)
+![](./images/260.png)
 
-![](/assets/261.jpeg) 
+![](./images/261.jpeg) 
 
-![](/assets/262.jpeg)
+![](./images/262.jpeg)
 
 如果看到以上图标，表示IIS安装成功了。
 
@@ -43,4 +43,4 @@
 ` http://127.0.0.1 ` 
 如果能显示以下图片则表示IIS已经正常工作了：
 
-![](/assets/263.jpeg)
+![](./images/263.jpeg)

@@ -3,7 +3,7 @@
 > SiteServer CMS 插件是扩展 SiteServer CMS 产品核心功能的代码包，SiteServer CMS 插件由.NET代码和其他文件(如图片、CSS和JavaScript等)组成。
 通过制作你自己的插件，你可以扩展 SiteServer CMS，在 SiteServer CMS 已经提供的功能基础上构建额外的功能。
 
-![](/assets/211.jpg)
+![](./images/211.jpg)
 
 ## 1、插件的作用
 
