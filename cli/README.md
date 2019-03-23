@@ -1,18 +1,14 @@
-# SiteServer Cli 命令行
-
-本文档旨在全面介绍 SiteServer 命令行工具，版本6.2.4。
-
-## 什么是 SiteServer 命令行工具？
-
-SiteServer 命令行工具（SiteServer Cli）是一个可执行的exe文件（siteserver.exe），需要单独下载，可以放到任意文件夹中，通过命令行执行。
-
-使用 SiteServer 命令行工具的主要目的是执行一些基础性的功能，如一键备份、一键还原、6.0版本之前的系统升级到最新版本以及切换系统至不同类型的数据库等功能。
-
-- 备份命令：`siteserver backup`，用于数据备份
-- 恢复命令：`siteserver restore`，用于数据恢复
-- 升级命令：`siteserver update`，用于6.0版本之前的系统升级到最新版本
-- 版本命令：`siteserver version`，用于查看版本及数据库信息
-
-## 帮助与支持
-
-如果使用命令行遇到问题，您可以在SiteServer CMS 源码仓库[讨论区发言](https://github.com/siteserver/cms/issues)，获取及时回复。
+---
+home: true
+heroImage: /hero.png
+actionText: 快速上手 →
+actionLink: /guide/
+features:
+- title: 插件优先
+  details: 用插件来实现网站的功能应用，实现功能可插拔。
+- title: 一键升级
+  details: 只需点一下升级按钮，系统就可以自动升级至最新版本，无需手动升级。
+- title: 持续更新
+  details: 定期对产品、源码、文档、模板进行更新，并在官网及Github上及时公布更新内容。
+footer: Copyright 2003 - 2019 SiteServer CMS 京ICP备10013847号
+---
