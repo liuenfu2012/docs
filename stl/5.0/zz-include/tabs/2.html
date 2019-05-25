@@ -1,0 +1,85 @@
+<h3>示例一：切换显示内容区域</h3>
+<p>
+	下面的例子有页签的方式切换显示"starting"与"新闻"区域。
+</p>
+
+<div class="bs-docs-example">
+
+    <ul>
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+    <stl:tabs tabName="页签一" isHeader="true" action="MouseOver" classActive="tabon" classNormal="taboff">  
+        <td width="100"><li class="tabon"><stl:a channelIndex="公司新闻">公司新闻</stl:a></li></td>  
+        <td><li class="taboff"><stl:a channelIndex="行业新闻">行业新闻</stl:a></li></td>
+    </stl:tabs>
+    </tr>
+    </table>  
+    </ul>  
+    <stl:tabs tabName="页签一" isHeader="false">  
+    <div>
+    	<ul>  
+        <stl:contents channelIndex="starting" totalNum="10" layout="None">  
+            <stl:content type="Title" wordNum="15"></stl:content><br />  
+        </stl:contents>  
+    	</ul>
+    </div>  
+    <div style="display:none">
+    	<ul>  
+        <stl:contents channelIndex="新闻" totalNum="10" layout="None">  
+            <stl:content type="Title" wordNum="15"></stl:content><br /> 
+        </stl:contents>  
+    	</ul>
+    </div>  
+    </stl:tabs>
+     
+</div>
+<pre class="prettyprint linenums">
+&lt;ul&gt;
+    &lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;
+    &lt;tr&gt; 
+        &lt;stl:tabs tabName=&quot;页签一&quot; isHeader=&quot;true&quot; action=&quot;MouseOver&quot; classActive=&quot;tabon&quot; classNormal=&quot;taboff&quot;&gt;  
+            &lt;td width=&quot;100&quot;&gt;&lt;li class=&quot;tabon&quot;&gt;&lt;stl:a channelIndex=&quot;公司新闻&quot;&gt;公司新闻&lt;/stl:a&gt;&lt;/li&gt;&lt;/td&gt;  
+            &lt;td&gt;&lt;li class=&quot;taboff&quot;&gt;&lt;stl:a channelIndex=&quot;行业新闻&quot;&gt;行业新闻&lt;/stl:a&gt;&lt;/li&gt;&lt;/td&gt;
+        &lt;/stl:tabs&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;  
+&lt;/ul&gt;  
+&lt;stl:tabs tabName=&quot;页签一&quot; isHeader=&quot;false&quot;&gt;  
+        &lt;div&gt;
+         &lt;ul&gt;  
+            &lt;stl:contents channelIndex=&quot;starting&quot; totalNum=&quot;10&quot; layout=&quot;None&quot;&gt;  
+                &lt;stl:content type=&quot;Title&quot; wordNum=&quot;15&quot;&gt;&lt;/stl:content&gt;&lt;br /&gt;  
+            &lt;/stl:contents&gt;  
+         &lt;/ul&gt;
+        &lt;/div&gt;  
+        &lt;div style=&quot;display:none&quot;&gt;
+         &lt;ul&gt;  
+            &lt;stl:contents channelIndex=&quot;新闻&quot; totalNum=&quot;10&quot; layout=&quot;None&quot;&gt;  
+                &lt;stl:content type=&quot;Title&quot; wordNum=&quot;15&quot;&gt;&lt;/stl:content&gt;&lt;br /&gt; 
+            &lt;/stl:contents&gt;  
+         &lt;/ul&gt;
+        &lt;/div&gt;  
+&lt;/stl:tabs&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<!--<hr class="bs-docs-separator">
+
+<h3>示例二：显示内容的添加时间</h3>
+<p>
+	下面的例子在页面中显示内容的添加时间，并按照&quot;yyyy-MM-dd&quot;格式显示。
+</p>
+
+<div class="bs-docs-example">
+<stl:content type="AddDate" formatString="yyyy-MM-dd"></stl:content>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:content type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:content&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>-->

@@ -1,0 +1,35 @@
+<h3>示例一：获取站点URL</h3>
+
+<div class="bs-docs-example">
+<link href="{Stl.SiteUrl}/css/style.css" rel="stylesheet" type="text/css">  
+</div>
+<pre class="prettyprint linenums">
+&lt;link href=&quot;&#123;Stl.SiteUrl&#125;/css/style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示Poweredby链接</h3>
+
+<div class="bs-docs-example">
+<div>  
+沪ICP备080434435号 | <a href="{Channel.NavigationUrl_友情链接}">友情链接</a> | <a href="{Channel.NavigationUrl_联系我们}">联系我们</a> | <a href="{Channel.NavigationUrl_版权声明}">版权声明</a>  
+  <br />  
+  {Stl.PoweredBy}   
+</div>
+</div>
+<pre class="prettyprint linenums">
+&lt;div&gt;
+    沪ICP备080434435号 | &lt;a href=&quot;{Channel.NavigationUrl_友情链接}&quot;&gt;友情链接&lt;/a&gt; | &lt;a href=&quot;{Channel.NavigationUrl_联系我们}&quot;&gt;联系我们&lt;/a&gt; | &lt;a href=&quot;{Channel.NavigationUrl_版权声明}&quot;&gt;版权声明&lt;/a&gt;  
+    &lt;br /&gt;
+    {Stl.PoweredBy}
+&lt;/div&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

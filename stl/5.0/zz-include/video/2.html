@@ -1,0 +1,31 @@
+<h3>示例一：显示当前内容的视频文件</h3>
+<p>
+	下面的例子显示当前内容的视频文件。
+</p>
+
+<div class="bs-docs-example">
+  <stl:video type="VideoUrl" width="640" height="264" isAutoPlay="false"></stl:video>
+</div>
+<pre class="prettyprint linenums">&lt;stl:video type=&quot;VideoUrl&quot; width=&quot;640&quot; height=&quot;264&quot; isAutoPlay="false"&gt;&lt;/stl:video&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示指定地址的视频文件</h3>
+<p>
+	下面的例子显示文件名为“oceans-clip.mp4”的视频文件，同时设置不自动播放。
+</p>
+
+<div class="bs-docs-example">
+	<stl:video playUrl="@/images/oceans-clip.mp4" imageUrl="@/images/oceans-clip.png" width="640" height="264" isAutoPlay="false"></stl:video>
+</div>
+<pre class="prettyprint linenums">&lt;stl:video playUrl=&quot;@/images/oceans-clip.mp4&quot; imageUrl=&quot;@/images/oceans-clip.png&quot; width=&quot;640&quot; height=&quot;264&quot; isAutoPlay=&quot;false&quot;&gt;&lt;/stl:video&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

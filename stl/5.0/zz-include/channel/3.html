@@ -1,0 +1,41 @@
+<h3>示例一：显示指定栏目的子栏目名称列表</h3>
+<p>
+	下面的例子显示栏目“首页”的所有子栏目名称。
+</p>
+
+<div class="bs-docs-example">
+<stl:channels channelIndex="首页">
+  <stl:channel type="Title"></stl:channel><br>
+</stl:channels>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channels channelIndex=&quot;首页&quot;&gt;
+  &lt;stl:channel type=&quot;Title&quot;&gt;&lt;/stl:channel&gt;&lt;br&gt;
+&lt;/stl:channels&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在栏目列表中显示栏目名称以及内容数</h3>
+<p>
+	下面的例子显示上级栏目的所有子栏目名称列表，并在名称后显示对应的内容数。
+</p>
+
+<div class="bs-docs-example">
+<stl:channels upLevel="1">
+  <stl:channel type="Title"></stl:channel>(<stl:channel type="CountOfContents"></stl:channel>)<br>
+</stl:channels>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channels upLevel="1"&gt;
+  &lt;stl:channel type=&quot;Title&quot;&gt;&lt;/stl:channel&gt;(&lt;stl:channel type=&quot;CountOfContents&quot;&gt;&lt;/stl:channel&gt;)&lt;br&gt;
+&lt;/stl:channels&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

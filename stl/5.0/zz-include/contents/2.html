@@ -1,0 +1,43 @@
+<h3>示例一：仅显示带图片的内容列表</h3>
+<p>
+	下面的例子显示"新闻"栏目下的带图片的内容列表。
+</p>
+
+<div class="bs-docs-example">
+  <stl:contents channelIndex="新闻" isImage="true">
+	  <stl:a><stl:image></stl:image></stl:a>
+  </stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:contents channelIndex=&quot;&#x65B0;&#x95FB;&quot; isImage=&quot;true&quot;&gt;
+	&lt;stl:a&gt;&lt;stl:image&gt;&lt;/stl:image&gt;&lt;/stl:a&gt;
+&lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示指定的栏目下的前7篇内容列表</h3>
+<p>
+	下面的例子显示栏目索引为"starting"的栏目下的所有内容的前7篇列表
+</p>
+
+<div class="bs-docs-example">
+<stl:contents channelIndex="starting" totalNum="7">
+	<stl:a><stl:content type="Title"></stl:content></stl:a>
+	<br />
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:contents channelIndex=&quot;starting&quot; totalNum=&quot;7&quot;&gt;
+	&lt;stl:a&gt;&lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;&lt;/stl:a&gt;
+	&lt;br /&gt;
+&lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

@@ -1,0 +1,35 @@
+<h3>示例一：根据用户是否登录显示不同的内容</h3>
+<p>
+	下面的例子根据用户是否登录显示不同的内容
+</p>
+
+<div class="bs-docs-example">
+<stl:if type="IsUserLoggin">
+    <stl:yes>
+        欢迎"{user.displayName}"
+        <stl:a href="{stl.HomeUrl}">用户中心</stl:a>
+        <stl:a href="{stl.LogoutUrl}">退出</stl:a>
+    </stl:yes>
+    <stl:no>
+        <stl:a href="{stl.LoginUrl}">登陆</stl:a>
+        <stl:a href="{stl.RegisterUrl}">注册</stl:a>
+    </stl:no>
+</stl:if>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:if type=&quot;IsUserLoggin&quot;&gt;
+    &lt;stl:yes&gt;
+        &#x6B22;&#x8FCE;&quot;&lcub;user.displayName&rcub;&quot;
+        &lt;stl:a href=&quot;&lcub;stl.HomeUrl&rcub;&quot;&gt;&#x7528;&#x6237;&#x4E2D;&#x5FC3;&lt;/stl:a&gt;
+        &lt;stl:a href=&quot;&lcub;stl.LogoutUrl&rcub;&quot;&gt;&#x9000;&#x51FA;&lt;/stl:a&gt;
+    &lt;/stl:yes&gt;
+    &lt;stl:no&gt;
+        &lt;stl:a href=&quot;&lcub;stl.LoginUrl&rcub;&quot;&gt;&#x767B;&#x9646;&lt;/stl:a&gt;
+        &lt;stl:a href=&quot;&lcub;stl.RegisterUrl&rcub;&quot;&gt;&#x6CE8;&#x518C;&lt;/stl:a&gt;
+    &lt;/stl:no&gt;
+&lt;/stl:if&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

@@ -1,0 +1,248 @@
+<h3>Rss订阅</h3>
+<pre class="prettyprint">
+&lt;stl:rss
+	channelIndex="栏目索引"
+	channelName="栏目名称"
+	description="Rss订阅摘要"
+	groupChannel="指定显示的栏目组"
+	groupChannelNot="指定不显示的栏目组"
+	groupContent="指定显示的内容组"
+	groupContentNot="指定不显示的内容组"
+	isColor="仅显示醒目内容"
+	isHot="仅显示热点内容"
+	isRecommend="仅显示推荐内容"
+	isTop="仅显示置顶内容"
+	order="排序"
+	scope="内容范围"
+	startNum="从第几条信息开始显示"
+	tags="指定标签"
+	title="Rss订阅标题"
+	totalNum="显示内容数目"
+&gt;&lt;/stl:rss&gt;
+</pre>
+<p>
+	stl:rss 用于生成Rss阅读器能够浏览的Rss订阅
+</p>
+
+
+<h3>属性列表</h3>
+<p>
+	下表显示所有属于此标签的属性列表。
+</p>
+<table class="table table-striped table-bordered">
+	<tbody>
+		<tr class="info thead">
+			<th>属性</th>
+			<th>可能的取值</th>
+			<th>默认值</th>
+			<th>简介</th>
+		</tr>
+		<tr>
+			<td>channelIndex</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>栏目索引</td>
+		</tr>
+		<tr>
+			<td>channelName</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>栏目名称</td>
+		</tr>
+		<tr>
+			<td>scope</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>内容范围。此属性只可属于以下可能的取值的一种。</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Self</td>
+			<td>&nbsp;</td>
+			<td>只显示本栏目下的所有内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Children</td>
+			<td>&nbsp;</td>
+			<td>只显示下一极子栏目下的所有内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>SelfAndChildren</td>
+			<td>&nbsp;</td>
+			<td>显示本级栏目及下一极子栏目下的所有内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Descendant</td>
+			<td>&nbsp;</td>
+			<td>显示所有级别的子栏目下的所有内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>All</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>显示本级栏目及所有级别子栏目下的所有内容</td>
+		</tr>
+		<tr>
+			<td>groupChannel</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>栏目组别，如设置此属性，则只显示指定栏目组别的内容列表。</td>
+		</tr>
+		<tr>
+			<td>groupChannelNot</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>非栏目组别，如设置此属性，则只显示不等于指定栏目组别的内容列表。</td>
+		</tr>
+		<tr>
+			<td>groupContent</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>内容组别，如设置此属性，则只显示指定内容组别的内容列表。</td>
+		</tr>
+		<tr>
+			<td>groupContentNot</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>非内容组别，如设置此属性，则只显示不等于内容组别的内容列表。</td>
+		</tr>
+		<tr>
+			<td>tags</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>仅显示指定标签的内容，多个标签用","分隔。</td>
+		</tr>
+		<tr>
+			<td>isTop</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否只显示置顶（非置顶）内容。</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>仅显示置顶的内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td>&nbsp;</td>
+			<td>仅显示非置顶的内容</td>
+		</tr>
+		<tr>
+			<td>isRecommend</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否只显示推荐（非推荐）内容。</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>仅显示推荐的内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td>&nbsp;</td>
+			<td>仅显示非推荐的内容</td>
+		</tr>
+		<tr>
+			<td>isHot</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否只显示热点（非热点）内容。</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>仅显示热点的内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td>&nbsp;</td>
+			<td>仅显示非热点的内容</td>
+		</tr>
+		<tr>
+			<td>isColor</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否只显示醒目（非醒目）内容。</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>仅显示醒目的内容</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td>&nbsp;</td>
+			<td>仅显示非醒目的内容</td>
+		</tr>
+		<tr>
+			<td>version</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>生成的Rss版本</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Rss0.9</td>
+			<td>&nbsp;</td>
+			<td>0.9版本Rss订阅</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Rss1.0</td>
+			<td>&nbsp;</td>
+			<td>1.0版本Rss订阅</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Rss2.0</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>2.0版本Rss订阅</td>
+		</tr>
+		<tr>
+			<td>totalNum</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>设置一共显示多少条信息，0代表显示所有信息。</td>
+		</tr>
+		<tr>
+			<td>startNum</td>
+			<td>&nbsp;</td>
+			<td class="center">1</td>
+			<td>从第几条信息开始显示，默认从第一条信息开始显示。</td>
+		</tr>
+		<tr>
+			<td>title</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Rss订阅标题</td>
+		</tr>
+		<tr>
+			<td>description</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Rss订阅摘要</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>注意</h3>
+<p>
+	&lt;stl:rss&gt; 通常在以 .xml 文件后缀结尾的单页模板中生成，用于 Rss 阅读器订阅栏目下的内容列表信息。
+</p>
+
+<p>
+	<code>&lt;stl:rss&gt;</code>标签对应的实体为<code>{<span></span>stl:rss<span></span>}</code>。
+</p>

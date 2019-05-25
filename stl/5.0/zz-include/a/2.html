@@ -1,0 +1,51 @@
+<h3>示例一：显示指定的栏目链接</h3>
+<p>
+	下面的例子显示栏目索引为"首页"的栏目链接，点击链接后在新窗口打开。
+</p>
+
+<div class="bs-docs-example">
+  <stl:a channelIndex="首页" target="_blank"></stl:a>
+</div>
+
+<pre class="prettyprint linenums">&lt;stl:a <code rel="popover" data-content="指定索引为首页的栏目，链接文字为对应的栏目名称">channelIndex="首页"</code> target="_blank"&gt;&lt;/stl:a&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在栏目链接中显示指定的文字</h3>
+<p>
+	下面的例子显示栏目索引为"首页"的栏目链接，链接文字为"转到首页"。
+</p>
+
+<div class="bs-docs-example">
+<stl:a channelIndex="首页" target="_blank"> 转到首页 </stl:a>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:a channelIndex=&quot;首页&quot; target=&quot;_blank&quot;&gt; <code rel="popover" data-content="指定链接文字">转到首页</code> &lt;/stl:a&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例三：根据栏目索引与栏目名称显示栏目的链接</h3>
+<p>
+	下面的例子显示栏目索引为"首页"的子栏目名称为“起步”的链接，链接文字为"转到起步页"。
+</p>
+
+<div class="bs-docs-example">
+<stl:a channelIndex="首页" channelName="起步" target="_blank"> 转到起步页 </stl:a>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:a <code rel="popover" data-content="指定索引为首页的栏目">channelIndex=&quot;首页&quot;</code> <code rel="popover" data-content="从指定索引为首页的栏目中寻找栏目名称为起步的子栏目">channelName=&quot;起步&quot;</code> target=&quot;_blank&quot;&gt; 转到起步页 &lt;/stl:a&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

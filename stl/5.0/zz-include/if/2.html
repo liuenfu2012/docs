@@ -1,0 +1,40 @@
+<h3>示例一：判断值是否为空</h3>
+<p>
+	下面的例子判断内容副标题是否为空，如果不为空将显示带有副标题的行。
+</p>
+
+<div class="bs-docs-example">
+<stl:if testType="SubTitle" testOperate="NotEmpty">  
+  <strong>副标题：</strong><stl:content type="SubTitle"></stl:content> 
+</stl:if>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:if testType=&quot;SubTitle&quot; testOperate=&quot;NotEmpty&quot;&gt;  
+  &lt;strong&gt;&#x526F;&#x6807;&#x9898;&#xFF1A;&lt;/strong&gt;&lt;stl:content type=&quot;SubTitle&quot;&gt;&lt;/stl:content&gt; 
+&lt;/stl:if&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：判断当前栏目名称是否为"栏目1"或"栏目2"</h3>
+
+<div class="bs-docs-example">
+<stl:if testType="ChannelName" testOperate="In" testValue="栏目1,栏目2">  
+  <stl:yes> <p>当前栏目是栏目1或栏目2</p> </stl:yes>  
+  <stl:no> <p>当前栏目不是栏目1或栏目2</p> </stl:no>  
+</stl:if> 
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:if testType=&quot;ChannelName&quot; testOperate=&quot;In&quot; testValue=&quot;&#x680F;&#x76EE;1,&#x680F;&#x76EE;2&quot;&gt;  
+  &lt;stl:yes&gt; &lt;p&gt;&#x5F53;&#x524D;&#x680F;&#x76EE;&#x662F;&#x680F;&#x76EE;1&#x6216;&#x680F;&#x76EE;2&lt;/p&gt; &lt;/stl:yes&gt;  
+  &lt;stl:no&gt; &lt;p&gt;&#x5F53;&#x524D;&#x680F;&#x76EE;&#x4E0D;&#x662F;&#x680F;&#x76EE;1&#x6216;&#x680F;&#x76EE;2&lt;/p&gt; &lt;/stl:no&gt;  
+&lt;/stl:if&gt; 
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

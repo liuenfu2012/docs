@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>起步 · SiteServer STL 参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<!-- Le styles -->
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/favicon.png">
+<script>var $pageInfo = { publishmentSystemID : 1, channelID : 107, contentID : 192, siteUrl : "", homeUrl : "/center", currentUrl : "/getting-started/192.html", rootUrl : "", apiUrl : "/api" }</script>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-target=".subnav" data-offset="50">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="javascript:;" id="trigger" class="btn pull-right">STL 快速索引</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="https://www.siteserver.cn/docs/stl/5.0/">首页</a>
+          </li>
+          
+            
+                <li class="active">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/index.html">起步</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/108.html">STL基本标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/155.html">STL高级标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/189.html">STL实体标签</a>
+                </li>
+              
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>起步</h1>
+      <p class="lead">
+        STL 语言基础
+      </p>
+      
+      <!-- Sub Navigation -->
+      
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="row">
+      <!-- Left Navigation -->
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+            
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/index.html"><i class="icon-chevron-right"></i> 什么是 STL语言</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/5.html"><i class="icon-chevron-right"></i> STL元素 和 STL实体</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/4.html"><i class="icon-chevron-right"></i> STL 模板语言规则</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/3.html"><i class="icon-chevron-right"></i> STL 实体说明</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/2.html"><i class="icon-chevron-right"></i> 翻页元素与实现</a></li>
+            
+              <li class="active"><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/192.html"><i class="icon-chevron-right"></i> 获取生成页面的访问地址</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/1.html"><i class="icon-chevron-right"></i> STL 地址通配符</a></li>
+            
+        </ul>
+      </div>
+      <div class="span9">
+
+        <section>
+          <div class="page-header">
+            <h1>获取生成页面的访问地址</h1>
+          </div>
+
+          <!-- Right Content -->
+          
+
+            
+
+          
+
+            
+
+          
+
+            
+
+          
+
+            
+
+          
+
+            
+
+          
+              
+            
+
+            
+
+          
+
+          <p>在使用获取数据标签时，有时需要获取站点栏目页面或者内容页面的地址，通常这些地址是通过后台设置并动态计算出来的，无法通过数据库查询获取到对应的地址。</p><p><br /></p><p>在模版中可以通过以下方式获得栏目及内容页面地址：</p><p>访问栏目页：<br />/sitefiles/services/cms/utils.aspx?type=Redirect&amp;channelID=&lt;&lt;栏目ID&gt;&gt;</p><p>访问内容页：<br />/sitefiles/services/cms/utils.aspx?type=Redirect&amp;channelID=&lt;&lt;栏目ID&gt;&gt;&amp;contentID=&lt;&lt;内容ID&gt;&gt;</p><p><br /></p><p>&lt;&lt;栏目ID&gt;&gt;是栏目的ID，可以通过STL实体&#123;Channel.ChannelID} 获取，如果在&lt;stl:sqlContents&gt;中访问，则通过内容辅助表的NodeID字段获取。</p><p>&lt;&lt;内容ID&gt;&gt;是内容的ID，可以通过STL实体<span>&#123;</span>Content.ContentID}获取，如果在&lt;stl:sqlContents&gt;中访问，则通过内容辅助表的ID字段获取。</p><p><br /></p><p>如果使用SiteServer WCM 内容协作平台，需要将地址中的cms替换为wcm。</p><p><br /></p>
+
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    <p class="center">Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a></p>
+
+    <ul class="footer-links">
+      <li><a href="http://www.siteservre.cn" target="_blank">SiteServer 官网</a></li>
+      <li><a href="https://github.com/siteserver/cms/issues/">SiteServer 论坛</a></li>
+      <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<script src="/js/bootstrap/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+<!-- <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/holder/holder.js"></script> -->
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/application.js"></script>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div id="listModal" class="modal hide fade" style="width:650px" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">STL 快速索引</h3>
+  </div>
+  <div class="modal-body">
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+</body>
+</html>
+<!-- T_系统内容模板.html(内容模板) -->

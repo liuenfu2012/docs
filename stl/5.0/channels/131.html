@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>评论标签 · SiteServer STL 语言参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel='stylesheet' href='/css/style.css' type='text/css' media='all' />
+<script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/jquery-1.9.1.min.js"></script>
+<link href="https://www.siteserver.cn/docs/stl/5.0/stl/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/stl/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/html5shiv.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/stl/assets/ico/favicon.png">
+<script>var $pageInfo = {publishmentSystemID : 1, channelID : 131, contentID : 0, siteUrl : "https://www.siteserver.cn/docs/stl/5.0/stl", homeUrl : "https://www.siteserver.cn/docs/stl/5.0/home", currentUrl : "https://www.siteserver.cn/docs/stl/5.0/stl/channels/131.html", rootUrl : "", apiUrl : "https://www.siteserver.cn/docs/stl/5.0/api"};</script></head>
+
+<body class="blog mp6 customizer-styles-applied highlander-enabled highlander-light infinite-scroll neverending">
+  <div id="page" class="hfeed site">
+
+    <header id="masthead" class="site-header" role="banner">
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+        <form role="search" method="get" class="search-form" action="https://developer.wordpress.com/">
+            <label>
+              <span class="screen-reader-text">Search for:</span>
+              <input type="search" class="search-field" placeholder="搜索 &hellip;" value="" name="s" />
+          </label>
+        </form>
+        <div class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="menu">
+                <li class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page page_item page-item-5503 menu-item-5714"><a href="https://www.siteserver.cn/docs/stl/5.0/">开发者中心</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32 current-menu-item"><a href="https://www.siteserver.cn/docs/stl/5.0/stl/">STL 语言</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32"><a href="https://www.siteserver.cn/docs/stl/5.0/docs/">文 档</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://www.siteserver.cn/docs/stl/5.0/blog/">博 客</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://github.com/siteserver/cms/issues/">论 坛</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://github.com/siteserver/cms/">Github</a></li>
+            </ul>
+        </div>
+        <a href="#" id="menu-hamburger"><span class="noticon noticon-menu"></span></a>
+        <a href="#" id="menu-search"><span class="noticon noticon-search"></span></a>
+    </nav>
+</header>
+
+    <div id="page-name" class="page-masthead">
+      <div class="name-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <h1>
+                评论标签
+              </h1>
+              <p class="lead" style="color: #fff">
+                
+              </p>
+            </div>
+            <div class="col-2" style="padding-top: 25px">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
+              STL 快速索引
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-container" class="site-content">
+
+      <ul class="nav nav-tabs nav-justified">
+  
+      <li class="nav-item">
+        <a href="https://www.siteserver.cn/docs/stl/5.0/stl" class="nav-link">STL 索引</a>
+      </li>
+    
+  
+    
+        <li class="nav-item">
+          <a href="https://www.siteserver.cn/docs/stl/5.0/stl/getting-started/index.html" class="nav-link">起 步</a>
+        </li>
+      
+  
+    
+        <li class="nav-item">
+          <a href="https://www.siteserver.cn/docs/stl/5.0/stl/channels/3.html" class="nav-link active">STL标签</a>
+        </li>
+      
+  
+    
+        <li class="nav-item">
+          <a href="https://www.siteserver.cn/docs/stl/5.0/stl/channels/87.html" class="nav-link">STL实体</a>
+        </li>
+      
+  
+</ul>
+
+      
+
+          <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          栏目标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/channels/index.html" class="dropdown-item">
+                              stl:channels 栏目列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/channel/index.html" class="dropdown-item">
+                              stl:channel 获取栏目值
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          内容标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/contents/index.html" class="dropdown-item">
+                              stl:contents 内容列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/content/index.html" class="dropdown-item">
+                              stl:content 获取内容值
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          翻页标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageItems/index.html" class="dropdown-item">
+                              stl:pageItems 翻页项容器
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageItem/index.html" class="dropdown-item">
+                              stl:pageItem 翻页项
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageChannels/index.html" class="dropdown-item">
+                              stl:pageChannels 翻页栏目列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageContents/index.html" class="dropdown-item">
+                              stl:pageContents 翻页内容列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageSqlContents/index.html" class="dropdown-item">
+                              stl:pageSqlContents 翻页数据库列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageComments/index.html" class="dropdown-item">
+                              stl:pageComments 翻页评论列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageInputContents/index.html" class="dropdown-item">
+                              stl:pageInputContents 翻页提交表单列表
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          导航标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/a/index.html" class="dropdown-item">
+                              stl:a 获取链接
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/location/index.html" class="dropdown-item">
+                              stl:location 当前位置
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/navigation/index.html" class="dropdown-item">
+                              stl:navigation 显示导航
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/tree/index.html" class="dropdown-item">
+                              stl:tree 树状导航
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/menu/index.html" class="dropdown-item">
+                              stl:menu 下拉菜单
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          图片及多媒体标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/image/index.html" class="dropdown-item">
+                              stl:image 显示图片
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/file/index.html" class="dropdown-item">
+                              stl:file 文件下载链接
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/focusViewer/index.html" class="dropdown-item">
+                              stl:focusViewer 滚动焦点图
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/flash/index.html" class="dropdown-item">
+                              stl:flash 显示Flash
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/slide/index.html" class="dropdown-item">
+                              stl:slide 图片幻灯片
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/photo/index.html" class="dropdown-item">
+                              stl:photo 相册图片
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/player/index.html" class="dropdown-item">
+                              stl:player 播放视频
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/video/index.html" class="dropdown-item">
+                              stl:video 播放视频
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/audio/index.html" class="dropdown-item">
+                              stl:audio 播放音频
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          判断标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/if/index.html" class="dropdown-item">
+                              stl:if 条件判断
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/itemTemplate/index.html" class="dropdown-item">
+                              stl:itemTemplate 列表项
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/loading/index.html" class="dropdown-item">
+                              stl:loading 载入模板
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/template/index.html" class="dropdown-item">
+                              stl:template 显示模板
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/yes/index.html" class="dropdown-item">
+                              stl:yes 成功模板
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/no/index.html" class="dropdown-item">
+                              stl:no 失败模板
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          数据库标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/sqlContents/index.html" class="dropdown-item">
+                              stl:sqlContents 数据库列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/sqlContent/index.html" class="dropdown-item">
+                              stl:sqlContent 数据库值
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/queryString/index.html" class="dropdown-item">
+                              stl:queryString SQL查询语句
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          提交表单标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/input/index.html" class="dropdown-item">
+                              stl:input 提交表单
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/inputContent/index.html" class="dropdown-item">
+                              stl:inputContent 获取提交表单值
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/inputContents/index.html" class="dropdown-item">
+                              stl:inputContents 提交表单列表
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          评论标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/comments/index.html" class="dropdown-item">
+                              stl:comments 评论列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/comment/index.html" class="dropdown-item">
+                              stl:comment 获取评论值
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/commentInput/index.html" class="dropdown-item">
+                              stl:commentInput 评论提交及显示
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          功能标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/search/index.html" class="dropdown-item">
+                              stl:search 搜索结果
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/digg/index.html" class="dropdown-item">
+                              stl:digg 掘客
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/resume/index.html" class="dropdown-item">
+                              stl:resume 提交简历
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/star/index.html" class="dropdown-item">
+                              stl:star 评分
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/vote/index.html" class="dropdown-item">
+                              stl:vote 投票
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          其他标签
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/include/index.html" class="dropdown-item">
+                              stl:include 包含文件
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/dynamic/index.html" class="dropdown-item">
+                              stl:dynamic 动态显示
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/each/index.html" class="dropdown-item">
+                              stl:each 列表项循环
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/value/index.html" class="dropdown-item">
+                              stl:value 获取值
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/count/index.html" class="dropdown-item">
+                              stl:count 显示数值
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/marquee/index.html" class="dropdown-item">
+                              stl:marquee 无间隔滚动
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/select/index.html" class="dropdown-item">
+                              stl:select 下拉列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/analysis/index.html" class="dropdown-item">
+                              stl:analysis 显示浏览量
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/tabs/index.html" class="dropdown-item">
+                              stl:tabs 页签切换
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/zoom/index.html" class="dropdown-item">
+                              stl:zoom 文字缩放
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/printer/index.html" class="dropdown-item">
+                              stl:printer 打印
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/action/index.html" class="dropdown-item">
+                              stl:action 执行动作
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/tags/index.html" class="dropdown-item">
+                              stl:tags 标签
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/rss/index.html" class="dropdown-item">
+                              stl:rss Rss订阅
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/ad/index.html" class="dropdown-item">
+                              stl:ad 固定广告
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/sites/index.html" class="dropdown-item">
+                              stl:sites 站点列表
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/site/index.html" class="dropdown-item">
+                              stl:site 获取站点值
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/layout/index.html" class="dropdown-item">
+                              stl:layout 页面布局
+                            </a>
+                          
+                            <a href="https://www.siteserver.cn/docs/stl/5.0/stl/container/index.html" class="dropdown-item">
+                              stl:container 容器
+                            </a>
+                          
+                        </div>
+                      </li>
+                    
+                
+
+              </ul>
+            </div>
+          </nav>
+        
+
+      <div class="container">
+
+        
+
+          <section>
+            <h3>
+              栏目标签
+            </h3>
+            <hr>
+            <div class="lead">
+              栏目标签包含获取栏目列表以及栏目属性的相关标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/channels/index.html">stl:channels 栏目列表</a></td>
+                        <td>通过 stl:channels 标签在模板中显示栏目列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/channel/index.html">stl:channel 获取栏目值</a></td>
+                        <td>通过 stl:channel 标签在模板中显示指定栏目的属性值</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              内容标签
+            </h3>
+            <hr>
+            <div class="lead">
+              内容标签包含获取内容列表以及内容属性相关的标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/contents/index.html">stl:contents 内容列表</a></td>
+                        <td>通过 stl:contents 标签在模板中显示内容列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/content/index.html">stl:content 获取内容值</a></td>
+                        <td>通过 stl:content 标签在模板中显示指定内容的属性值</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              翻页标签
+            </h3>
+            <hr>
+            <div class="lead">
+              翻页标签包含所有涉及翻页时所需要用到的标签，包括翻页元素、栏目翻页列表、内容翻页列表等
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageItems/index.html">stl:pageItems 翻页项容器</a></td>
+                        <td>通过 stl:pageItems 标签在模板中插入翻页项的容器，当不需要翻页时容器内的内容不显示</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageItem/index.html">stl:pageItem 翻页项</a></td>
+                        <td>通过 stl:pageItem 标签在模板中显示翻页项（上一页、下一页、当前页、页跳转、页导航等）</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageChannels/index.html">stl:pageChannels 翻页栏目列表</a></td>
+                        <td>通过 stl:pageChannels 标签在模板中显示翻页栏目列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageContents/index.html">stl:pageContents 翻页内容列表</a></td>
+                        <td>通过 stl:pageContents 标签在模板中显示翻页内容列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageSqlContents/index.html">stl:pageSqlContents 翻页数据库列表</a></td>
+                        <td>通过 stl:pageSqlContents 标签在模板中显示能够翻页的数据库列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageComments/index.html">stl:pageComments 翻页评论列表</a></td>
+                        <td>通过 stl:pageComments 标签在模板中显示翻页评论列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageInputContents/index.html">stl:pageInputContents 翻页提交表单列表</a></td>
+                        <td>通过 stl:pageInputContents 标签在模板中显示翻页提交表单列表</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              导航标签
+            </h3>
+            <hr>
+            <div class="lead">
+              导航标签包含所有与页面导航相关的标签，包括链接、当前位置、导航、以及下拉菜单等
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/a/index.html">stl:a 获取链接</a></td>
+                        <td>通过 stl:a 标签在模板中创建链接，系统将根据所处上下文计算链接地址</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/location/index.html">stl:location 当前位置</a></td>
+                        <td>通过 stl:location 标签在模板中插入页面的当前位置</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/navigation/index.html">stl:navigation 显示导航</a></td>
+                        <td>通过 stl:navigation 标签在模板中显示链接导航</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/tree/index.html">stl:tree 树状导航</a></td>
+                        <td>通过 stl:tree 标签在模板中显示树状导航</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/menu/index.html">stl:menu 下拉菜单</a></td>
+                        <td>通过 stl:menu 标签在模板中显示栏目下拉菜单</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              图片及多媒体标签
+            </h3>
+            <hr>
+            <div class="lead">
+              图片标签包含所有涉及到显示图片以及组织图片显示样式的相关标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/image/index.html">stl:image 显示图片</a></td>
+                        <td>通过 stl:image 标签在模板中显示栏目或内容的图片</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/file/index.html">stl:file 文件下载链接</a></td>
+                        <td>通过 stl:file 标签在模板中显示文件下载链接</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/focusViewer/index.html">stl:focusViewer 滚动焦点图</a></td>
+                        <td>通过 stl:focusviewer 标签在模板中实现由 FLASH 显示的图片轮播效果</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/flash/index.html">stl:flash 显示Flash</a></td>
+                        <td>通过 stl:flash 标签在模板中获取并显示栏目或内容的Flash</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/slide/index.html">stl:slide 图片幻灯片</a></td>
+                        <td>通过 stl:slide 标签在模板中显示图片幻灯片</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/photo/index.html">stl:photo 相册图片</a></td>
+                        <td>通过 stl:photo 标签在模板中显示内容的相册图片</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/player/index.html">stl:player 播放视频</a></td>
+                        <td>通过 stl:player 标签在模板中播放视频</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/video/index.html">stl:video 播放视频</a></td>
+                        <td>通过 stl:video 标签在模板中显示视频播放器</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/audio/index.html">stl:audio 播放音频</a></td>
+                        <td>通过 stl:audio 标签在模板中显示并播放音频文件</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              判断标签
+            </h3>
+            <hr>
+            <div class="lead">
+              判断标签用于根据条件判断显示内容，包含通用的if标签以及用于列表的itemTemplate标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/if/index.html">stl:if 条件判断</a></td>
+                        <td>通过 stl:if 标签在模板中根据条件判断显示内容</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/itemTemplate/index.html">stl:itemTemplate 列表项</a></td>
+                        <td>通过 stl:itemTemplate 标签在模板中控制列表中每一项的显示内容及样式</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/loading/index.html">stl:loading 载入模板</a></td>
+                        <td>通过 stl:loading 标签在模板中创建载入中显示的内容</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/template/index.html">stl:template 显示模板</a></td>
+                        <td>通过 stl:template 标签在模板中定义显示模板</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/yes/index.html">stl:yes 成功模板</a></td>
+                        <td>通过 stl:yes 标签在模板中显示成功模板</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/no/index.html">stl:no 失败模板</a></td>
+                        <td>通过 stl:no 标签在模板中显示失败模板</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              数据库标签
+            </h3>
+            <hr>
+            <div class="lead">
+              数据库标签用于获取指定数据库信息，包括显示列表以及获取值所需要的标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/sqlContents/index.html">stl:sqlContents 数据库列表</a></td>
+                        <td>通过 stl:sqlContents 标签在模板中显示数据库列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/sqlContent/index.html">stl:sqlContent 数据库值</a></td>
+                        <td>通过 stl:sqlContent 标签在模板中显示数据库值</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/queryString/index.html">stl:queryString SQL查询语句</a></td>
+                        <td>通过 stl:queryString 标签在模板中定义SQL查询语句</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              提交表单标签
+            </h3>
+            <hr>
+            <div class="lead">
+              提交表单标签包括所有涉及提交表单功能的标签，包含提交数据以及显示已提交数据的标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/input/index.html">stl:input 提交表单</a></td>
+                        <td>通过 stl:input 标签在模板中实现提交表单功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/inputContent/index.html">stl:inputContent 获取提交表单值</a></td>
+                        <td>通过 stl:inputContent 标签在模板中显示指定表单的提交值</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/inputContents/index.html">stl:inputContents 提交表单列表</a></td>
+                        <td>通过 stl:inputContents 标签在模板中显示提交表单列表</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              评论标签
+            </h3>
+            <hr>
+            <div class="lead">
+              评论标签包含所有涉及到评论功能的相关标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/comments/index.html">stl:comments 评论列表</a></td>
+                        <td>通过 stl:comments 标签在模板中显示评论列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/comment/index.html">stl:comment 获取评论值</a></td>
+                        <td>通过 stl:comment 标签在模板中显示评论的属性值</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/commentInput/index.html">stl:commentInput 评论提交及显示</a></td>
+                        <td>通过 stl:commentInput 标签在模板中实现评论提交及显示功能</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              功能标签
+            </h3>
+            <hr>
+            <div class="lead">
+              其他高级标签包含网站会使用到的其他常见功能标签，如评分、投票等
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/search/index.html">stl:search 搜索结果</a></td>
+                        <td>通过 stl:search 标签在模板中显示搜索结果</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/digg/index.html">stl:digg 掘客</a></td>
+                        <td>通过 stl:digg 标签在模板中实现赞同/不赞同、投个鲜花/扔个鸡蛋、顶一下/踩一下等功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/resume/index.html">stl:resume 提交简历</a></td>
+                        <td>通过 stl:resume 标签在模板中实现提交简历功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/star/index.html">stl:star 评分</a></td>
+                        <td>通过 stl:star 标签在模板中显示评分功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/vote/index.html">stl:vote 投票</a></td>
+                        <td>通过 stl:vote 标签在模板中实现投票功能</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+          <section>
+            <h3>
+              其他标签
+            </h3>
+            <hr>
+            <div class="lead">
+              其他常用的STL 标签
+            </div>
+
+            <br />
+
+                              <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/include/index.html">stl:include 包含文件</a></td>
+                        <td>通过 stl:include 标签在模板中包含另一个文件，作为模板的一部分</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/dynamic/index.html">stl:dynamic 动态显示</a></td>
+                        <td>通过 stl:dynamic 标签在模板中实现动态显示功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/each/index.html">stl:each 列表项循环</a></td>
+                        <td>通过 stl:each 标签在模板中遍历指定的列表项</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/value/index.html">stl:value 获取值</a></td>
+                        <td>通过 stl:value 标签在模板中获取值</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/count/index.html">stl:count 显示数值</a></td>
+                        <td>通过 stl:count 标签在模板中显示统计数字</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/marquee/index.html">stl:marquee 无间隔滚动</a></td>
+                        <td>通过 stl:marquee 标签在模板中创建一个能够无间隔滚动的内容块</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/select/index.html">stl:select 下拉列表</a></td>
+                        <td>通过 stl:select 标签在模板中显示栏目或内容下拉列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/analysis/index.html">stl:analysis 显示浏览量</a></td>
+                        <td>通过 stl:analysis 标签在模板中显示页面的浏览量及点击次数、点击率</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/tabs/index.html">stl:tabs 页签切换</a></td>
+                        <td>通过 stl:tabs 标签在模板中显示页签切换</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/zoom/index.html">stl:zoom 文字缩放</a></td>
+                        <td>通过 stl:zoom 标签在模板中实现文字缩放功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/printer/index.html">stl:printer 打印</a></td>
+                        <td>通过 stl:printer 标签在模板中实现打印功能</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/action/index.html">stl:action 执行动作</a></td>
+                        <td>通过 stl:action 标签在模板中创建链接，点击链接后将执行相应的动作</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/tags/index.html">stl:tags 标签</a></td>
+                        <td>通过 stl:tags 标签在模板中显示内容标签</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/rss/index.html">stl:rss Rss订阅</a></td>
+                        <td>通过 stl:rss 标签在模板中生成Rss阅读器能够浏览的Rss订阅</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/ad/index.html">stl:ad 固定广告</a></td>
+                        <td>通过 stl:ad 标签在模板中显示指定位置的广告</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/sites/index.html">stl:sites 站点列表</a></td>
+                        <td>通过 stl:sites 标签在模板中显示站点列表</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/site/index.html">stl:site 获取站点值</a></td>
+                        <td>通过 stl:site 标签在模板中显示站点值</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/layout/index.html">stl:layout 页面布局</a></td>
+                        <td>通过 stl:layout 标签在模板中创建页面布局</td>
+                      </tr>
+                      
+                      <tr>
+                        <td><a href="https://www.siteserver.cn/docs/stl/5.0/stl/container/index.html">stl:container 容器</a></td>
+                        <td>通过 stl:container 标签在模板中定义容器，切换上下文</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+          </hr></section>
+
+        
+
+      </div>
+
+    </div>
+    <!-- #content -->
+
+    <div class="footer-contain">
+      <footer class="footer">
+  <div class="container">
+    <p class="center">Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a></p>
+
+    <ul class="footer-links">
+      <li><a href="http://www.siteservre.cn" target="_blank">SiteServer 官网</a></li>
+      <li><a href="https://github.com/siteserver/cms/issues/">SiteServer 论坛</a></li>
+      <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">STL 快速索引</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>图标 <img src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/images/html5.png" style="width: 16px; height: 16px; vertical-align: middle;">代表标签解析后为HTML5代码，中间线代表此标签已被其他标签替代，不推荐使用。</p>
+
+        <div class="index">
+          <span id="A">A B</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/a/index.html">stl:a 获取链接</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/action/index.html">stl:action 执行动作</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/ad/index.html">stl:ad 固定广告</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/analysis/index.html">stl:analysis 显示浏览量</a></li>
+            <li class="html5"><a href="https://www.siteserver.cn/docs/stl/5.0/stl/audio/index.html">stl:audio 播放音频</a></li>
+          </ul>
+          <span id="C">C</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/channel/index.html">stl:channel 获取栏目值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/channels/index.html">stl:channels 栏目列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/comment/index.html">stl:comment 获取评论值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/commentInput/index.html">stl:commentInput 评论提交及显示</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/comments/index.html">stl:comments 评论列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/container/index.html">stl:container 容器</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/content/index.html">stl:content 获取内容值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/contents/index.html">stl:contents 内容列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/count/index.html">stl:count 显示数值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Channel/index.html">&lcub;channel&period;&rcub; 栏目实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Comment/index.html">&lcub;comment&period;&rcub; 评论实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Content/index.html">&lcub;content&period;&rcub; 内容实体</a></li>
+          </ul>
+          <span id="D">D</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/digg/index.html">stl:digg 掘客</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/dynamic/index.html">stl:dynamic 动态显示</a></li>
+          </ul>
+          <span id="E">E</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/each/index.html">stl:each 列表项循环</a></li>
+          </ul>
+          <span id="F">F G H</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/file/index.html">stl:file 文件下载链接</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/flash/index.html">stl:flash 显示Flash</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/focusViewer/index.html">stl:focusViewer 滚动焦点图</a></li>
+          </ul>
+          <span id="I">I J K</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/if/index.html">stl:if 条件判断</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/image/index.html">stl:image 显示图片</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/include/index.html">stl:include 包含文件</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/input/index.html">stl:input 提交表单</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/inputContent/index.html">stl:inputContent 获取提交表单值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/inputContents/index.html">stl:inputContents 提交表单列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/itemTemplate/index.html">stl:itemTemplate 列表项</a></li>
+          </ul>
+          <span id="L">L</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/layout/index.html">stl:layout 页面布局</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/loading/index.html">stl:loading 载入模板</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/location/index.html">stl:location 当前位置</a></li>
+          </ul>
+          <span id="M">M</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/marquee/index.html">stl:marquee 无间隔滚动</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/menu/index.html">stl:menu 下拉菜单</a></li>
+          </ul>
+          <span id="N">N O</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/navigation/index.html">stl:navigation 显示导航</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/no/index.html">stl:no 失败模板</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Navigation/index.html">&lcub;navigation&period;&rcub; 导航实体</a></li>
+          </ul>
+          <span id="P">P</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageChannels/index.html">stl:pageChannels 翻页栏目列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageComments/index.html">stl:pageComments 翻页评论列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageContents/index.html">stl:pageContents 翻页内容列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageInputContents/index.html">stl:pageInputContents 翻页提交表单列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageItem/index.html">stl:pageItem 翻页项</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageItems/index.html">stl:pageItems 翻页项容器</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/pageSqlContents/index.html">stl:pageSqlContents 翻页数据库列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/photo/index.html">stl:photo 相册图片</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/player/index.html">stl:player 播放视频</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/printer/index.html">stl:printer 打印</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-photo/index.html">&lcub;photo&period;&rcub; 图片实体</a></li>
+          </ul>
+          <span id="Q">Q</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/queryString/index.html">stl:queryString SQL查询语句</a></li>
+          </ul>
+          <span id="R">R</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/resume/index.html">stl:resume 提交简历</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/rss/index.html">stl:rss Rss订阅</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Request/index.html">&lcub;request&period;&rcub; 请求实体</a></li>
+          </ul>
+          <span id="S">S</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/search/index.html">stl:search 搜索结果</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/select/index.html">stl:select 下拉列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/site/index.html">stl:site 获取站点值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/sites/index.html">stl:sites 站点列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/slide/index.html">stl:slide 图片幻灯片</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/sqlContent/index.html">stl:sqlContent 数据库值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/sqlContents/index.html">stl:sqlContents 数据库列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/star/index.html">stl:star 评分</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Sql/index.html">&lcub;sql&period;&rcub; 数据库实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-Stl/index.html">&lcub;stl&period;&rcub; 通用实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-StlColon/index.html">&lcub;stl&colon;&rcub; STL标签实体</a></li>
+          </ul>
+          <span id="T">T</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/tabs/index.html">stl:tabs 页签切换</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/tags/index.html">stl:tags 标签</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/template/index.html">stl:template 显示模板</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/tree/index.html">stl:tree 树状导航</a></li>
+          </ul>
+          <span id="U">U</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/e-User/index.html">&lcub;user&period;&rcub; 用户实体</a></li>
+          </ul>
+          <span id="V W X">V W X</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/value/index.html">stl:value 获取值</a></li>
+            <li class="html5"><a href="https://www.siteserver.cn/docs/stl/5.0/stl/video/index.html">stl:video 播放视频</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/vote/index.html">stl:vote 投票</a></li>
+          </ul>
+          <span id="Y">Y</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/yes/index.html">stl:yes 成功模板</a></li>
+          </ul>
+          <span id="Z">Z</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/stl/zoom/index.html">stl:zoom 文字缩放</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/jquery-3.1.1.slim.min.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/tether.min.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/stl/assets/js/application.js"></script>
+    </div>
+  </div>
+  <!-- #page -->
+
+</body>
+
+</html>
+<script type="text/javascript" language="javascript">document.ondblclick=function(x){location.href = '/api/stl/actions/trigger?publishmentSystemId=1&channelId=131&contentId=0&fileTemplateId=0&isRedirect=True';}</script>
+
+<!-- T_系统栏目模板.html(栏目模板) -->

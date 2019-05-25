@@ -1,0 +1,249 @@
+<h3>评论值</h3>
+<pre class="prettyprint">
+&lt;stl:comment
+	ellipsis="文字超出部分显示的文字"
+	formatString="显示的格式"
+	isClearTags="是否清除标签信息"
+	isDynamic="是否动态显示"
+	isLower="是否转换为小写"
+	isReturnToBr="是否将回车替换为HTML换行标签"
+	isUpper="是否转换为大写"
+	leftText="显示在信息前的文字"
+	length="指定字符长度"
+	replace="需要替换的文字，可以是正则表达式"
+	rightText="显示在信息后的文字"
+	startIndex="字符开始位置"
+	to="替换replace的文字信息"
+	type="显示的类型"
+	wordNum="显示字符的数目"
+&gt;&lt;/stl:comment&gt;
+</pre>
+<p>
+	用于显示评论值，包括评论正文、评论人、评论时间以及其他评论信息。
+</p>
+
+
+<h3>属性列表</h3>
+<p>
+	下表显示所有属于此标签的属性列表。
+</p>
+<table class="table table-striped table-bordered">
+	<tbody>
+		<tr class="info thead">
+			<th>属性</th>
+			<th>可能的取值</th>
+			<th>默认值</th>
+			<th>简介</th>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>显示内容评论属性的类型。此属性只可属于以下可能的取值的一种。</td>
+		</tr>
+
+		<tr>
+			<td>&nbsp;</td>
+			<td>Id</td>
+			<td>&nbsp;</td>
+			<td>评论Id</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>AddDate</td>
+			<td>&nbsp;</td>
+			<td>评论日期</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>UserName</td>
+			<td>&nbsp;</td>
+			<td>评论人用户名</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>DisplayName</td>
+			<td>&nbsp;</td>
+			<td>评论人姓名</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>GoodCount</td>
+			<td>&nbsp;</td>
+			<td>点赞数</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>Content</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>评论正文</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>ItemIndex</td>
+			<td>&nbsp;</td>
+			<td>项次序数字</td>
+		</tr>
+		<tr>
+			<td>startIndex</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>字符开始位置</td>
+		</tr>
+		<tr>
+			<td>length</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>指定字符长度</td>
+		</tr>
+		<tr>
+			<td>leftText</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>显示在信息前的文字，当信息不存在时文字也不显示。</td>
+		</tr>
+		<tr>
+			<td>rightText</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>显示在信息后的文字，当信息不存在时文字也不显示。</td>
+		</tr>
+		<tr>
+			<td>formatString</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>显示的格式。</td>
+		</tr>
+		<tr>
+			<td>separator</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>显示多项时的分割字符串。</td>
+		</tr>
+		<tr>
+			<td>wordNum</td>
+			<td>&nbsp;</td>
+			<td class="center">
+				0</td>
+			<td>显示字符的数目，0代表不限制字数。</td>
+		</tr>
+		<tr>
+			<td>ellipsis</td>
+			<td>&nbsp;</td>
+			<td class="center">
+				...</td>
+			<td>文字超出部分显示的文字</td>
+		</tr>
+		<tr>
+			<td>replace</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>需要替换的文字，可以是正则表达式</td>
+		</tr>
+		<tr>
+			<td>to</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>替换的文字信息</td>
+		</tr>
+		<tr>
+			<td>isClearTags</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否清除HTML标签</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>清除HTML标签</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>不清除HTML标签</td>
+		</tr>
+		<tr>
+			<td>isReturnToBr</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否将回车替换为HTML换行标签</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>替换回车符</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>不替换回车符</td>
+		</tr>
+		<tr>
+			<td>isLower</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否转换为小写</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>转换为小写</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>不转换</td>
+		</tr>
+		<tr>
+			<td>isUpper</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否转换为大写</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>转换为大写</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>不转换</td>
+		</tr>
+		<tr>
+			<td>isDynamic</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否动态显示</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>动态显示</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>静态显示</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>注意</h3>
+<p>
+	&lt;stl:comment&gt; 必须放置在 &lt;stl:comments&gt; 列表标签中才能起作用。
+</p>
+<p>
+	<code>&lt;stl:comment&gt;</code>标签对应的实体为<code>{<span></span>stl:comment<span></span>}</code>，可以将实体放到属性中使用，如：<br />
+	<pre class="prettyprint">&lt;a title="{<span></span>stl:comment type=Content isClearTags=true<span></span>}"&gt;</pre>
+</p>

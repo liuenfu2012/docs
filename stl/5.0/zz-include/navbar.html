@@ -1,0 +1,28 @@
+<ul class="nav nav-tabs nav-justified">
+  <stl:if type="TemplateType" value="IndexPageTemplate">
+    <stl:yes>
+      <li class="nav-item">
+        <stl:a topLevel="0" class="nav-link active">STL 索引</stl:a>
+      </li>
+    </stl:yes>
+    <stl:no>
+      <li class="nav-item">
+        <stl:a topLevel="0" class="nav-link">STL 索引</stl:a>
+      </li>
+    </stl:no>
+  </stl:if>
+  <stl:channels topLevel="0" groupChannel="主导航">
+    <stl:if testType="UpChannelOrSelf">
+      <stl:yes>
+        <li class="nav-item">
+          <stl:a class="nav-link active"></stl:a>
+        </li>
+      </stl:yes>
+      <stl:no>
+        <li class="nav-item">
+          <stl:a class="nav-link"></stl:a>
+        </li>
+      </stl:no>
+    </stl:if>
+  </stl:channels>
+</ul>

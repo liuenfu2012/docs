@@ -1,0 +1,75 @@
+<h3>示例一：显示最新添加的内容列表</h3>
+<p>
+	下面的例子显示按最新添加时间获取内容列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:dynamic>
+
+<stl:pageSqlContents connectionStringName="ConnectionString" pageNum="6" totalNum="30" cellpadding="2">  
+  <stl:queryString>
+    SELECT * FROM {Stl.TableForContent} WHERE PublishmentSystemId = {Stl.SiteId} AND NodeId > 0 ORDER BY AddDate DESC
+  </stl:queryString>
+  <a href="{Stl.RootUrl}/sitefiles/services/wcm/utils.aspx?type=Redirect&channelId={sql.nodeId}&contentId={sql.Id}" target="_blank">
+    <stl:sqlContent type="Title" wordnum="20"></stl:sqlContent>
+  </a>
+  (<stl:sqlContent type="AddDate" formatString="yyyy-MM-dd"></stl:sqlContent>)
+  <br>
+</stl:pageSqlContents>
+
+<hr>
+
+<stl:pageItems>
+<div class="pagination">
+  <ul>
+    <li><a href="{PageItem.PreviousPage}">Prev</a></li>
+    <stl:pageItem type="PageNavigation">
+      <stl:yes>
+        <li><a href="{Current.Url}">{Current.Num}</a></li>
+      </stl:yes>  
+      <stl:no>  
+        <li class="active"><span>{Current.Num}</span></li>
+      </stl:no>
+    </stl:pageItem>
+    <li><a href="{PageItem.NextPage}">Next</a></li>
+  </ul>
+</div>
+</stl:pageItems>
+
+</stl:dynamic>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:pageSqlContents connectionStringName=&quot;ConnectionString&quot; pageNum=&quot;6&quot; totalNum=&quot;30&quot; cellpadding=&quot;2&quot;&gt;  
+  &lt;stl:queryString&gt;
+    SELECT * FROM &#123;Stl.TableForContent&#125; WHERE PublishmentSystemId = &#123;Stl.SiteId&#125; AND NodeId &gt; 0 ORDER BY AddDate DESC
+  &lt;/stl:queryString&gt;
+  &lt;a href=&quot;&#123;Stl.RootUrl&#125;/sitefiles/services/wcm/utils.aspx?type=Redirect&amp;channelId=&#123;sql.nodeId&#125;&amp;contentId=&#123;sql.Id&#125;&quot; target=&quot;_blank&quot;&gt;
+    &lt;stl:sqlContent type=&quot;Title&quot; wordnum=&quot;20&quot;&gt;&lt;/stl:sqlContent&gt;
+  &lt;/a&gt;
+  (&lt;stl:sqlContent type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:sqlContent&gt;)
+  &lt;br&gt;
+&lt;/stl:pageSqlContents&gt;
+
+&lt;hr&gt;
+
+&lt;stl:pageItems&gt;
+&lt;div class=&quot;pagination&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;&#123;PageItem.PreviousPage&#125;&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+    &lt;stl:pageItem type=&quot;PageNavigation&quot;&gt;
+      &lt;stl:yes&gt;
+        &lt;li&gt;&lt;a href=&quot;&#123;Current.Url&#125;&quot;&gt;&#123;Current.Num&#125;&lt;/a&gt;&lt;/li&gt;
+      &lt;/stl:yes&gt;  
+      &lt;stl:no&gt;  
+        &lt;li class=&quot;active&quot;&gt;&lt;span&gt;&#123;Current.Num&#125;&lt;/span&gt;&lt;/li&gt;
+      &lt;/stl:no&gt;
+    &lt;/stl:pageItem&gt;
+    &lt;li&gt;&lt;a href=&quot;&#123;PageItem.NextPage&#125;&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;/stl:pageItems&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

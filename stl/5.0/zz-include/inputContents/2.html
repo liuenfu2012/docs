@@ -1,0 +1,23 @@
+<h3>示例一：显示提交内容</h3>
+<p>
+	下面的例子显示提交表单为"咨询信箱"的提交内容列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:inputContents inputName="咨询信箱" isReply="true" width="90%">  
+    标题:<stl:inputContent type="TitleName"></stl:inputContent><br />    
+    正文:<stl:inputContent type="MainText"></stl:inputContent><br />    
+    <font color="red">回复:</font><stl:inputContent type="Reply"></stl:inputContent>  <br />
+</stl:inputContents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:inputContents inputName=&quot;咨询信箱&quot; isReply=&quot;true&quot; width=&quot;90%&quot;&gt;
+     标题:&lt;stl:inputContent type=&quot;TitleName&quot;&gt;&lt;/stl:inputContent&gt;&lt;br /&gt;
+     正文:&lt;stl:inputContent type=&quot;MainText&quot;&gt;&lt;/stl:inputContent&gt;&lt;br /&gt;
+     &lt;font color=&quot;red&quot;&gt;回复:&lt;/font&gt;&lt;stl:inputContent type=&quot;Reply&quot;&gt;&lt;/stl:inputContent&gt;  &lt;br /&gt;
+&lt;/stl:inputContents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

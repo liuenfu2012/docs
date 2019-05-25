@@ -1,0 +1,20 @@
+<h3>示例一：获取文章标题</h3>
+
+<div class="bs-docs-example">
+<stl:sqlContents connectionStringName="ConnectionString" cellpadding="2">  
+<stl:queryString> SELECT TOP 6 * FROM cms_Content ORDER BY Id DESC </stl:queryString>  
+ {Sql.Title}     
+ (<stl:sqlContent type="AddDate" formatString="yyyy-MM-dd"></stl:sqlContent>) <br />  
+</stl:sqlContents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sqlContents connectionStringName=&quot;ConnectionString&quot; cellpadding=&quot;2&quot;&gt;
+&lt;stl:queryString&gt; SELECT TOP 6 * FROM au_Content ORDER BY Id DESC &lt;/stl:queryString&gt;
+&#123;Sql.Title&#125;
+(&lt;stl:sqlContent type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:sqlContent&gt;)&lt;br /&gt;
+&lt;/stl:sqlContents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

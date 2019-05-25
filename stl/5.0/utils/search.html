@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>搜索</title>
+<style>
+*{font-size:12px}
+</style>
+<script>var $pageInfo = {publishmentSystemID : 2, channelID : 2, contentID : 0, siteUrl : "https://www.siteserver.cn/docs/stl/5.0", homeUrl : "http://home.siteserver.cn", currentUrl : "/utils/search.html", rootUrl : "", apiUrl : "http://api.siteserver.cn/api"};</script></head>
+
+<body>
+
+<stl:searchInput openwin="false" isLoadValues="true"></stl:searchInput>
+
+<br />
+
+<div id="ajaxElement_1_503"><div class="stl_loading"><div style="margin: 0 auto; padding: 40px 0; font-size: 14px; font-family: 'Microsoft YaHei'; text-align: center; font-weight: 400;">搜索中，请稍后...</div></div><div class="stl_yes" style="display:none"></div><div class="stl_no" style="display:none"><div style="margin: 0 auto; padding: 40px 0; font-size: 14px; font-family: 'Microsoft YaHei'; text-align: center; font-weight: 400;">抱歉，找不到和您的查询相符的网页。</div></div></div>
+<script type="text/javascript" language="javascript">
+jQuery(document).ready(function(){
+    var url = 'http://api.siteserver.cn/api/stl/actions/search';
+    var parameters = 
+{
+    isallsites: false,
+    sitename: '',
+    sitedir: '',
+    siteids: '',
+    channelindex: '',
+    channelname: '',
+    channelids: '',
+    type: 'Title',
+    word: '',
+    dateattribute: 'AddDate',
+    datefrom: '',
+    dateto: '',
+    since: '',
+    pagenum: 0,
+    ishighlight: true,
+    isdefaultdisplay: false,
+    publishmentsystemid: '2',
+    ajaxdivid: 'ajaxElement_1_503',
+    template: 'e8lUF0slash0a6ssSilaEDzCwYbFmZcEAWtHJgeTVjYl08MKibimathigu0OSdI6sbMdvKcKwj6wZB1sxUJsuppusoCU0WjM0slash0rZdgoVkkcDEdDuHmYgFT8OSS5YMppet0slash0DVZTawi6YKQMvV9KmjmK3v9QANDNk0O9IIj0nSSpaeelCJnfi545LI13pVHLyc7YZj7i3gp2JkfVzzEjn9fjjEkKFB9aFIle5oiepL8yfQR0slash0tzmcTadXOiGtcE5JMsmp6U6rP54woYpEB46BpNFXkfHvOerc7CHiOCy1PgdPf1WfRVCAO2feIkCBYw0u8hVUFb40add09eA19TF0M0slash0aUo0LjsVuyQGvRoP1QzTdqgZjSNHwFIbjRwdLDNqavziE9QTZa1IqpxF0add0pjWG2zBVT4PujOjceO3elu2j2NYQcOA8G3jwa7tFDaWTMOSe054aq5GIFzQOI0add08w4qqxR8kOvyK9M7By8MqtltbS3Ng0add0WQMjqBo0add02mzGHVTxokEqj3kdwB0add0jcHhm9wvgPjkR1OZwn4QsdE1ctYKUfYHW8HgovdFkCXFk4diN0add0qqMcLKtT6daS37LB0q5vo7C1RUzoqfHFQYr4Wi0add04vMKLwx6HwJmMd7sUjSwRxt5pdPPlTbT1aSMsoDqM0add00XUSFWyNCXxV6ANbCoN77cJcPhEyT52eyugT0eMpAkZ0Nf1vtflE6z4aNkKjP2QEIoPwkns95MrtmMfk3hg2ISlzYD2DbC9JD0NjBI0slash0wRt0qXz7Ajue6GNk6z59BO45mGJ6PErXEL3bypTbfDTKgfy69uRNT0add0JwYFg0add0tVd9HwKmD8Epa0XPXaqz6gtrhLH30slash0MMWgs4X1jZVNjVxv9EXswxY2nD1gScCdqO3uM77kPtT4Cym2gVdQ7haQM9lUkWolwFEaXizl5NXxXhqoSHcTGGaSagFtHfJrd5WhP2s6mpfOELXyQNqg4gILM4y1FkNDzuDqAKrlggNWCAbFfIGCOwwxZPTwPIFZZhk95Cmq40slash0JVwxx6IL6Sf0slash0ojLCFxKImgedeg5NIe0BPRZvaCJQz8KqAQc0p0add0uREZKo3pLY80slash0FapSBVDqEzBchEKy4wOnV8htPMwx2K4mbZ0slash0chgI5Oejpnj0slash0r82SF5WeMx50add099XK04YMyoawBA1pqvw15VjTM3WFP3BCBNOzBiRPlVswPZiGKtzV90slash0zEFMY52HJnGGOKWkQxBBljzt0slash0Yebn8A2Wijlqyo0add07cxZ8N6pcJ0slash0gCeXM773EN0add0InxwMdN0add0zpScVSp0add0sz3nSVUJ4OkiAuFPNltpTeJBo6kLLcKg1UPpkFYxMJF7Bd8E0slash0tmLaKQDA3w1BmygrHeL0v68gO0kWeD2gDaM0add0r0slash038uTzj3Bfax20add0Skl8w6Y7N2gwWTw0equals00equals0',
+};
+
+    var queryString = document.location.search;
+    if (queryString && queryString.length > 1) {
+        queryString = queryString.substring(1);
+        var arr = queryString.split('&');
+        for(var i=0; i < arr.length; i++) {
+            var item = arr[i];
+            var arr2 = item.split('=');
+            if (arr2 && arr2.length == 2) {
+                var key = (arr2[0] || '').toLowerCase();
+                if (key) {
+                    parameters[key] = decodeURIComponent(arr2[1]);
+                }
+            }
+        }
+        if (!parameters['page']) {
+            parameters['page'] = 1;
+        }
+
+        jQuery.support.cors = true;
+        jQuery.ajax({
+            url: url,
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(parameters),
+            dataType: 'json',
+            success: function(res) {
+                jQuery("#ajaxElement_1_503 .stl_loading").hide();
+                jQuery("#ajaxElement_1_503 .stl_yes").show();
+                jQuery("#ajaxElement_1_503 .stl_no").hide();
+                jQuery("#ajaxElement_1_503 .stl_yes").html(res);
+            },
+            error: function(e) {
+                jQuery("#ajaxElement_1_503 .stl_loading").hide();
+                jQuery("#ajaxElement_1_503 .stl_yes").hide();
+                jQuery("#ajaxElement_1_503 .stl_no").show();
+            }
+        });
+    } else {
+        jQuery("#ajaxElement_1_503 .stl_loading").hide();
+        jQuery("#ajaxElement_1_503 .stl_yes").hide();
+        jQuery("#ajaxElement_1_503 .stl_no").show();
+    }
+});
+
+function stlRedirectajaxElement_1_503(page)
+{
+    var queryString = document.location.search;
+    if (queryString && queryString.length > 1) {
+        queryString = queryString.substring(1);
+        var parameters = '';
+        var arr = queryString.split('&');
+        for(var i=0; i < arr.length; i++) {
+            var item = arr[i];
+            var arr2 = item.split('=');
+            if (arr2 && arr2.length == 2) {
+                if (arr2[0] !== 'page') {
+                    parameters += item + '&';
+                }
+            }
+        }
+        parameters += 'page=' + page;
+        location.href = location.protocol + '//' + location.host + location.pathname + location.hash + '?' + parameters;
+    }
+}
+
+function stlJumpajaxElement_1_503(selObj)
+{
+    stlRedirectajaxElement_1_503(selObj.options[selObj.selectedIndex].value);
+}
+</script>
+
+
+</body>
+</html>
+<!-- T_搜索.html(单页模板) -->

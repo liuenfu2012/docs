@@ -1,0 +1,81 @@
+<h3>示例一：显示系统中所有站点的名称以及最新添加的两条内容。</h3>
+<!--<p>
+	下面的例子在页面中显示内容的副标题。
+</p>-->
+
+<div class="bs-docs-example">
+  <stl:sites>  
+    <a href="{Stl.SiteUrl}" target="_blank"><stl:value type="SiteName"></stl:value></a>  
+        <br/>  
+    <ul>  
+    <stl:contents totalNum="2" order="AddDate" scope="All">  
+        <li><stl:a target="_blank"></stl:a></li>  
+    </stl:contents>  
+    </ul>  
+  </stl:sites> 
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sites&gt;
+    &lt;a href=&quot;{Stl.SiteUrl}&quot; target=&quot;_blank&quot;&gt;&lt;stl:value type=&quot;SiteName&quot;&gt;&lt;/stl:value&gt;&lt;/a&gt;
+        &lt;br/&gt;
+        &lt;ul&gt;
+        &lt;stl:contents totalNum=&quot;2&quot; order=&quot;AddDate&quot; scope=&quot;All&quot;&gt;
+            &lt;li&gt;&lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;/li&gt;
+        &lt;/stl:contents&gt;
+        &lt;/ul&gt;
+&lt;/stl:sites&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示系统中所有站点及站点的内容数，并按内容数量进行排序。</h3>
+
+<div class="bs-docs-example">
+<stl:sites order="Contents">  
+    <a href="{Stl.SiteUrl}" target="_blank">  
+        <stl:value type="SiteName"></stl:value>  
+    </a>  
+    (内容数：<stl:count type="Contents" scope="All"></stl:count>)   
+</stl:sites> 
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sites order=&quot;Contents&quot;&gt;
+   &lt;a href=&quot;{Stl.SiteUrl}&quot; target=&quot;_blank&quot;&gt;
+       &lt;stl:value type=&quot;SiteName&quot;&gt;&lt;/stl:value&gt;
+   &lt;/a&gt;
+        (内容数：&lt;stl:count type=&quot;Contents&quot; scope=&quot;All&quot;&gt;&lt;/stl:count&gt;)
+&lt;/stl:sites&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例三：显示系统中所有站点，并按最近3个月的页面浏览量进行排序，同时显示对应站点的内容数、栏目数及浏览量。</h3>
+
+<div class="bs-docs-example">
+<stl:sites order="Hits" since="3m">  
+    <a href="{Stl.SiteUrl}" target="_blank"><stl:value type="SiteName"></stl:value></a>  
+    (新增内容数：<stl:count type="Contents" scope="All" since="3m"></stl:count>  
+    栏目数：<stl:count type="Channels" scope="All"></stl:count>  
+    访问量：<stl:analysis type="PageView" scope="Site" since="3m"></stl:analysis>)   
+</stl:sites> 
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sites order=&quot;Hits&quot; since=&quot;3m&quot;&gt;
+    &lt;a href=&quot;{Stl.SiteUrl}&quot; target=&quot;_blank&quot;&gt;&lt;stl:value type=&quot;SiteName&quot;&gt;&lt;/stl:value&gt;&lt;/a&gt;
+    (新增内容数：&lt;stl:count type=&quot;Contents&quot; scope=&quot;All&quot; since=&quot;3m&quot;&gt;&lt;/stl:count&gt;
+     栏目数：&lt;stl:count type=&quot;Channels&quot; scope=&quot;All&quot;&gt;&lt;/stl:count&gt;
+     访问量：&lt;stl:analysis type=&quot;PageView&quot; scope=&quot;Site&quot; since=&quot;3m&quot;&gt;&lt;/stl:analysis&gt;)
+&lt;/stl:sites&gt; 
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

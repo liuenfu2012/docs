@@ -1,0 +1,51 @@
+﻿<h3>示例一：在内容页面显示内容模型为图片的内容图片列表</h3>
+<p>
+    下面的例子显示内容的图片列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:each type="photo">
+    <stl:photo type="largeUrl" width="50px"></stl:photo>
+    <stl:photo type="Description"></stl:photo>
+    <hr />
+</stl:each>
+</div>
+
+<pre class="prettyprint linenums">
+&lt;stl:each type="photo"&gt;
+    &lt;stl:photo type="largeUrl" width="50px"&gt;&lt;/stl:photo&gt;
+    &lt;stl:photo type=&quot;Description&quot;&gt;&lt;/stl:photo&gt;
+    &lt;hr /&gt;
+&lt;/stl:each&gt;
+</pre>
+<p>
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums">
+</pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在内容页面显示图片字段的图片列表</h3>
+<p>
+    下面的例子显示内容的图片字段列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:each type="imageUrl">
+    <stl:image></stl:image>
+    <hr />
+</stl:each>
+</div>
+
+<pre class="prettyprint linenums">
+&lt;stl:each type=&quot;imageUrl&quot;&gt;
+    &lt;stl:image&gt;&lt;/stl:image&gt;
+    &lt;hr /&gt;
+&lt;/stl:each&gt;
+</pre>
+<p>
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums">
+</pre>

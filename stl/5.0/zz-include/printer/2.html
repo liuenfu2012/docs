@@ -1,0 +1,29 @@
+<h3>示例一：显示打印链接</h3>
+<p>
+	下面的例子显示打印链接。
+</p>
+
+<div class="bs-docs-example">
+
+  <div id="title">  
+    <stl:content type="Title"></stl:content>  
+  </div>  
+  <div id="body">  
+    <stl:content type="Content"></stl:content>  
+  </div>  
+  <stl:printer titleId="title" bodyId="body">打印</stl:printer>  
+
+</div>
+<pre class="prettyprint linenums">
+    &lt;div id=&quot;title&quot;&gt;
+        &lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;body&quot;&gt;
+        &lt;stl:content type=&quot;Content&quot;&gt;&lt;/stl:content&gt;
+    &lt;/div&gt;
+    &lt;stl:printer titleId=&quot;title&quot; bodyId=&quot;body&quot;&gt;打印&lt;/stl:printer&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

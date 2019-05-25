@@ -1,0 +1,23 @@
+<h3>数据库查询语句 </h3>
+<pre class="prettyprint">
+&lt;stl:queryString&gt;&lt;/stl:queryString&gt;
+</pre>
+
+<h3>注意</h3>
+
+<p>
+    &lt;stl:queryString&gt; 必须作为 &lt;stl:sqlContents&gt; 或者 &lt;stl:pageSqlContents&gt; 的子标签使用。 <br> &lt;stl:queryString&gt;
+    用于设置数据库查询语句（SQL语句），在此标签内放置 SQL 语句。
+</p>
+
+<p>
+    &lt;stl:queryString&gt; 中定义的SQL 语句内可以嵌入STL 语句，如&#123;Channel.ChannelId&#125;当前栏目Id、&#123;Stl.SiteId&#125;站点Id等。
+</p>
+
+<p>
+    如果为动态调取（在&lt;stl:dynamic&gt;内部使用），可以采用&#123;Request&#125;实体获取页面地址栏参数，如当前页面地址为“page.html?Id=123”，即可使用&#123;Request.Id&#125;获取值并放到SQL语句中作为查询条件。
+</p>
+
+<p>
+    <code>&lt;stl:queryString&gt;</code>标签对应的实体为<code>{<span></span>stl:queryString<span></span>}</code>。
+</p>

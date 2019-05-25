@@ -1,0 +1,91 @@
+<h3>提交表单</h3>
+<pre class="prettyprint">
+&lt;stl:input
+	inputName="提交表单名称"
+	isLoadValues="是否载入URL参数"
+&gt;&lt;/stl:input&gt;
+</pre>
+<p>
+	用于实现前台提交内容（反馈、留言等）提交表单功能。
+</p>
+
+
+<h3>属性列表</h3>
+<p>
+	下表显示所有属于此标签的属性列表。
+</p>
+<table class="table table-striped table-bordered">
+	<tbody>
+		<tr class="info thead">
+			<th>属性</th>
+			<th>可能的取值</th>
+			<th>默认值</th>
+			<th>简介</th>
+		</tr>
+		<tr>
+			<td>inputName</td>
+			<td>&nbsp;</td>
+			<td class="center">第一个提交表单名称</td>
+			<td>在线留言提交表单名称</td>
+		</tr>
+		<tr>
+			<td>isLoadValues</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>是否载入URL参数</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>true</td>
+			<td>&nbsp;</td>
+			<td>载入</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>false</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>不载入</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>子标签列表</h3>
+
+<p>
+	下表显示此标签所有的子标签。
+</p>
+<table class="table table-striped table-bordered">
+	<tbody>
+		<tr>
+			<th>子标签</th>
+			<th>简介</th>
+		</tr>
+		<tr>
+			<td>stl:template</td>
+			<td>提交内容表单，可以省略</td>
+		</tr>
+		<tr>
+			<td>stl:yes</td>
+			<td>提交成功显示模板，可以省略</td>
+		</tr>
+		<tr>
+			<td>stl:no</td>
+			<td>提交失败显示模板，可以省略</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<h3>注意</h3>
+<p>
+	&lt;stl:input&gt; 用于实现前台提交内容（反馈、留言等）提交表单功能，在系统"功能管理"—"提交表单"—"提交表单管理"中管理字段及显示样式。
+</p>
+<p>
+	属性 isLoadValues 用于判断是否将浏览器地址栏中的参数值载入并显示在表单中，系统会自动判断 Id 属性与参数名称相同的字段。
+</p>
+<p>
+	如果希望在模板中自定义显示样式，可以将自定义提交表单代码放到 &lt;stl:inputTemplate &gt; 子标签中。
+</p>
+<p>
+	<code>&lt;stl:input&gt;</code>标签对应的实体为<code>{<span></span>stl:input<span></span>}</code>。
+</p>

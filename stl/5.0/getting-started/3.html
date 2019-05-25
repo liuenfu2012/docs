@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>起 步 · SiteServer STL 语言参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel='stylesheet' href="https://www.siteserver.cn/docs/stl/5.0/assets/css/style.css" type='text/css' media='all' />
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/jquery-1.9.1.min.js"></script>
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/html5shiv.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/favicon.png">
+<script>var $pageInfo = {publishmentSystemID : 2, channelID : 3, contentID : 3, siteUrl : "https://www.siteserver.cn/docs/stl/5.0", homeUrl : "http://home.siteserver.cn", currentUrl : "/getting-started/3.html", rootUrl : "", apiUrl : "http://api.siteserver.cn/api"};</script></head>
+
+<body class="blog mp6 customizer-styles-applied highlander-enabled highlander-light infinite-scroll neverending">
+  <div id="page" class="hfeed site">
+
+    <header id="masthead" class="site-header" role="banner">
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+        <form role="search" method="get" class="search-form" action="https://www.siteserver.cn/docs/search.html">
+            <label>
+              <span class="screen-reader-text">搜索：</span>
+              <input type="search" class="search-field" placeholder="搜索 &hellip;" value="" name="word" />
+          </label>
+        </form>
+        <div class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="menu">
+                <li class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page page_item page-item-5503 menu-item-5714"><a href="https://www.siteserver.cn/docs/">开发者中心</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32 current-menu-item"><a href="https://www.siteserver.cn/docs/stl/5.0">STL 语言</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32"><a href="https://www.siteserver.cn/docs/">文 档</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://www.siteserver.cn/blog/">博 客</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://github.com/siteserver/cms/issues/" target="_blank">论 坛</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://github.com/siteserver/cms/" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        <a href="#" id="menu-hamburger"><span class="noticon noticon-menu"></span></a>
+        <a href="#" id="menu-search"><span class="noticon noticon-search"></span></a>
+    </nav>
+</header>
+
+    <div id="page-name" class="page-masthead">
+      <div class="name-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <h1>
+                起 步
+              </h1>
+              <p class="lead" style="color: #fff">
+                
+              </p>
+            </div>
+            <div class="col-2" style="padding-top: 25px">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
+              STL 快速索引
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-container" class="site-content">
+
+      <ul class="nav nav-tabs nav-justified">
+  
+      <li class="nav-item">
+        <a href="https://www.siteserver.cn/docs/stl/5.0" class="nav-link">STL 索引</a>
+      </li>
+    
+  
+    
+        <li class="nav-item">
+          <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/index.html" class="nav-link active">起 步</a>
+        </li>
+      
+  
+    
+        <li class="nav-item">
+          <a href="https://www.siteserver.cn/docs/stl/5.0/channels/4.html" class="nav-link">STL标签</a>
+        </li>
+      
+  
+    
+        <li class="nav-item">
+          <a href="https://www.siteserver.cn/docs/stl/5.0/channels/79.html" class="nav-link">STL实体</a>
+        </li>
+      
+  
+</ul>
+
+      
+
+      <div class="container">
+
+        <div class="row">
+          <!-- Left Navigation -->
+          <div class="col-3">
+            <div class="list-group" style="margin-top: 20px">
+              
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/index.html" class="list-group-item list-group-item-action">
+                    <i class="icon-chevron-right"></i>
+                      STL 语言
+                    </a>
+                
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/5.html" class="list-group-item list-group-item-action">
+                    <i class="icon-chevron-right"></i>
+                      STL 标签与 STL 实体
+                    </a>
+                
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/4.html" class="list-group-item list-group-item-action">
+                    <i class="icon-chevron-right"></i>
+                      STL 模板语言规则
+                    </a>
+                
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/3.html" class="list-group-item list-group-item-action list-group-item-success">
+                    <i class="icon-chevron-right"></i>
+                      STL 实体说明
+                    </a>
+                
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/2.html" class="list-group-item list-group-item-action">
+                    <i class="icon-chevron-right"></i>
+                      STL 翻页标签与实现
+                    </a>
+                
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/1.html" class="list-group-item list-group-item-action">
+                    <i class="icon-chevron-right"></i>
+                      STL 地址通配符
+                    </a>
+                
+            </div>
+
+          </div>
+          <div class="col-9">
+            <section>
+
+              <h1>
+                STL 实体说明
+              </h1>
+
+              <!-- Right Content -->
+              
+
+                
+
+              
+
+                
+
+              
+
+                
+
+              
+                  
+                
+
+                
+
+              
+
+                
+
+              
+
+              <h3 style="text-align: left; text-indent: 0em;">实体说明</h3><p style="text-align: left; text-indent: 0em;">STL 实体是左大括号（&#123;）和右大括号（&#125;）以及位于二者之间的所有内容。有开始标记和结束标记（例如 &#123;Stl.SiteName&#125;）。</p><p style="text-align: left; text-indent: 0em;"><span style="text-indent:2em;">STL 实体能够嵌入到HTML 语言或STL 语言的任何位置，（例如内容模版中 &lt;stl:a title=&quot;&#123;Content.Title&#125;&quot;&gt;&lt;/stl:a&gt;）。</span><br/></p><p style="text-align: left; text-indent: 0em;">STL 其余实体分为通用实体（&#123;Stl.开头）、内容实体（&#123;Content.开头）、栏目实体（&#123;Channel.开头）、评论实体（&#123;Comment.开头）以及数据库实体（&#123;Sql.开头）。</p><p style="text-align: left; text-indent: 0em;">通用实体与&lt;stl:value&gt;元素相同，&lt;stl:value type=&quot;xyz&quot;&gt;&lt;/stl:value&gt;等价于&#123;Stl.xyz&#125;，请参考&lt;stl:value&gt; 标签。通用实体能在任何地方解析。</p><p style="text-align: left; text-indent: 0em;">内容实体与&lt;stl:content&gt;元素相同，&lt;stl:content type=&quot;xyz&quot;&gt;&lt;/stl:content&gt;等价于&#123;Content.xyz&#125;，请参考&lt;stl:content&gt; 标签。内容实体只能在内容模板中或&lt;stl:contents&gt; 元素内部解析。</p><p style="text-align: left; text-indent: 0em;">栏目实体与&lt;stl:channel&gt;元素相同，&lt;stl:channel type=&quot;xyz&quot;&gt;&lt;/stl:channel&gt;等价于&#123;Channel.xyz&#125;，请参考&lt;stl:channel&gt; 标签。栏目实体能在任何地方解析。</p><p style="text-align: left; text-indent: 0em;">评论实体与&lt;stl:comment&gt;元素相同，&lt;stl:comment type=&quot;xyz&quot;&gt;&lt;/stl:comment&gt;等价于&#123;Comment.xyz&#125;，请参考&lt;stl:comment&gt; 标签。评论实体只能在评论上下文中解析。</p><p style="text-align: left; text-indent: 0em;">数据库实体与&lt;stl:sqlContent&gt;元素相同，&lt;stl:sqlContent type=&quot;xyz&quot;&gt;&lt;/stl:sqlContent&gt;等价于&#123;Sql.xyz&#125;，请参考&lt;stl:sqlContent&gt; 标签。数据库实体只能在数据库查询上下文中解析。</p><h3 style="text-align: left; text-indent: 0em;"><span style="text-indent: 0em;">标签与实体</span><br/></h3><p style="text-indent: 0em; white-space: normal;">所有STL 元素均有对应实体，将元素“&lt;”替换为“&#123;”，“&gt;”替换为“&#125;”即为对应实体，实体中属性采用单引号或者不带引号。如内容值元素：</p><pre class="brush:html;toolbar:false;"><p style="text-indent: 0em;">&lt;stl:content type=&quot;Title&quot; wordNum=&quot;20&quot;&gt;&lt;/stl:content&gt;<br/></p></pre><p style="text-indent: 0em; white-space: normal;"><span style="text-indent: 2em;">对应实体为</span><br/></p><pre class="brush:html;toolbar:false;"><p style="text-indent: 0em;">&#123;stl:content type=&#39;Title&#39; wordNum=&#39;20&#39;&#125;<br/></p></pre><p style="text-indent: 0em; white-space: normal;"><span style="text-indent: 2em;">或</span><br/></p><pre class="brush:html;toolbar:false;"><p style="text-indent: 0em;">&#123;stl:content type=Title wordNum=20&#125;<br/></p></pre><p style="text-align: left; text-indent: 0em;"><br/></p>
+
+              <p class="lead">&nbsp;</p>
+
+            </section>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- #content -->
+
+    <div class="footer-contain">
+      <div class="footer-contain">
+    <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info">
+            <div class="poweredby">
+                Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.siteserver.cn" target="_blank">SiteServer 官网</a>
+                <a href="https://github.com/siteserver/cms/issues/" target="_blank">SiteServer 论坛</a>
+                <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">STL 快速索引</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>图标 <img src="https://www.siteserver.cn/docs/stl/5.0/assets/images/html5.png" style="width: 16px; height: 16px; vertical-align: middle;">代表标签解析后为HTML5代码，中间线代表此标签已被其他标签替代，不推荐使用。</p>
+
+        <div class="index">
+          <span id="A">A B</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/a/index.html">stl:a 获取链接</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/action/index.html">stl:action 执行动作</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/ad/index.html">stl:ad 固定广告</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/analysis/index.html">stl:analysis 显示浏览量</a></li>
+            <li class="html5"><a href="https://www.siteserver.cn/docs/stl/5.0/audio/index.html">stl:audio 播放音频</a></li>
+          </ul>
+          <span id="C">C</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/channel/index.html">stl:channel 获取栏目值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/channels/index.html">stl:channels 栏目列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/comment/index.html">stl:comment 获取评论值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/commentInput/index.html">stl:commentInput 评论提交及显示</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/comments/index.html">stl:comments 评论列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/container/index.html">stl:container 容器</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/content/index.html">stl:content 获取内容值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/contents/index.html">stl:contents 内容列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/count/index.html">stl:count 显示数值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Channel/index.html">&lcub;channel&period;&rcub; 栏目实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Comment/index.html">&lcub;comment&period;&rcub; 评论实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Content/index.html">&lcub;content&period;&rcub; 内容实体</a></li>
+          </ul>
+          <span id="D">D</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/digg/index.html">stl:digg 掘客</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/dynamic/index.html">stl:dynamic 动态显示</a></li>
+          </ul>
+          <span id="E">E</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/each/index.html">stl:each 列表项循环</a></li>
+          </ul>
+          <span id="F">F G H</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/file/index.html">stl:file 文件下载链接</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/flash/index.html">stl:flash 显示Flash</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/focusViewer/index.html">stl:focusViewer 滚动焦点图</a></li>
+          </ul>
+          <span id="I">I J K</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/if/index.html">stl:if 条件判断</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/image/index.html">stl:image 显示图片</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/include/index.html">stl:include 包含文件</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/input/index.html">stl:input 提交表单</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/inputContent/index.html">stl:inputContent 获取提交表单值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/inputContents/index.html">stl:inputContents 提交表单列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/itemTemplate/index.html">stl:itemTemplate 列表项</a></li>
+          </ul>
+          <span id="L">L</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/loading/index.html">stl:loading 载入模板</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/location/index.html">stl:location 当前位置</a></li>
+          </ul>
+          <span id="M">M</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/marquee/index.html">stl:marquee 无间隔滚动</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/menu/index.html">stl:menu 下拉菜单</a></li>
+          </ul>
+          <span id="N">N O</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/navigation/index.html">stl:navigation 显示导航</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/no/index.html">stl:no 失败模板</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Navigation/index.html">&lcub;navigation&period;&rcub; 导航实体</a></li>
+          </ul>
+          <span id="P">P</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageChannels/index.html">stl:pageChannels 翻页栏目列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageComments/index.html">stl:pageComments 翻页评论列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageContents/index.html">stl:pageContents 翻页内容列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageInputContents/index.html">stl:pageInputContents 翻页提交表单列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageItem/index.html">stl:pageItem 翻页项</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageItems/index.html">stl:pageItems 翻页项容器</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageSqlContents/index.html">stl:pageSqlContents 翻页数据库列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/photo/index.html">stl:photo 相册图片</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/player/index.html">stl:player 播放视频</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/printer/index.html">stl:printer 打印</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-photo/index.html">&lcub;photo&period;&rcub; 图片实体</a></li>
+          </ul>
+          <span id="Q">Q</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/queryString/index.html">stl:queryString SQL查询语句</a></li>
+          </ul>
+          <span id="R">R</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/resume/index.html">stl:resume 提交简历</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/rss/index.html">stl:rss Rss订阅</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Request/index.html">&lcub;request&period;&rcub; 请求实体</a></li>
+          </ul>
+          <span id="S">S</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/search/index.html">stl:search 搜索</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/select/index.html">stl:select 下拉列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/site/index.html">stl:site 获取站点值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/sites/index.html">stl:sites 站点列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/slide/index.html">stl:slide 图片幻灯片</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/sqlContent/index.html">stl:sqlContent 数据库值</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/sqlContents/index.html">stl:sqlContents 数据库列表</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/star/index.html">stl:star 评分</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Sql/index.html">&lcub;sql&period;&rcub; 数据库实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-Stl/index.html">&lcub;stl&period;&rcub; 通用实体</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-StlColon/index.html">&lcub;stl&colon;&rcub; STL标签实体</a></li>
+          </ul>
+          <span id="T">T</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/tabs/index.html">stl:tabs 页签切换</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/tags/index.html">stl:tags 标签</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/template/index.html">stl:template 显示模板</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/tree/index.html">stl:tree 树状导航</a></li>
+          </ul>
+          <span id="U">U</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/e-User/index.html">&lcub;user&period;&rcub; 用户实体</a></li>
+          </ul>
+          <span id="V W X">V W X</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/value/index.html">stl:value 获取值</a></li>
+            <li class="html5"><a href="https://www.siteserver.cn/docs/stl/5.0/video/index.html">stl:video 播放视频</a></li>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/vote/index.html">stl:vote 投票</a></li>
+          </ul>
+          <span id="Y">Y</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/yes/index.html">stl:yes 成功模板</a></li>
+          </ul>
+          <span id="Z">Z</span>
+          <ul>
+            <li><a href="https://www.siteserver.cn/docs/stl/5.0/zoom/index.html">stl:zoom 文字缩放</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/tether.min.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/application.js"></script>
+    </div>
+  </div>
+  <!-- #page -->
+
+</body>
+
+</html>
+<!-- T_系统内容模板.html(内容模板) -->

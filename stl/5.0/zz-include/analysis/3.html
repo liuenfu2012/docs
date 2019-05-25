@@ -1,0 +1,21 @@
+<h3>示例一：统计每一篇内容的访问量</h3>
+<p>
+	下面的例子统计栏目"新闻"下每一篇内容的访问量。
+</p>
+
+<div class="bs-docs-example">
+<stl:contents channelIndex="新闻">  
+    <stl:a target="_blank"><stl:content type="Title"></stl:content></stl:a>  
+    (点击：<stl:analysis type="PageView" since="1m"></stl:analysis>)  <br /> 
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:contents channelIndex=&quot;新闻&quot;&gt;  
+    &lt;stl:a target=&quot;_blank&quot;&gt;&lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;&lt;/stl:a&gt;  
+    (点击：&lt;stl:analysis type=&quot;PageView&quot;&gt;&lt;/stl:analysis&gt;)&lt;br&gt;   
+&lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

@@ -1,0 +1,52 @@
+<h3>示例一：获取栏目链接地址和名称</h3>
+
+<div class="bs-docs-example">
+  <a href="{Channel.NavigationUrl}">{Channel.Title}</a>
+</div>
+<pre class="prettyprint linenums">
+&lt;a href=&quot;&#123;Channel.NavigationUrl&#125;&quot;&gt;&#123;Channel.Title&#125;&lt;/a&gt; 
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：获取栏目组别和添加日期</h3>
+
+<div class="bs-docs-example">
+<table>  
+<tr><th>栏目组别</th><th>添加日期</th></tr>  
+<tr><td>{Channel.Group}</td><td>{Channel.AddDate}</td></tr>  
+</table>
+</div>
+<pre class="prettyprint linenums">
+&lt;table&gt;  
+&lt;tr&gt;&lt;th&gt;栏目组别&lt;/th&gt;&lt;th&gt;添加日期&lt;/th&gt;&lt;/tr&gt;  
+&lt;tr&gt;&lt;td&gt;&#123;Channel.Group&#125;&lt;/td&gt;&lt;td&gt;&#123;Channel.AddDate&#125;&lt;/td&gt;&lt;/tr&gt;  
+&lt;/table&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例三：获取栏目排序和名称</h3>
+
+<div class="bs-docs-example">
+<stl:channels channelIndex="数据实体">     
+    {Channel.ItemIndex}:<stl:a>{Channel.Title}</stl:a><br />  
+</stl:channels>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channels channelIndex=&quot;数据实体&quot;&gt;     
+&#123;Channel.ItemIndex&#125;:&lt;stl:a&gt;&#123;Channel.Title&#125;&lt;/stl:a&gt;&lt;br /&gt;  
+&lt;/stl:channels&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

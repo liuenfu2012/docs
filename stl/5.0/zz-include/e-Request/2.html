@@ -1,0 +1,56 @@
+<h3>示例一：动态获取地址栏参数</h3>
+
+<div class="bs-docs-example">
+点击进入带参数的页面： <br>
+<a href="{Stl.CurrentUrl}?title=这里是中文标题&name=here is the english name&pageId=123">{Stl.CurrentUrl}?title=这里是中文标题&name=here is the english name&pageId=123</a>
+<hr>
+<stl:dynamic>
+	<table class="table table-bordered table-straped">
+	<tr class="info thead">
+		<th>参数名称</th>
+		<th>参数值</th>
+	</tr>
+	<tr>
+		<td>title</td>
+		<td><code>{Request.title}</code></td>
+	</tr>
+	<tr>
+		<td>name</td>
+		<td><code>{Request.name}</code></td>
+	</tr>
+	<tr>
+		<td>pageId</td>
+		<td><code>{Request.pageId}</code></td>
+	</tr>
+	</table>
+</stl:dynamic>
+</div>
+<pre class="prettyprint linenums">
+&#x70b9;&#x51fb;&#x8fdb;&#x5165;&#x5e26;&#x53c2;&#x6570;&#x7684;&#x9875;&#x9762;&#xff1a; &lt;br&gt;
+&lt;a href=&quot;&#123;Stl.CurrentUrl&#125;?title=&#x8fd9;&#x91cc;&#x662f;&#x4e2d;&#x6587;&#x6807;&#x9898;&amp;name=here is the english name&amp;pageId=123&quot;&gt;&#123;Stl.CurrentUrl&#125;?title=&#x8fd9;&#x91cc;&#x662f;&#x4e2d;&#x6587;&#x6807;&#x9898;&amp;name=here is the english name&amp;pageId=123&lt;/a&gt;
+&lt;hr&gt;
+&lt;stl:dynamic&gt;
+	&lt;table class=&quot;table table-bordered table-straped&quot;&gt;
+	&lt;tr class=&quot;info thead&quot;&gt;
+		&lt;td width=&quot;150&quot;&gt;&#x53c2;&#x6570;&#x540d;&#x79f0;&lt;/td&gt;
+		&lt;td&gt;&#x53c2;&#x6570;&#x503c;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;title&lt;/td&gt;
+		&lt;td&gt;&lt;code&gt;&#123;Request.title&#125;&lt;/code&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;name&lt;/td&gt;
+		&lt;td&gt;&lt;code&gt;&#123;Request.name&#125;&lt;/code&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;pageId&lt;/td&gt;
+		&lt;td&gt;&lt;code&gt;&#123;Request.pageId&#125;&lt;/code&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/stl:dynamic&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

@@ -1,6 +1,6 @@
 module.exports = ctx => ({
   base: '/docs/stl/',
-  dest: '../www-app-nuxt/static/docs/stl',
+  dest: './dist/docs/stl',
   locales: {
     '/': {
       lang: 'zh-CN',

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>公司总部 · SiteServer STL 参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<!-- Le styles -->
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/favicon.png">
+<script>var $pageInfo = { publishmentSystemID : 1, channelID : 215, contentID : 0, siteUrl : "", homeUrl : "/center", currentUrl : "/jobs/215.html", rootUrl : "", apiUrl : "/api" }</script>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-target=".subnav" data-offset="50">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="javascript:;" id="trigger" class="btn pull-right">STL 快速索引</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="https://www.siteserver.cn/docs/stl/5.0/">首页</a>
+          </li>
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/index.html">起步</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/108.html">STL基本标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/155.html">STL高级标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/189.html">STL实体标签</a>
+                </li>
+              
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>人才招聘</h1>
+      <p class="lead"></p>
+      <div class="subnav">
+        <ul class="nav nav-pills">
+          
+
+            
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">公司总部 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job5.html">网页设计/制作/美工</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job4.html">产品经理</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job2.html">客户经理</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job1.html">储备总经理</a></li>
+                    
+                  </ul>
+                </li>
+              
+
+            
+          
+
+            
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">北京分公司 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job7.html">项目主管</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job6.html">网站编辑</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job3.html">网络推广专员</a></li>
+                    
+                  </ul>
+                </li>
+              
+
+            
+          
+
+            
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">天津分公司 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job12.html">技术总监</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job11.html">UI设计师</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job10.html">产品经理</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job9.html">软件测试工程师</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job8.html">通信技术工程师</a></li>
+                    
+                  </ul>
+                </li>
+              
+
+            
+          
+
+            
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">上海分公司 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job15.html">需求分析师</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job14.html">方案工程师 </a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job13.html">咨询顾问</a></li>
+                    
+                  </ul>
+                </li>
+              
+
+            
+          
+
+            
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">深圳分公司 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job19.html">售前技术支持</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job18.html">实施主管</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job17.html">需求分析工程师</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job16.html">数据库工程师</a></li>
+                    
+                  </ul>
+                </li>
+              
+
+            
+          
+
+            
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">成都分公司 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job24.html">人事专员</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job23.html">数据分析师</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job22.html">互联网产品策划</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job21.html">运维主管</a></li>
+                    
+                      <li><a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job20.html">广告运营专员</a></li>
+                    
+                  </ul>
+                </li>
+              
+
+            
+          
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="container" style="padding:0 30px;">
+
+          <section>
+            <h3>公司总部</h3>
+            <hr>
+            
+            <table class="table table-bordered">
+              <tr class="thead info">
+                <td width="160">招聘单位</td>
+                <td align="center" width="150">职位名称</td>
+                <td align="center" width="80">招录进程</td>
+                <td align="center" width="90">发布日期</td>
+                <td align="center" width="80">详细</td>
+              </tr>
+              
+              <tr>
+                <td class="center"><strong>公司总部</strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                
+                  <tr>
+                    <td width="150">
+                      网页设计/制作/美工(2)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job5.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      产品经理(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job4.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      客户经理(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-24
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job2.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      储备总经理(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-24
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job1.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+              <tr>
+                <td class="center"><strong>北京分公司</strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                
+                  <tr>
+                    <td width="150">
+                      项目主管(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job7.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      网站编辑(3)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job6.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      网络推广专员(10)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-24
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job3.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+              <tr>
+                <td class="center"><strong>天津分公司</strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                
+                  <tr>
+                    <td width="150">
+                      技术总监(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job12.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      UI设计师(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job11.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      产品经理(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job10.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      软件测试工程师(2)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job9.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      通信技术工程师(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job8.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+              <tr>
+                <td class="center"><strong>上海分公司</strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                
+                  <tr>
+                    <td width="150">
+                      需求分析师(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job15.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      方案工程师 (1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job14.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      咨询顾问(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job13.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+              <tr>
+                <td class="center"><strong>深圳分公司</strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                
+                  <tr>
+                    <td width="150">
+                      售前技术支持(2)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job19.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      实施主管(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job18.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      需求分析工程师(2)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job17.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      数据库工程师(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job16.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+              <tr>
+                <td class="center"><strong>成都分公司</strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                
+                  <tr>
+                    <td width="150">
+                      人事专员(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job24.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      数据分析师(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job23.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      互联网产品策划(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job22.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      运维主管(1)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job21.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                
+                  <tr>
+                    <td width="150">
+                      广告运营专员(若干)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      2013-07-25
+                    </td>
+                    <td class="center" width="80">
+                      <a href="https://www.siteserver.cn/docs/stl/5.0/jobs/job20.html"><img border="0" align="absmiddle" src="../images/job_detail.jpg"></img></a>
+                    </td>
+                  </tr>
+                </table></td>
+              </tr>
+              
+            </table>
+
+
+          </section>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    <p class="center">Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a></p>
+
+    <ul class="footer-links">
+      <li><a href="http://www.siteservre.cn" target="_blank">SiteServer 官网</a></li>
+      <li><a href="https://github.com/siteserver/cms/issues/">SiteServer 论坛</a></li>
+      <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<script src="/js/bootstrap/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+<!-- <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/holder/holder.js"></script> -->
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/application.js"></script>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div id="listModal" class="modal hide fade" style="width:650px" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">STL 快速索引</h3>
+  </div>
+  <div class="modal-body">
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+</body>
+</html>
+<!-- T_招聘栏目模板.html(栏目模板) -->

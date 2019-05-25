@@ -1,0 +1,50 @@
+<h3>示例一：显示指定SQL语句查询的数据库列表。</h3>
+
+<div class="bs-docs-example">
+<stl:sqlContents  
+    connectionString="server=(local);uid=sa;pwd=sa;Trusted_Connection=no;database=stl" cellpadding="2" cellspacing="2">  
+    <stl:queryString> SELECT TOP 6 Title, AddDate FROM cms_Content ORDER BY AddDate DESC </stl:queryString>  
+    <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td>  
+        <a href="#"><stl:sqlContent type="Title" wordnum="20"></stl:sqlContent></a>  
+    </td><td>  
+        <stl:sqlContent type="PostDate" formatString="yyyy-MM-dd"></stl:sqlContent>  
+    </td></tr></table>  
+</stl:sqlContents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sqlContents connectionStringName=&quot;ConnectionString&quot; cellpadding=&quot;2&quot;&gt;
+     &lt;stl:queryString&gt; SELECT TOP 6 * FROM cms_Content ORDER BY Id DESC &lt;/stl:queryString&gt;
+     &lt;stl:sqlContent type=&quot;Title&quot; wordnum=&quot;20&quot;&gt;&lt;/stl:sqlContent&gt;
+     (&lt;stl:sqlContent type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:sqlContent&gt;) &lt;br /&gt;
+&lt;/stl:sqlContents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在数据库列表中显示每一项</h3>
+<p>
+	
+</p>
+
+<div class="bs-docs-example">
+<stl:sqlContents connectionStringName="ConnectionString" cellpadding="2">  
+    <stl:queryString> SELECT TOP 6 * FROM cms_Content ORDER BY Id DESC </stl:queryString>  
+    <stl:sqlContent type="Title" wordnum="20"></stl:sqlContent>  
+    (<stl:sqlContent type="AddDate" formatString="yyyy-MM-dd"></stl:sqlContent>)  <br /> 
+</stl:sqlContents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sqlContents connectionStringName=&quot;ConnectionString&quot; cellpadding=&quot;2&quot;&gt;
+     &lt;stl:queryString&gt; SELECT TOP 6 * FROM cms_Content ORDER BY Id DESC &lt;/stl:queryString&gt;
+     &lt;stl:sqlContent type=&quot;Title&quot; wordnum=&quot;20&quot;&gt;&lt;/stl:sqlContent&gt;
+     (&lt;stl:sqlContent type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:sqlContent&gt;) &lt;br /&gt;
+&lt;/stl:sqlContents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

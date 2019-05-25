@@ -1,0 +1,26 @@
+<h3>示例一：在内容列表中显示内容链接</h3>
+<p>
+	下面的例子显示栏目索引为"新闻"的栏目的内容列表前五条，内容链接的提示为内容标题全称。
+</p>
+
+<div class="bs-docs-example">
+<stl:contents channelIndex="新闻" totalNum="5" width="80%" border="0">  
+    <stl:a title="{Content.FullTitle}" target="_blank">  
+        <stl:content type="Title"></stl:content><br /> 
+    </stl:a>
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:contents channelIndex=&quot;新闻&quot; totalNum=&quot;5&quot; width=&quot;80%&quot; border=&quot;0&quot;&gt;
+        &lt;stl:a title=&quot;&#123;Content.FullTitle&#125;&quot; target=&quot;_blank&quot;&gt;
+            &lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;&lt;br /&gt;
+        &lt;/stl:a&gt;
+    &lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+

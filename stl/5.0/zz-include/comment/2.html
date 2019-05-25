@@ -1,0 +1,45 @@
+<h3>示例一：评论列表中显示评论正文</h3>
+<p>
+	下面的例子显示当前内容的评论列表，列表中只显示评论正文。
+</p>
+
+<div class="bs-docs-example">
+  <stl:comments>
+  	<stl:comment type="Content"></stl:comment><br>
+	</stl:comments>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:comments&gt;
+  &lt;stl:comment type=&quot;Content&quot;&gt;&lt;/stl:comment&gt;&lt;br&gt;
+&lt;/stl:comments&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示内容评论的添加时间</h3>
+<p>
+	下面的例子显示内容评论的添加时间。
+</p>
+
+<div class="bs-docs-example">
+	<stl:comments>
+  	<stl:comment type="Content"></stl:comment>
+  	（<stl:comment type="AddDate" formatString="yyyy-MM-dd HH:mm"></stl:comment>）
+  	<br>
+	</stl:comments>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:comments&gt;
+&lt;stl:comment type=&quot;Content&quot;&gt;&lt;/stl:comment&gt;
+（&lt;stl:comment type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd HH:mm&quot;&gt;&lt;/stl:comment&gt;）
+&lt;br&gt;
+&lt;/stl:comments&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

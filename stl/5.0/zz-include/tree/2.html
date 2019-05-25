@@ -1,0 +1,37 @@
+<h3>示例一：显示所有不属于"树状导航"栏目组的栏目列表</h3>
+<p>
+	下面的例子显示所有不属于"树状导航"栏目组的栏目列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:tree channelIndex="首页" groupChannelNot="树状导航" title="栏目列表" currentFormatString="<font color=red><strong>{0}</strong></font>">  
+</stl:tree>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:tree channelIndex=&quot;首页&quot; groupChannelNot=&quot;树状导航&quot; title=&quot;栏目列表&quot; currentFormatString=&quot;&lt;font color=red&gt;&lt;strong&gt;{0}&lt;/strong&gt;&lt;/font&gt;&quot;&gt;
+&lt;/stl:tree&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示父栏目的栏目列表</h3>
+<p>
+	下面的例子显示父栏目下所有栏目列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:tree upLevel="1" title="栏目列表" currentFormatString="<font color=red><strong>{0}</strong></font>">  
+</stl:tree>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:tree upLevel=&quot;1&quot; title=&quot;栏目列表&quot; currentFormatString=&quot;&lt;font color=red&gt;&lt;strong&gt;{0}&lt;/strong&gt;&lt;/font&gt;&quot;&gt;
+&lt;/stl:tree&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

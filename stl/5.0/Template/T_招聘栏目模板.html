@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<stl:include file="include/header.html"></stl:include>
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-target=".subnav" data-offset="50">
+  <stl:include file="/include/navbar.html"></stl:include>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1><stl:channel type="Title" topLevel="1"></stl:channel></h1>
+      <p class="lead"><stl:channel type="Content" isClearTags="true"></stl:channel></p>
+      <div class="subnav">
+        <ul class="nav nav-pills">
+          <stl:channels topLevel="1">
+
+            <stl:if testType="UpChannelOrSelf">
+              <stl:successTemplate>
+                <li class="dropdown active">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><stl:channel type="Title"></stl:channel> <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <stl:contents>
+                      <li><stl:a><stl:content type="Title"></stl:content></stl:a></li>
+                    </stl:contents>
+                  </ul>
+                </li>
+              </stl:successTemplate>
+              <stl:failureTemplate>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><stl:channel type="Title"></stl:channel> <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <stl:contents>
+                      <li><stl:a><stl:content type="Title"></stl:content></stl:a></li>
+                    </stl:contents>
+                  </ul>
+                </li>
+              </stl:failureTemplate>
+            </stl:if>
+
+            
+          </stl:channels>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="container" style="padding:0 30px;">
+
+          <section>
+            <h3><stl:channel type="Title"></stl:channel></h3>
+            <hr>
+            
+            <table class="table table-bordered">
+              <tr class="thead info">
+                <td width="160">招聘单位</td>
+                <td align="center" width="150">职位名称</td>
+                <td align="center" width="80">招录进程</td>
+                <td align="center" width="90">发布日期</td>
+                <td align="center" width="80">详细</td>
+              </tr>
+              <stl:channels topLevel="1">
+              <tr>
+                <td class="center"><strong><stl:channel type="Title"></stl:channel></strong></td>
+                <td colspan="4">
+                <table class="table table-noborder">
+                <stl:contents>
+                  <tr>
+                    <td width="150">
+                      <stl:content type="Title"></stl:content>(<stl:content type="NumberOfPeople"></stl:content>)
+                    </td>
+                    <td width="80">&nbsp;</td>
+                    <td class="center" width="90">
+                      <stl:content type="AddDate"></stl:content>
+                    </td>
+                    <td class="center" width="80">
+                      <stl:a><img border="0" align="absmiddle" src="../images/job_detail.jpg"></stl:a>
+                    </td>
+                  </tr>
+                </stl:contents></table></td>
+              </tr>
+              </stl:channels>
+            </table>
+
+
+          </section>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <stl:include file="/include/footer.html"></stl:include>
+</body>
+</html>

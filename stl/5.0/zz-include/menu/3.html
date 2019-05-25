@@ -1,0 +1,23 @@
+<h3>示例一：显示指定栏目组的下级菜单</h3>
+<p>
+	下面的例子显示栏目组为"STL标签"的栏目下级菜单，点击菜单项后在新窗口打开。
+</p>
+
+<div class="bs-docs-example">
+<stl:channels channelIndex="首页" groupChannel="STL">
+  <stl:menu>  
+    <stl:a><stl:channel type="Title"></stl:channel></stl:a>  
+  </stl:menu>
+</stl:channels>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:channels channelIndex=&quot;首页&quot; groupChannel=&quot;STL&quot;&gt;
+    	&lt;stl:menu&gt;
+        	&lt;stl:a&gt;&lt;stl:channel type=&quot;Title&quot;&gt;&lt;/stl:channel&gt;&lt;/stl:a&gt;
+    	&lt;/stl:menu&gt;
+    &lt;/stl:channels&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

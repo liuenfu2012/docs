@@ -1,0 +1,48 @@
+<h3>示例一：显示翻页项组合</h3>
+<p>
+	下面的例子显示组合了所有翻页标签的翻页项容器。
+</p>
+
+<div class="bs-docs-example">
+<stl:dynamic context="Channel">
+
+<stl:pageContents pageNum="1">
+  <stl:a><stl:content type="Title"></stl:content></stl:a>
+</stl:pageContents>
+<hr>
+
+<stl:pageItems>
+<table width="100%">  
+<tr><td align="left">  
+  <stl:pageItem type="FirstPage" text="首页"></stl:pageItem> |    
+  <stl:pageItem type="PreviousPage" text="上一页"></stl:pageItem> |    
+  <stl:pageItem type="NextPage" text="下一页"></stl:pageItem> |    
+  <stl:pageItem type="LastPage" text="末页"></stl:pageItem>  
+</td><td align="right">  
+  <stl:pageItem type="CurrentPageIndex" text="当前页："></stl:pageItem>      
+  <stl:pageItem type="PageNavigation"></stl:pageItem>  
+</td></tr>
+</table>
+</stl:pageItems>
+
+</stl:dynamic>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:pageItems&gt;
+&lt;table width=&quot;100%&quot;&gt;  
+&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;  
+  &lt;stl:pageItem type=&quot;FirstPage&quot; text=&quot;首页&quot;&gt;&lt;/stl:pageItem&gt; |    
+  &lt;stl:pageItem type=&quot;PreviousPage&quot; text=&quot;上一页&quot;&gt;&lt;/stl:pageItem&gt; |    
+  &lt;stl:pageItem type=&quot;NextPage&quot; text=&quot;下一页&quot;&gt;&lt;/stl:pageItem&gt; |    
+  &lt;stl:pageItem type=&quot;LastPage&quot; text=&quot;末页&quot;&gt;&lt;/stl:pageItem&gt;  
+&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;  
+  &lt;stl:pageItem type=&quot;CurrentPageIndex&quot; text=&quot;当前页：&quot;&gt;&lt;/stl:pageItem&gt;      
+  &lt;stl:pageItem type=&quot;PageNavigation&quot;&gt;&lt;/stl:pageItem&gt;  
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/stl:pageItems&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

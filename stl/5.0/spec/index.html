@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>stl:spec 商品规格值 · SiteServer STL 参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<!-- Le styles -->
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-target=".subnav" data-offset="50">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="javascript:;" id="trigger" class="btn pull-right">STL 快速索引</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="https://www.siteserver.cn/docs/stl/5.0/">首页</a>
+          </li>
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/">起步</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/108.html">STL基本标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/155.html">STL高级标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/189.html">STL实体标签</a>
+                </li>
+              
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>stl:spec 商品规格值</h1>
+      <p class="lead">
+        
+      </p>
+      
+      <!-- Sub Navigation -->
+      
+          <div class="subnav">
+            <ul class="nav nav-pills">
+              
+
+                
+                    <li class="dropdown active">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">电子商务 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/filters/">stl:filters 商品筛选列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/filter/">stl:filter 商品筛选值</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/specs/">stl:specs 商品规格列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/spec/">stl:spec 商品规格值</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+            </ul>
+          </div>
+        
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="row">
+      <!-- Left Navigation -->
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+          
+              <li class="active"><a href="https://www.siteserver.cn/docs/stl/5.0/spec/"><i class="icon-chevron-right"></i> stl:spec 标签用法</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/spec/1.html"><i class="icon-chevron-right"></i> stl:spec 标签示例</a></li>
+            
+        </ul>
+      </div>
+      <div class="span9">
+
+        <section>
+          <div class="page-header">
+            <h1>stl:spec 标签用法</h1>
+          </div>
+
+          <!-- Right Content -->
+          
+              <h3>显示内容图片</h3>
+<pre class="prettyprint">
+        &lt;stl:photo type="显示类型" lefttext="显示在信息前的文字" righttext="显示在信息后的文字" startindex="字符开始位置" length="指定字符长度" wordnum="显示字符的数目" ellipsis="文字超出部分显示的文字" replace="需要替换的文字，可以是正则表达式" to="替换replace的文字信息" iscleartags="是否清除标签信息" isreturntobr="是否将回车替换为HTML换行标签" islower="转换为小写" isupper="转换为大写" isdynamic="是否动态显示"&gt;&lt;/stl:photo&gt;
+</pre>
+<p class="lead">
+    获取并显示内容的一条图片信息
+</p>
+
+
+<h3>属性列表</h3>
+<p class="lead">
+    下表显示所有属于此元素的属性列表。<br />
+    所有属于Html 元素 &lt;img&gt; 的成员均适用于 &lt;stl:photo&gt; 元素。 属于Html 元素 &lt;img&gt; 的属性列表未在下表列出。
+</p>
+<table class="table table-striped table-hover table-bordered">
+    <tbody>
+        <tr class="info thead">
+            <td>
+                属性
+            </td>
+            <td>
+                可能的取值
+            </td>
+            <td width="50">
+                默认值
+            </td>
+            <td>
+                简介
+            </td>
+        </tr>
+        <tr>
+            <td>
+                type
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                显示内容属性的类型。根据后台内容辅助表字段的不同type属性可以有不同的取值。默认的后台辅助表字段如下：
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                ID
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                内容ID
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                SmallUrl
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                显示缩略图
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                MiddleUrl
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                显示小图
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                LargeUrl
+            </td>
+            <td>
+                <img src="/images/right.gif" />
+            </td>
+            <td>
+                显示原图
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                Description
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                图片描述
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                ...
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                其他对应字段的字段名
+            </td>
+        </tr>
+        <tr>
+            <td>
+                leftText
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                显示在信息前的文字，当信息不存在时文字也不显示。
+            </td>
+        </tr>
+        <tr>
+            <td>
+                rightText
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                显示在信息后的文字，当信息不存在时文字也不显示。
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                wordNum
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="center">
+                0
+            </td>
+            <td>
+                显示字符的数目，0代表不限制字数。
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ellipsis
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="center">
+                ...
+            </td>
+            <td>
+                文字超出部分显示的文字
+            </td>
+        </tr>
+        <tr>
+            <td>
+                replace
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                需要替换的文字，可以是正则表达式
+            </td>
+        </tr>
+        <tr>
+            <td>
+                to
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                替换的文字信息
+            </td>
+        </tr>
+        <tr>
+            <td>
+                isClearTags
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                是否清除HTML标签
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                true
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                清除HTML标签
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                false
+            </td>
+            <td class="center">
+                <img src="/images/right.gif" />
+            </td>
+            <td>
+                不清除HTML标签
+            </td>
+        </tr>
+        <tr>
+            <td>
+                isReturnToBR
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                是否将回车替换为HTML换行标签
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                true
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                替换回车符
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                false
+            </td>
+            <td class="center">
+                <img src="/images/right.gif" />
+            </td>
+            <td>
+                不替换回车符
+            </td>
+        </tr>
+        <tr>
+            <td>
+                isOriginal
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                如果是引用内容，是否获取所引用内容的值
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                true
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                显示所引用内容的值
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                false
+            </td>
+            <td class="center">
+                <img src="/images/right.gif" />
+            </td>
+            <td>
+                不显示所引用内容的值
+            </td>
+        </tr>
+        <tr>
+            <td>
+                isDynamic
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                是否动态显示
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                true
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                动态显示
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                false
+            </td>
+            <td class="center">
+                <img src="/images/right.gif" />
+            </td>
+            <td>
+                静态显示
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>注意</h3>
+<p class="lead">
+    stl:photo 只适用于内容模型为"图片"的栏目.
+</p>
+<p class="lead">
+    stl:photo 元素只能作为 &lt;stl:each&gt;标签的子元素,当作为子元素使用时将显示内容的图片列表
+    <br />
+    &lt;stl:each&gt;标签可以作为<stl:contents>标签的子元素。
+</p>
+<p class="lead">
+    <code>&lt;stl:photo&gt;</code>元素对应的实体为<code>{<span></span>stl:photo<span></span>}</code>。
+</p>
+            
+
+            
+
+          
+
+          
+
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    <p class="center">Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a></p>
+
+    <ul class="footer-links">
+      <li><a href="http://www.siteservre.cn" target="_blank">SiteServer 官网</a></li>
+      <li><a href="https://github.com/siteserver/cms/issues/">SiteServer 论坛</a></li>
+      <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<script src="/js/bootstrap/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+<!-- <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/holder/holder.js"></script> -->
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/application.js"></script>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div id="listModal" class="modal hide fade" style="width:650px" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">STL 快速索引</h3>
+  </div>
+  <div class="modal-body">
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+</body>
+</html>
+<script src="/SiteFiles/bairong/scripts/independent/tracker.js" type="text/javascript"></script>
+<script type="text/javascript">AddTrackerCount('/sitefiles/services/wcm/PageService.aspx?type=AddTrackerCount&publishmentSystemID=1&channelID=231&contentID=254', 1);</script>
+<script src="/sitefiles/services/wcm/PageService.aspx?type=AddCountHits&publishmentSystemID=1&channelID=231&contentID=254" type="text/javascript"></script>
+
+<!-- T_系统内容模板.html(内容模板) -->

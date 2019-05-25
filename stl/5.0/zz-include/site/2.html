@@ -1,0 +1,27 @@
+<h3>示例一：显示指定站点的内容</h3>
+<p>
+	下面的例子显示站点 "SiteServer STL" 下新闻栏目的内容列表。
+</p>
+
+<div class="bs-docs-example">
+  <stl:site siteName="SiteServer STL">  
+    <ul>  
+    <stl:contents channelIndex="新闻" layout="None">  
+        <li><stl:a target="_blank"></stl:a></li>  
+    </stl:contents>  
+    </ul>  
+  </stl:site>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:site siteName=&quot;SiteServer STL&quot;&gt;
+    &lt;ul&gt;
+        &lt;stl:contents channelIndex=&quot;新闻&quot; layout=&quot;None&quot;&gt;
+            &lt;li&gt;&lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;/li&gt;
+        &lt;/stl:contents&gt;
+    &lt;/ul&gt;
+&lt;/stl:site&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

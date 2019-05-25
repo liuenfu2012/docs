@@ -472,7 +472,7 @@ module.exports = [
       },
       {
         text: "SiteServer CMS 5.0",
-        link: "https://stl.siteserver.cn/"
+        link: "https://www.siteserver.cn/docs/stl/5.0/"
       }
     ]
   },
@@ -484,15 +484,15 @@ module.exports = [
         items: [
           {
             text: 'SiteServer CMS Introduction',
-            link: 'https://docs.siteserver.cn/introduction/'
+            link: 'https://www.siteserver.cn/docs/introduction/'
           },
           {
             text: 'SiteServer CMS Getting Started',
-            link: 'https://docs.siteserver.cn/getting-started/'
+            link: 'https://www.siteserver.cn/docs/getting-started/'
           },
           {
             text: 'SiteServer CMS FAQ',
-            link: 'https://docs.siteserver.cn/faq/'
+            link: 'https://www.siteserver.cn/docs/faq/'
           },
         ]
       },
@@ -505,7 +505,7 @@ module.exports = [
           },
           {
             text: 'Plugin Develop Reference',
-            link: 'https://docs.siteserver.cn/plugins/',
+            link: 'https://www.siteserver.cn/docs/plugins/',
           },
           {
             text: 'CLI Reference',
@@ -513,11 +513,11 @@ module.exports = [
           },
           {
             text: 'REST API Reference',
-            link: 'https://docs.siteserver.cn/api/'
+            link: 'https://www.siteserver.cn/docs/api/'
           },
           {
             text: 'Data Model Reference',
-            link: 'https://docs.siteserver.cn/model/'
+            link: 'https://www.siteserver.cn/docs/model/'
           },
         ]
       },
@@ -526,31 +526,31 @@ module.exports = [
         items: [
           {
             text: 'Login Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.login/#/'
+            link: 'http://www.siteserver.cn/docs/ss/login/#/'
           },
           {
             text: 'Form Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.form/#/'
+            link: 'http://www.siteserver.cn/docs/ss/form/#/'
           },
           {
             text: 'Hits Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.hits/#/'
+            link: 'http://www.siteserver.cn/docs/ss/hits/#/'
           },
           {
             text: 'Restriction Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.restriction/#/'
+            link: 'http://www.siteserver.cn/docs/ss/restriction/#/'
           },
           {
             text: 'Jobs Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.jobs/#/'
+            link: 'http://www.siteserver.cn/docs/ss/jobs/#/'
           },
           {
             text: 'Photo Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.photo/#/'
+            link: 'http://www.siteserver.cn/docs/ss/photo/#/'
           },
           {
             text: 'Application Plugin Manual',
-            link: 'http://plugins.siteserver.cn/ss.application/#/'
+            link: 'http://www.siteserver.cn/docs/ss/application/#/'
           }
         ]
       }

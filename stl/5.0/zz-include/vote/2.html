@@ -1,0 +1,14 @@
+<p>
+用于显示投票提交项及其样式。
+</p>
+<h3>注意</h3>
+<p>
+    <ul>
+    	<li>stl:inputTemplate 内必须包含多个 &lt;input type="radio"&gt; 或 &lt;input type="checkbox"&gt;，用于显示投票单选框或复选框。如果投票类型为单选，必须包含 &lt;input type="radio"&gt;，如果投票类型为复选，必须包含 &lt;input type="checkbox"&gt;</li>
+        <li>&lt;input type="checkbox"&gt; 或 &lt;input type="radio"&gt;不用设置 id 或 name 等属性，系统将自动分配投票项 Id。</li>
+        <li>stl:inputTemplate 内必须包含 <code>id="submit"</code> 的 &lt;button&gt;、&lt;input&gt; 或 &lt;a&gt;标签，如 &lt;input type="button" id="submit" value="提 交" /&gt;，用于提交投票。</li>
+        <li>stl:inputTemplate 内必须包含 <code>id="results"</code> 的 &lt;button&gt;、&lt;input&gt; 或 &lt;a&gt;标签，如 &lt;input type="button" id="results" value="查 看" /&gt;，用于查看投票结果。</li>
+		<li>stl:inputTemplate 中除表单标签外可以添加任意 Html 标签，用于组织表单样式。 </li>
+
+    </ul>
+</p>

@@ -1,0 +1,56 @@
+<h3>示例一：默认方式显示标签云</h3>
+<p>
+	下面的例子显示站点内的所有标签，显示数量为30。
+</p>
+
+<div class="bs-docs-example">
+  <stl:tags context="Channel" totalNum="30"></stl:tags>
+</div>
+<pre class="prettyprint linenums">&lt;stl:tags context=&quot;Channel&quot; totalNum=&quot;30&quot;&gt;&lt;/stl:tags&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：自定义标签显示样式</h3>
+<p>
+	下面的例子采用自定义的方式显示标签。
+</p>
+
+<div class="bs-docs-example">
+
+    <div class="mod">  
+    <div class="mBody">  
+    <div class="tagHead">标签列表</div>  
+    <ul class="tagCloud">  
+        <stl:tags context="Channel" totalNum="30">  
+        <li class="tag_popularity_{Tag.Level}">  
+            <stl:a target="_blank" href="https://www.siteserver.cn/docs/stl/5.0/utils/tags.html?tagName={Tag.Name}">{Tag.Name}</stl:a>  
+        </li>  
+        </stl:tags>  
+    </ul>  
+    </div>  
+    </div>
+
+</div>
+<pre class="prettyprint linenums">
+&lt;div class=&quot;mod&quot;&gt;
+&lt;div class=&quot;mBody&quot;&gt;
+&lt;div class=&quot;tagHead&quot;&gt;标签列表&lt;/div&gt;
+&lt;ul class=&quot;tagCloud&quot;&gt;
+      &lt;stl:tags context=&quot;Channel&quot; totalNum=&quot;30&quot;&gt;
+      &lt;li class=&quot;tag_popularity_{Tag.Level}&quot;&gt;
+            &lt;stl:a target=&quot;_blank&quot; href=&quot;/utils/tags.html?tagName={Tag.Name}&quot;&gt;{Tag.Name}&lt;/stl:a&gt;
+      &lt;/li&gt;
+      &lt;/stl:tags&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

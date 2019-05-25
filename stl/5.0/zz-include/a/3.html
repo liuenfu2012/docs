@@ -1,0 +1,41 @@
+<h3>示例一：在内容列表中显示内容链接</h3>
+<p>
+	下面的例子显示当前栏目的内容列表，内容链接为内容标题。
+</p>
+
+<div class="bs-docs-example">
+<stl:contents>
+  <stl:a target="_blank"></stl:a><br>
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:contents&gt;
+  &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;br&gt;
+&lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在栏目列表中显示栏目链接</h3>
+<p>
+	下面的例子显示栏目索引为"首页"的下级栏目列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:channels channelIndex="首页" groupChannel="主导航">
+  <stl:a target="_blank"></stl:a><br>
+</stl:channels>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channels channelIndex=&quot;首页&quot; groupChannel="主导航"&gt;
+  &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;br&gt;
+&lt;/stl:channels&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

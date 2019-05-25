@@ -1,0 +1,53 @@
+<h3>示例一：显示内容列表信息</h3>
+
+<div class="bs-docs-example">
+<table>  
+<tr>  
+<th>标题</th><th>所属组别</th><th>作者</th><th>发布日期</th>  
+</tr>  
+<tr>  
+<td><a href="{Content.NavigationUrl}">{Content.Title}</a></td>  
+<td>{Content.Group}</td>  
+<td>{Content.AddUserName}</td>  
+<td>{Content.AddDate}</td>  
+</tr>  
+</table>
+</div>
+<pre class="prettyprint linenums">
+&lt;table&gt;  
+&lt;tr&gt;  
+&lt;th&gt;标题&lt;/th&gt;&lt;th&gt;所属组别&lt;/th&gt;&lt;th&gt;作者&lt;/th&gt;&lt;th&gt;发布日期&lt;/th&gt;  
+&lt;/tr&gt;  
+&lt;tr&gt;  
+&lt;td&gt;&lt;a href=&quot;&#123;Content.NavigationUrl&#125;&quot;&gt;&#123;Content.Title&#125;&lt;/a&gt;&lt;/td&gt;  
+&lt;td&gt;&#123;Content.Group&#125;&lt;/td&gt;  
+&lt;td&gt;&#123;Content.AddUserName&#125;&lt;/td&gt;  
+&lt;td&gt;&#123;Content.AddDate&#125;&lt;/td&gt;  
+&lt;/tr&gt;  
+&lt;/table&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：获取内容排序和标题</h3>
+
+<div class="bs-docs-example">
+<stl:contents channelIndex="新闻">     
+    <img src="/images/nav.jpg"/>     
+    {Content.ItemIndex}:<stl:a>{Content.Title}</stl:a><br />     
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:contents channelIndex=&quot;新闻&quot;&gt;
+    &lt;img src=&quot;/images/nav.jpg&quot;/&gt;
+    &#123;Content.ItemIndex&#125;:&lt;stl:a&gt;&#123;Content.Title&#125;&lt;/stl:a&gt;&lt;br /&gt;
+&lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

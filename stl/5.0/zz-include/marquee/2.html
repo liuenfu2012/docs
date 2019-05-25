@@ -1,0 +1,49 @@
+<h3>示例一：显示由下向上的滚动链接</h3>
+<p>
+	下面的例子使用了 stl: marquee 标签创建了由下向上的滚动链接，滚动对象为栏目索引为"新闻"的内容列表。
+</p>
+
+<div class="bs-docs-example">
+  <stl:marquee direction="Vertical" width="220" height="160">  
+    <stl:contents channelIndex="新闻" cellpadding="2" cellspacing="2">  
+        <stl:a target="_blank"></stl:a>  <br />
+    </stl:contents>  
+  </stl:marquee>
+</div>
+<pre class="prettyprint linenums">
+      &lt;stl:marquee direction=&quot;Vertical&quot; width=&quot;220&quot; height=&quot;160&quot;&gt;
+        &lt;stl:contents channelIndex=&quot;新闻&quot; cellpadding=&quot;2&quot; cellspacing=&quot;2&quot;&gt;
+            &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;  &lt;br /&gt;
+        &lt;/stl:contents&gt;
+      &lt;/stl:marquee&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示由右至左的滚动链接</h3>
+<p>
+	下面的例子使用了 stl: marquee 标签创建了由右至左的滚动链接，滚动对象为栏目名称为"新闻"的内容列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:marquee direction="Horizontal" width="600">  
+    <stl:contents channelIndex="新闻" layout="None">  
+        <stl:a target="_blank"></stl:a>  
+    </stl:contents>  
+</stl:marquee> 
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:marquee direction=&quot;Horizontal&quot; width=&quot;600&quot;&gt;
+        &lt;stl:contents channelIndex=&quot;新闻&quot; layout=&quot;None&quot;&gt;
+            &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;
+        &lt;/stl:contents&gt;
+    &lt;/stl:marquee&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

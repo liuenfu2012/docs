@@ -1,0 +1,32 @@
+<h3>示例一：显示当前栏目的内容数。</h3>
+<p>
+	下面的例子在页面中显示当前栏目的内容数。
+</p>
+
+<div class="bs-docs-example">
+  内容数：<stl:count type="Contents"></stl:count>
+</div>
+<pre class="prettyprint linenums">&lt;stl:count type=&quot;Contents&quot;&gt;&lt;/stl:count&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示指定栏目三个月内添加的内容数，包括本栏目及所有下级栏目。</h3>
+<p>
+	下面的例子在页面中显示指定栏目三个月内添加的内容数，包括本栏目及所有下级栏目。
+</p>
+
+<div class="bs-docs-example">
+内容数：<stl:count type="Contents" channelIndex="新闻" scope="All" since="3m"></stl:count>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:count type=&quot;Contents&quot; channelIndex=&quot;新闻&quot; scope=&quot;All&quot; since=&quot;3m&quot;&gt;&lt;/stl:count&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

@@ -1,0 +1,33 @@
+<h3>示例一：当上一篇/下一篇内容存在时显示对应链接</h3>
+<p>
+	下面的例子仅当上一篇/下一篇内容存在时显示对应链接，否则不显示。
+</p>
+
+<div class="bs-docs-example">
+<stl:navigation type="PreviousContent">
+  <p>
+    上一篇： <stl:a></stl:a>
+  </p>
+</stl:navigation>
+<stl:navigation type="NextContent">
+  <p>
+    下一篇： <stl:a></stl:a>
+  </p>
+</stl:navigation>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:navigation type=&quot;PreviousContent&quot;&gt;
+  &lt;p&gt;
+    上一篇： &lt;stl:a&gt;&lt;/stl:a&gt;
+  &lt;/p&gt;
+&lt;/stl:navigation&gt;
+&lt;stl:navigation type=&quot;NextContent&quot;&gt;
+  &lt;p&gt;
+    下一篇： &lt;stl:a&gt;&lt;/stl:a&gt;
+  &lt;/p&gt;
+&lt;/stl:navigation&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

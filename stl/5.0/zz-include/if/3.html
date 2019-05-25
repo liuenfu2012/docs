@@ -1,0 +1,65 @@
+<h3>示例一：根据模板名称显示不同内容</h3>
+<p>
+	下面的例子根据当前模板的模板名称显示不同的内容。
+</p>
+
+<div class="bs-docs-example">
+  <stl:if testType="TemplateName" testOperate="Equals" testValue="系统首页模板">  
+    <stl:yes>  
+        <LI><A href="https://www.siteserver.cn/docs/stl/5.0/" class="current">首 页</A></LI>  
+    </stl:yes>  
+    <stl:no>  
+        <LI>我不是首页</LI>  
+    </stl:no>  
+  </stl:if> 
+</div>
+<pre class="prettyprint linenums">
+   &lt;stl:if testType=&quot;TemplateName&quot; testOperate=&quot;Equals&quot; testValue=&quot;系统首页模板&quot;&gt;
+        &lt;stl:yes&gt;
+            &lt;LI&gt;&lt;A href=&quot;/&quot; class=&quot;current&quot;&gt;首 页&lt;/A&gt;&lt;/LI&gt;
+        &lt;/stl:yes&gt;
+        &lt;stl:no&gt;
+            &lt;LI&gt;我不是首页&lt;/LI&gt;
+        &lt;/stl:no&gt;
+   &lt;/stl:if&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：最新10天内更新的内容以红色突出显示</h3>
+<p>
+	下面的例子显示整个站点中最新更新的20篇内容，并突出显示10天内更新的内容。
+</p>
+
+<div class="bs-docs-example">
+  <stl:contents topLevel="0" totalNum="20" order="LastEditDate" scope="All">  
+    <stl:if testType="LastEditDate" testOperate="LessThan" testValue="10d">  
+        <stl:yes>  
+            <li><stl:a target="_blank" style="color:#F00;"></stl:a></li>  
+        </stl:yes>  
+        <stl:no>  
+            <li><stl:a target="_blank"></stl:a></li>  
+        </stl:no>  
+    </stl:if>  
+  </stl:contents>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:contents topLevel=&quot;0&quot; totalNum=&quot;20&quot; order=&quot;LastEditDate&quot; scope=&quot;All&quot;&gt;
+        &lt;stl:if testType=&quot;LastEditDate&quot; testOperate=&quot;LessThan&quot; testValue=&quot;10d&quot;&gt;
+            &lt;stl:yes&gt;
+                &lt;li&gt;&lt;stl:a target=&quot;_blank&quot; style=&quot;color:#F00;&quot;&gt;&lt;/stl:a&gt;&lt;/li&gt;
+            &lt;/stl:yes&gt;
+            &lt;stl:no&gt;
+                &lt;li&gt;&lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;/li&gt;
+            &lt;/stl:no&gt;
+        &lt;/stl:if&gt;
+      &lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

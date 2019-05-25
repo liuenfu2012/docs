@@ -1,0 +1,55 @@
+<h3>示例一：显示当前页面的访问量和独立访客量</h3>
+<p>
+	下面的例子显示当前页面的访问量（Page View）和独立访客（Unique Visitor）。
+</p>
+
+<div class="bs-docs-example">
+访问量：<stl:analysis type="PageView"></stl:analysis>  
+访问人数：<stl:analysis type="UniqueVisitor"></stl:analysis>
+</div>
+<pre class="prettyprint linenums">
+访问量：&lt;stl:analysis type=&quot;PageView&quot;&gt;&lt;/stl:analysis&gt;
+访问人数：&lt;stl:analysis type=&quot;UniqueVisitor&quot;&gt;&lt;/stl:analysis&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：实时显示当前页面的访问量和独立访客量</h3>
+<p>
+	下面的例子实时显示当前页面的访问量（Page View）和独立访客（Unique Visitor）。
+</p>
+
+<div class="bs-docs-example">
+访问量：<stl:analysis type="PageView" isDynamic="true"></stl:analysis>  
+访问人数：<stl:analysis type="UniqueVisitor" isDynamic="true"></stl:analysis>
+</div>
+<pre class="prettyprint linenums">
+访问量：&lt;stl:analysis type=&quot;PageView&quot; isDynamic="true"&gt;&lt;/stl:analysis&gt;
+访问人数：&lt;stl:analysis type=&quot;UniqueVisitor&quot; isDynamic="true"&gt;&lt;/stl:analysis&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例三：统计指定栏目的访问量</h3>
+<p>
+	下面的例子统计栏目"新闻"的访问量。
+</p>
+
+<div class="bs-docs-example">
+新闻访问量：<stl:analysis channelIndex="新闻" type="PageView"></stl:analysis>
+</div>
+<pre class="prettyprint linenums">
+新闻访问量：&lt;stl:analysis channelIndex=&quot;新闻&quot; type=&quot;PageView&quot;&gt;&lt;/stl:analysis&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

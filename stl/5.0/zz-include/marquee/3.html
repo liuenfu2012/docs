@@ -1,0 +1,23 @@
+<h3>示例一：显示由右至左的滚动图片链接</h3>
+<p>
+	下面的例子使用了 stl: marquee 标签创建了由右至左的滚动图片链接，滚动对象为栏目名称为"新闻"的内容图片列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:marquee direction="Horizontal" width="600">  
+  <stl:contents channelIndex="新闻" isImage="true" layout="None">  
+    <stl:a target="_blank"><stl:image></stl:image></stl:a>
+  </stl:contents>  
+</stl:marquee>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:marquee direction=&quot;Horizontal&quot; width=&quot;600&quot;&gt;  
+  &lt;stl:contents channelIndex=&quot;新闻&quot; isImage=&quot;true&quot; layout=&quot;None&quot;&gt;  
+    &lt;stl:a target=&quot;_blank&quot;&gt;&lt;stl:image&gt;&lt;/stl:image&gt;&lt;/stl:a&gt;
+  &lt;/stl:contents&gt;  
+&lt;/stl:marquee&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

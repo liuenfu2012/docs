@@ -1,0 +1,33 @@
+<h3>示例一：显示指定文件的下载链接。</h3>
+<p>
+	下面的例子在页面中显示指定文件的下载链接。
+</p>
+
+<div class="bs-docs-example">
+  <stl:file src="@/assets/examples.zip">点击下载</stl:file>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:file src=&quot;@/assets/examples.zip&quot;&gt;&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;&lt;/stl:file&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示当前内容的附件下载链接及大小。</h3>
+<p>
+	下面的例子在页面中显示当前内容的附件下载链接及大小。
+</p>
+
+<div class="bs-docs-example">
+<stl:file isFileSize="true"></stl:file>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:file isFileSize=&quot;true&quot;&gt;&lt;/stl:file&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

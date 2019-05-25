@@ -1,0 +1,203 @@
+<h3>列表项</h3>
+<pre class="prettyprint">
+&lt;stl:itemTemplate
+	selected="列表当前选定项类型"
+	selectedValue="当前选定项的值"
+	type="列表项类型"
+&gt;&lt;/stl:itemTemplate&gt;
+</pre>
+<p>
+	控制列表中每一项的显示内容及样式
+</p>
+
+
+<h3>属性列表</h3>
+<p>
+	下表显示所有属于此标签的属性列表。
+</p>
+<table class="table table-striped table-bordered">
+	<tbody>
+		<tr class="info thead">
+			<th>属性</th>
+			<th>可能的取值</th>
+			<th>默认值</th>
+			<th>简介</th>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>列表项的类型</td>
+		</tr>
+
+		<tr>
+			<td>&nbsp;</td>
+			<td>alternatingItem</td>
+			<td>&nbsp;</td>
+			<td>为列表的交替项提供模板</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>footer</td>
+			<td>&nbsp;</td>
+			<td>为列表提供底部模板</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>header</td>
+			<td>&nbsp;</td>
+			<td>为列表提供头部模板</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>item</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>为列表的项提供模板</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>selectedItem</td>
+			<td>&nbsp;</td>
+			<td>为列表当前选定项提供模板</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>separator</td>
+			<td>&nbsp;</td>
+			<td>为列表各项之间的分隔符提供模板</td>
+		</tr>
+
+		<tr>
+			<td>selected</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>决定SelectedItem的选定内容项类型</td>
+		</tr>
+
+		<tr>
+			<td>&nbsp;</td>
+			<td>channelName</td>
+			<td>&nbsp;</td>
+			<td>指定栏目名称的项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>current</td>
+			<td class="center"><img src="{Stl.SiteUrl}/assets/images/right.gif" /></td>
+			<td>当前项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>file</td>
+			<td>&nbsp;</td>
+			<td>带附件项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>image</td>
+			<td>&nbsp;</td>
+			<td>带图片项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>isColor</td>
+			<td>&nbsp;</td>
+			<td>醒目项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>isHot</td>
+			<td>&nbsp;</td>
+			<td>热点项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>isRecommend</td>
+			<td>&nbsp;</td>
+			<td>推荐项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>isTop</td>
+			<td>&nbsp;</td>
+			<td>置顶项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>top</td>
+			<td>&nbsp;</td>
+			<td>当前栏目从首页向下的栏目为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>up</td>
+			<td>&nbsp;</td>
+			<td>当前栏目的上级栏目为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>video</td>
+			<td>&nbsp;</td>
+			<td>带视频项为选中项</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>n</td>
+			<td>&nbsp;</td>
+			<td>n为数字，代表列表的第n项为显示选择项，如：1</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>n,m,p...</td>
+			<td>&nbsp;</td>
+			<td>字母为数字，代表列表的第n,m,p等项为选择项，如：2,4,6</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>n-m</td>
+			<td>&nbsp;</td>
+			<td>n及m为数字，代表列表的第n项到第m项为选择项，如：2-8</td>
+		</tr>
+		<tr>
+			<td>selectedValue</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>如果selected为ChannelName,selectedValue应该为栏目名称</td>
+		</tr>
+	</tbody>
+</table>
+
+<br />
+
+<h3>上级标签</h3>
+<p>
+	<code>&lt;stl:itemTemplate&gt;</code> 标签用于显示列表项，必须嵌套在列表标签中使用，列表标签清单如下：
+	<table class="table table-striped table-bordered">
+		<tbody>
+			<tr class="info thead">
+				<th>列表标签</th>
+				<th>说明</th>
+			</tr>
+			<stl:channels topLevel="0" scope="All" groupChannel="列表标签">
+			<tr>
+				<td><stl:a></stl:a></td>
+				<td><stl:channel type="Description"></stl:channel></td>
+			</tr>
+			</stl:channels>
+		</tbody>
+	</table>
+</p>
+
+<br />
+
+<h3>注意</h3>
+
+<p>
+	type属性为<code>Item</code>、<code>AlternatingItem</code>、<code>Separator</code>三种类型的列表项在列表中最多只能有一个，<code>SelectedItem</code>类型的列表项可以有零个或多个。
+</p>
+<p>
+	<code>SelectedItem</code>类型的列表项所显示的内容由 <code>selected</code> 属性控制，默认当前内容为选中项。
+</p>
+<p>
+	<code>&lt;stl:itemTemplate&gt;</code>标签对应的实体为<code>{<span></span>stl:itemTemplate<span></span>}</code>。
+</p>

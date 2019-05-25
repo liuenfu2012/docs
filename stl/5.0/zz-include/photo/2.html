@@ -1,0 +1,76 @@
+﻿<h3>示例一：在内容页面显示图片列表</h3>
+<p>
+    下面的例子显示内容的图片。
+</p>
+
+<div class="bs-docs-example">
+    <img src="/upload/images/2015/1/2815215385.png" />
+    <img src="/upload/images/2015/1/28152153146.png" />
+    <img src="/upload/images/2015/1/28152153213.png" />
+    <img src="/upload/images/2015/1/28152153293.png" />
+</div>
+
+<pre class="prettyprint linenums">
+    &lt;stl:each type="photo"&gt;
+        &lt;stl:photo type="largeUrl" width="50px"&gt;&lt;/stl:photo&gt;
+    &lt;/stl:each&gt;
+</pre>
+<p>
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums">
+</pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在内容列表中显示内容图片列表</h3>
+<p>
+    下面的例子显示栏目索引为"新闻"的栏目的内容图片列表。
+</p>
+
+<div class="bs-docs-example">
+    新闻内容一
+
+    <img src="/upload/images/2015/1/281639917.png" />
+    图片描述111111
+
+    <img src="/upload/images/2015/1/281639998.png" />
+    图片描述222222
+
+    <img src="/upload/images/2015/1/2816310119.png" />
+    3
+
+    <img src="/upload/images/2015/1/2816310184.png" />
+    4
+
+
+    新闻内容二
+
+    <img src="/upload/images/2015/1/2815215385.png" />
+    21
+
+    <img src="/upload/images/2015/1/28152153146.png" />
+    22
+
+    <img src="/upload/images/2015/1/28152153213.png" />
+    23
+
+    <img src="/upload/images/2015/1/28152153293.png" />
+    24
+
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:contents channelIndex=&quot;新闻&quot;&gt;
+      &lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;
+      &lt;stl:each type=&quot;photo&quot;&gt;
+        &lt;stl:photo type=&quot;largeUrl&quot;&gt;&lt;/stl:photo&gt;
+        &lt;stl:photo type=&quot;Description&quot;&gt;&lt;/stl:photo&gt;
+      &lt;/stl:each&gt;
+    &lt;/stl:contents&gt;
+</pre>
+<p>
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums">
+      
+</pre>

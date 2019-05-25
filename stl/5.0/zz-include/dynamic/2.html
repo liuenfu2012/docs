@@ -1,0 +1,42 @@
+<h3>示例一：显示当前栏目的内容数</h3>
+
+<div class="bs-docs-example">
+<stl:dynamic>
+    <stl:count type="Contents"></stl:count>
+</stl:dynamic>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:dynamic&gt;
+    &lt;stl:count type=&quot;Contents&quot;&gt;&lt;/stl:count&gt;
+&lt;/stl:dynamic&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示栏目"新闻"的内容列表</h3>
+<p>
+下面例子在页面中显示"新闻"栏目的前10篇内容列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:dynamic>  
+    <stl:contents channelIndex="新闻" totalNum="10">  
+        <stl:a target="_blank"></stl:a> <br /> 
+    </stl:contents>  
+</stl:dynamic>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:dynamic&gt;
+    &lt;stl:contents channelIndex=&quot;新闻&quot; totalNum=&quot;10&quot;&gt;
+        &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt; &lt;br /&gt;
+    &lt;/stl:contents&gt;
+&lt;/stl:dynamic&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

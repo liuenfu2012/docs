@@ -1,0 +1,44 @@
+<h3>示例一：列表显示三列</h3>
+<p>
+	下面的例子显示的列表列数为三列，并仅显示带图片的内容。
+</p>
+
+<div class="bs-docs-example">
+<stl:contents channelIndex="新闻" columns="3" isImage="true" width="90%" border="0" cellpadding="2">
+<stl:content type="ImageUrl"></stl:content><br />
+  <stl:a><stl:content type="Title"></stl:content></stl:a><br>
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:contents channelIndex=&quot;Example&quot; columns=&quot;3&quot; isImage=&quot;true&quot; width=&quot;90%&quot; border=&quot;0&quot; cellpadding=&quot;2&quot;&gt;
+    		&lt;stl:content type=&quot;ImageUrl&quot;&gt;&lt;/stl:content&gt;
+    		&lt;stl:a&gt;&lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;&lt;/stl:a&gt;
+    &lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示栏目名称为<code>STL标签</code>下的所有内容（含下级栏目）</h3>
+<p>
+	显示栏目名称为<code>STL标签</code>下的所有内容（含下级栏目），共显示10篇。
+</p>
+
+<div class="bs-docs-example">
+<stl:contents topLevel="1" channelName="STL标签" scope="All" totalNum="10">
+  <stl:content type="Title"></stl:content>
+	<br />
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channels upLevel="1"&gt;
+  &lt;stl:channel type=&quot;Title&quot;&gt;&lt;/stl:channel&gt;(&lt;stl:channel type=&quot;CountOfContents&quot;&gt;&lt;/stl:channel&gt;)&lt;br&gt;
+&lt;/stl:channels&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

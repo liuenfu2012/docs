@@ -1,0 +1,57 @@
+<h3>示例一：显示当前栏目的名称</h3>
+<p>
+	下面的例子显示当前栏目的栏目名称。
+</p>
+
+<div class="bs-docs-example">
+  <stl:channel type="Title"></stl:channel>
+</div>
+<pre class="prettyprint linenums">&lt;stl:channel type=&quot;Title&quot;&gt;&lt;/stl:channel&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示指定栏目的所有下级栏目数量</h3>
+<p>
+	下面的例子显示栏目索引为"首页"的所有下级栏目数量。
+</p>
+
+<div class="bs-docs-example">
+<stl:channel channelIndex="首页" type="CountOfChannels"></stl:channel>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channel channelIndex=&quot;首页&quot; type=&quot;CountOfChannels&quot;&gt;&lt;/stl:channel&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例三：根据模板名称显示不同内容</h3>
+<p>
+	下面的例子根据当前模板的模板名称显示不同的内容。
+</p>
+
+<div class="bs-docs-example">
+<stl:if testType="TemplateName" testOperate="Equals" testValue="系统首页模板">  
+    <stl:yes>  
+        <LI><A href="{Stl.SiteUrl}" class="current">首 页</A></LI>  
+    </stl:yes>  
+    <stl:no>  
+        <LI><A href="{Stl.SiteUrl}">首 页</A></LI>  
+    </stl:no>  
+</stl:if>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channel parent=&quot;true&quot; type=&quot;Content&quot;&gt;&lt;/stl:channel&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

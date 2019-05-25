@@ -1,0 +1,193 @@
+<h3>示例一：获取用户属性</h3>
+显示用户属性需要使用用户账号登录，如果未登录可以“ <a href="https://www.siteserver.cn/docs/stl/5.0/usercenter/login.aspx?returnUrl={Stl.CurrentUrl}">点击这里</a> ”登录后返回。
+<div class="bs-docs-example">
+<stl:dynamic>
+	<table class="table table-bordered table-straped">
+	<tr class="info thead">
+		<th>参数名称</th>
+		<th>参数值</th>
+	</tr>
+	<tr>
+			<td>&#123;UserName&#125;</td>
+			<td><code>{User.UserName}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;DisplayName&#125;</td>
+			<td><code>{User.DisplayName}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;Email&#125;</td>
+			<td><code>{User.Email}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;Mobile&#125;</td>
+			<td><code>{User.Mobile}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;CreateDate&#125;</td>
+			<td><code>{User.CreateDate}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;LastActivityDate&#125;</td>
+			<td><code>{User.LastActivityDate}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;CreateIPAddress&#125;</td>
+			<td><code>{User.CreateIPAddress}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;Group&#125;</td>
+			<td><code>{User.Group}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;Type&#125;</td>
+			<td><code>{User.Type}</code></td>
+		</tr>
+		<tr>
+			<td>&#123;AvatarLarge&#125;</td>
+			<td>
+				<code id="avatorLargeCode">{User.AvatarLarge}</code>
+				<div id="avatorLargeDiv"></div>
+				<script type="text/javascript">
+				if ($('#avatorLargeCode').text().length > 0){
+					$('#avatorLargeDiv').html('<img src="' + $('#avatorLargeCode').text() + '" />');
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>&#123;AvatarMiddle&#125;</td>
+			<td>
+				<code id="avatarMiddleCode">{User.AvatarMiddle}</code>
+				<div id="avatarMiddleDiv"></div>
+				<script type="text/javascript">
+				if ($('#avatarMiddleCode').text().length > 0){
+					$('#avatarMiddleDiv').html('<img src="' + $('#avatarMiddleCode').text() + '" />');
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>&#123;AvatarSmall&#125;</td>
+			<td>
+				<code id="avatarSmallCode">{User.AvatarSmall}</code>
+				<div id="avatarSmallDiv"></div>
+				<script type="text/javascript">
+				if ($('#avatarSmallCode').text().length > 0){
+					$('#avatarSmallDiv').html('<img src="' + $('#avatarSmallCode').text() + '" />');
+				}
+				</script>
+			</td>
+		</tr>
+		<tr>
+			<td>&#123;LogoutUrl&#125;</td>
+			<td><code>{User.LogoutUrl}</code></td>
+		</tr>
+	</table>
+</stl:dynamic>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:dynamic&gt;
+	&lt;table class=&quot;table table-bordered table-straped&quot;&gt;
+	&lt;tr class=&quot;info thead&quot;&gt;
+		&lt;td width=&quot;150&quot;&gt;&#x53c2;&#x6570;&#x540d;&#x79f0;&lt;/td&gt;
+		&lt;td&gt;&#x53c2;&#x6570;&#x503c;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+			&lt;td&gt;&amp;#123;UserName&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.UserName&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;DisplayName&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.DisplayName&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;Email&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.Email&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;Mobile&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.Mobile&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;CreateDate&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.CreateDate&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;LastActivityDate&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.LastActivityDate&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;CreateIPAddress&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.CreateIPAddress&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;Group&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.Group&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;Type&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.Type&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;AvatarLarge&amp;#125;&lt;/td&gt;
+			&lt;td&gt;
+				&lt;code id=&quot;avatorLargeCode&quot;&gt;&#123;User.AvatarLarge&#125;&lt;/code&gt;
+				&lt;div id=&quot;avatorLargeDiv&quot;&gt;&lt;/div&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				if ($('#avatorLargeCode').text().length &gt; 0)&#123;
+					$('#avatorLargeDiv').html('&lt;img src=&quot;' + $('#avatorLargeCode').text() + '&quot; /&gt;');
+				&#125;
+				&lt;/script&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;AvatarMiddle&amp;#125;&lt;/td&gt;
+			&lt;td&gt;
+				&lt;code id=&quot;avatarMiddleCode&quot;&gt;&#123;User.AvatarMiddle&#125;&lt;/code&gt;
+				&lt;div id=&quot;avatarMiddleDiv&quot;&gt;&lt;/div&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				if ($('#avatarMiddleCode').text().length &gt; 0)&#123;
+					$('#avatarMiddleDiv').html('&lt;img src=&quot;' + $('#avatarMiddleCode').text() + '&quot; /&gt;');
+				&#125;
+				&lt;/script&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;AvatarSmall&amp;#125;&lt;/td&gt;
+			&lt;td&gt;
+				&lt;code id=&quot;avatarSmallCode&quot;&gt;&#123;User.AvatarSmall&#125;&lt;/code&gt;
+				&lt;div id=&quot;avatarSmallDiv&quot;&gt;&lt;/div&gt;
+				&lt;script type=&quot;text/javascript&quot;&gt;
+				if ($('#avatarSmallCode').text().length &gt; 0)&#123;
+					$('#avatarSmallDiv').html('&lt;img src=&quot;' + $('#avatarSmallCode').text() + '&quot; /&gt;');
+				&#125;
+				&lt;/script&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;&amp;#123;LogoutUrl&amp;#125;&lt;/td&gt;
+			&lt;td&gt;&lt;code&gt;&#123;User.LogoutUrl&#125;&lt;/code&gt;&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+&lt;/stl:dynamic&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示退出登录链接</h3>
+
+<div class="bs-docs-example">
+<a href="{User.LogoutUrl}">退出</a>
+</div>
+<pre class="prettyprint linenums">
+&lt;a href=&quot;&#123;User.LogoutUrl&#125;&quot;&gt;退出&lt;/a&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

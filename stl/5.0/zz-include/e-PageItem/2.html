@@ -1,0 +1,39 @@
+<h3>示例一：显示分页实体总页数和总内容数</h3>
+
+<div class="bs-docs-example">
+<table>  
+<tr><td>总页数：</td><td>{PageItem.TotalPageNum}</td></tr>  
+<tr><td>总内容数：</td><td>{PageItem.TotalNum}</td></tr>  
+</table>
+</div>
+<pre class="prettyprint linenums">
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;总页数：&lt;/td&gt;&lt;td&gt;&#123;PageItem.TotalPageNum&#125;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;总内容数：&lt;/td&gt;&lt;td&gt;&#123;PageItem.TotalNum&#125;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：首页/上一页/下一页/尾页</h3>
+
+<div class="bs-docs-example">
+<span><a href="javascript:void(0)" onclick="{PageItem.FirstPage}">首页</a></span>     
+<span><a href="javascript:void(0)" onclick="{PageItem.PreviousPage}">上一页</a></span>     
+<span><a href="javascript:void(0)" onclick="{PageItem.NextPage}">下一页</a></span>     
+<span><a href="javascript:void(0)" onclick="{PageItem.LastPage}">尾页</a></span>
+</div>
+<pre class="prettyprint linenums">
+&lt;span&gt;&lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;&#123;PageItem.FirstPage&#125;&quot;&gt;首页&lt;/a&gt;&lt;/span&gt;
+&lt;span&gt;&lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;&#123;PageItem.PreviousPage&#125;&quot;&gt;上一页&lt;/a&gt;&lt;/span&gt;
+&lt;span&gt;&lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;&#123;PageItem.NextPage&#125;&quot;&gt;下一页&lt;/a&gt;&lt;/span&gt;
+&lt;span&gt;&lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;&#123;PageItem.LastPage&#125;&quot;&gt;尾页&lt;/a&gt;&lt;/span&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

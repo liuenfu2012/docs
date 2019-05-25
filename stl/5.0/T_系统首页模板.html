@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <stl:include file="https://www.siteserver.cn/docs/stl/5.0/zz-include/header.html"></stl:include>
+</head>
+
+
+<body class="blog mp6 customizer-styles-applied highlander-enabled highlander-light infinite-scroll neverending">
+  <div id="page" class="hfeed site">
+
+    <stl:include file="https://www.siteserver.cn/docs/stl/5.0/zz-include/site-navigation.html"></stl:include>
+
+    <div id="page-name" class="page-masthead">
+      <div class="name-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <h1>STL 语言</h1>
+              <p class="lead" style="color: #fff">
+                STL 语言，全称为 SiteServer Template Language（SiteServer 模版语言），是用于SiteServer CMS模版使用的类HTML语言。
+              </p>
+            </div>
+            <div class="col-2" style="padding-top: 25px">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
+              STL 快速索引
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-container" class="site-content">
+
+      <stl:include file="https://www.siteserver.cn/docs/stl/5.0/zz-include/navbar.html"></stl:include>
+
+      <div class="alert alert-info" role="alert">
+        <strong>小提示</strong> 点击页面右上角STL 快速索引按钮，可以快速寻找对应的STL 标签。
+      </div>
+
+      <div class="container">
+
+        <div class="row">
+
+          <!--<div class="container" style="padding:0 30px; padding-bottom:40px;">
+            <section>
+              <p class="lead">我们推荐使用模板插件辅助开发，可以在无需记住STL 语言细节的情况下以最快速最便捷的方式编写STL 语言。我们根据用户的习惯开发并提供两款模板插件下载：</p>
+
+              <div class="row-fluid">
+                <div class="span6">
+                  <h2>Dreamweaver 模板插件</h2>
+                  <p>Dreamweaver 模板插件是专为 Adobe Dreamweaver 软件开发的可视化STL 标签开发工具，此工具能极大简化模版的制作，使用可视化的方式编辑模版。 </p>
+                  <p><a class="btn btn-large btn-success" href="http://download.siteserver.cn/latest/stl/Dreamweaver%E6%A8%A1%E6%9D%BF%E6%8F%92%E4%BB%B6.zip">立即下载</a></p>
+                </div>
+                <div class="span6">
+                  <h2>Sublime Text 模板插件</h2>
+                  <p>Sublime Text 模板插件是专为 Sublime Text 软件开发的可视化STL 标签开发工具，此工具能极大简化模版的制作，使用自动化的方式编辑模版。 </p>
+                  <p><a class="btn btn-large btn-success" href="http://download.siteserver.cn/latest/stl/SublimeText%E6%A8%A1%E6%9D%BF%E6%8F%92%E4%BB%B6.zip">立即下载</a></p>
+                </div>
+              </div>
+            </section>
+          </div>-->
+
+          <stl:channels groupChannel="STL">
+
+            <div class="container" style="padding:0 30px;">
+              <h2>
+                <stl:channel type="Title"></stl:channel>
+              </h2>
+              <hr>
+              <stl:channels cellPadding="10">
+
+                <section>
+                  <h3>
+                    <stl:channel type="Title"></stl:channel>
+                  </h3>
+                  <hr>
+                  <div class="lead">
+                    <stl:channel type="Content" isClearTags="true"></stl:channel>
+                  </div>
+                  <br />
+
+                  <table class="table table-striped table-bordered">
+                    <tbody>
+                      <tr class="info thead">
+                        <th>STL</th>
+                        <th>说明</th>
+                      </tr>
+                      <stl:channels>
+                      <tr>
+                        <td><stl:a></stl:a></td>
+                        <td><stl:channel type="Description"></stl:channel></td>
+                      </tr>
+                      </stl:channels>
+                    </tbody>
+                  </table>
+
+                  
+                </section>
+
+              </stl:channels>
+            </div>
+
+          </stl:channels>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- #content -->
+
+  </div>
+  <!-- #page -->
+
+  <stl:include file="https://www.siteserver.cn/docs/stl/5.0/zz-include/footer.html"></stl:include>
+</body>
+
+</html>

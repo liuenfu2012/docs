@@ -1,0 +1,61 @@
+<h3>示例一：显示指定的栏目列表</h3>
+<p>
+	下面的例子显示所有栏目组别为"STL标签"的栏目列表，各栏目项间用" | "分隔。
+</p>
+
+<div class="bs-docs-example">
+<stl:channels groupChannel="STL" isTotal="true">  
+  <stl:itemTemplate type="Item">  
+    <stl:a><stl:channel type="title"></stl:channel></stl:a>  
+  </stl:itemTemplate>  
+  <stl:itemTemplate type="Separator">
+    |  
+  </stl:itemTemplate>  
+</stl:channels> 
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:channels groupChannel=&quot;STL&quot; isTotal=&quot;true&quot;&gt;  
+  &lt;stl:itemTemplate type=&quot;Item&quot;&gt;  
+    &lt;stl:a&gt;&lt;stl:channel type=&quot;title&quot;&gt;&lt;/stl:channel&gt;&lt;/stl:a&gt;  
+  &lt;/stl:itemTemplate&gt;  
+  &lt;stl:itemTemplate type=&quot;Separator&quot;&gt;
+    |  
+  &lt;/stl:itemTemplate&gt;  
+&lt;/stl:channels&gt; 
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示指定的内容列表</h3>
+<p>
+  下面的例子显示栏目"新闻"下的内容列表，对第2条至第4条内容用红色显示。
+</p>
+
+<div class="bs-docs-example">
+  <stl:contents channelIndex="新闻" totalNum="5">  
+    <stl:itemTemplate type="Item">  
+        <stl:a target="_blank"></stl:a><br />
+    </stl:itemTemplate>  
+    <stl:itemTemplate type="SelectedItem" selected="2-4">
+        <stl:a style="color:red" target="_blank"></stl:a><br />
+    </stl:itemTemplate>  
+  </stl:contents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:contents channelIndex=&quot;新闻&quot; totalNum=&quot;5&quot;&gt;  
+  &lt;stl:itemTemplate type=&quot;Item&quot;&gt;  
+      &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;br /&gt;
+  &lt;/stl:itemTemplate&gt;  
+  &lt;stl:itemTemplate type=&quot;SelectedItem&quot; selected=&quot;2-4&quot;&gt;
+      &lt;stl:a style=&quot;color:red&quot; target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;br /&gt;
+  &lt;/stl:itemTemplate&gt;  
+&lt;/stl:contents&gt;
+</pre>
+<p>
+  解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

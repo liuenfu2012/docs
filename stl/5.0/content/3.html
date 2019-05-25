@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>stl:content 内容值 · SiteServer STL 参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<!-- Le styles -->
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/favicon.png">
+<script>var $pageInfo = {publishmentSystemID : 1, channelID : 9, contentID : 19, siteUrl : "", homeUrl : "/home", currentUrl : "/content/3.html", rootUrl : "", apiUrl : "/api"};</script></head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-target=".subnav" data-offset="50">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="javascript:;" id="trigger" class="btn pull-right">STL 快速索引</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="https://www.siteserver.cn/docs/stl/5.0/">首页</a>
+          </li>
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/index.html">起步</a>
+                </li>
+              
+          
+            
+                <li class="active">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/3.html">STL基本标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/52.html">STL高级标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/87.html">STL实体标签</a>
+                </li>
+              
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>stl:content 内容值</h1>
+      <p class="lead">
+        
+      </p>
+      
+      <!-- Sub Navigation -->
+      
+          <div class="subnav">
+            <ul class="nav nav-pills">
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">栏目标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/channels/index.html">stl:channels 栏目列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/channel/index.html">stl:channel 栏目值</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown active">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">内容标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/contents/index.html">stl:contents 内容列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/content/index.html">stl:content 内容值</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">翻页标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageItems/index.html">stl:pageItems 翻页项容器</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageItem/index.html">stl:pageItem 翻页项</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageChannels/index.html">stl:pageChannels 翻页栏目列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageContents/index.html">stl:pageContents 翻页内容列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageSqlContents/index.html">stl:pageSqlContents 获取翻页数据库数据列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageComments/index.html">stl:pageComments 翻页评论列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/pageInputContents/index.html">stl:pageInputContents 翻页提交内容列表</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">多媒体标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/player/index.html">stl:player 播放视频</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/video/index.html">stl:video 播放视频</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/audio/index.html">stl:audio 播放音频</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">导航标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/a/index.html">stl:a 获取链接</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/location/index.html">stl:location 显示当前位置</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/navigation/index.html">stl:navigation 显示导航</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/tree/index.html">stl:tree 树状导航</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/menu/index.html">stl:menu 显示下拉菜单</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">图片标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/image/index.html">stl:image 显示图片</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/focusViewer/index.html">stl:focusViewer 显示滚动焦点图</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/flash/index.html">stl:flash 显示flash</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/photoContents/index.html">stl:photoContents 获取图片内容列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/photoContent/index.html">stl:photoContent 获取图片内容</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/slide/index.html">stl:slide 显示图片幻灯片</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/photo/index.html">stl:photo 显示内容图片</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">站点标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/sites/index.html">stl:sites 获取站点列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/site/index.html">stl:site 显示指定站点的数据</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">判断标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/if/index.html">stl:if 条件判断</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/itemTemplate/index.html">stl:itemTemplate 列表项</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+
+                
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">其他基本标签 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/include/index.html">stl:include 包含文件</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/dynamic/index.html">stl:dynamic 显示动态内容</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/file/index.html">stl:file 文件下载链接</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/value/index.html">stl:value 获取值</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/count/index.html">stl:count 显示数值</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/marquee/index.html">stl:marquee 无间隔滚动</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/select/index.html">stl:select 栏目或内容下拉列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/analysis/index.html">stl:analysis 显示浏览量</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/each/index.html">stl:each 遍历</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+            </ul>
+          </div>
+        
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="row">
+      <!-- Left Navigation -->
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+            
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/content/index.html"><i class="icon-chevron-right"></i> stl:content 标签用法</a></li>
+            
+              <li class="active"><a href="https://www.siteserver.cn/docs/stl/5.0/content/3.html"><i class="icon-chevron-right"></i> stl:content 标签示例（一）</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/content/2.html"><i class="icon-chevron-right"></i> stl:content 标签示例（二）</a></li>
+              
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/content/1.html"><i class="icon-chevron-right"></i> stl:content 标签示例（三）</a></li>
+            
+        </ul>
+      </div>
+      <div class="span9">
+
+        <section>
+          <div class="page-header">
+            <h1>stl:content 标签示例（一）</h1>
+          </div>
+
+          <!-- Right Content -->
+          
+
+            
+
+          
+              <h3>示例一：显示内容的副标题</h3>
+<p class="lead">
+	下面的例子在页面中显示内容的副标题。
+</p>
+
+<div class="bs-docs-example">
+  内容副标题
+</div>
+<pre class="prettyprint linenums">&lt;stl:content type=&quot;SubTitle&quot;&gt;&lt;/stl:content&gt;
+</pre>
+<p class="lead">
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示内容的添加时间</h3>
+<p class="lead">
+	下面的例子在页面中显示内容的添加时间，并按照&quot;yyyy-MM-dd&quot;格式显示。
+</p>
+
+<div class="bs-docs-example">
+2013-06-03
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:content type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:content&gt;
+</pre>
+<p class="lead">
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+            
+
+            
+
+          
+
+            
+
+          
+
+          
+
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    <p class="center">Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a></p>
+
+    <ul class="footer-links">
+      <li><a href="http://www.siteservre.cn" target="_blank">SiteServer 官网</a></li>
+      <li><a href="https://github.com/siteserver/cms/issues/">SiteServer 论坛</a></li>
+      <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<script src="/js/bootstrap/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+<!-- <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/holder/holder.js"></script> -->
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/application.js"></script>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div id="listModal" class="modal hide fade" style="width:650px" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">STL 快速索引</h3>
+  </div>
+  <div class="modal-body">
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" language="javascript">document.ondblclick=function(x){location.href = '/api/stl/actions/trigger?publishmentSystemId=1&channelId=9&contentId=19&fileTemplateId=0&isRedirect=True';}</script>
+
+<!-- T_系统内容模板.html(内容模板) -->

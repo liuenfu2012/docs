@@ -1,0 +1,63 @@
+<h3>示例一：显示指定栏目的图片</h3>
+<p>
+	下面的例子显示当前栏目的图片，如果栏目没有图片显示，则不显示任何信息。
+</p>
+
+<div class="bs-docs-example">
+<stl:container context="Channel">
+    <stl:image></stl:image>
+</stl:container>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:container context=&quot;Channel&quot;&gt;
+    &lt;stl:image&gt;&lt;/stl:image&gt;
+&lt;/stl:container&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在内容列表中显示内容图片</h3>
+<p>
+	下面的例子显示栏目索引为"新闻"的栏目的内容图片列表，点击图片后新窗口打开内容页。
+</p>
+
+<div class="bs-docs-example">
+<stl:contents channelIndex="新闻" totalNum="3" isImage="true" width="80%">  
+    <stl:a target="_blank">  
+        <stl:image width="200" height="100"></stl:image>  
+    </stl:a>  
+</stl:contents>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:contents channelIndex=&quot;新闻&quot; totalNum=&quot;3&quot; isImage=&quot;true&quot; width=&quot;80%&quot;&gt;
+        &lt;stl:a target=&quot;_blank&quot;&gt;
+            &lt;stl:image width=&quot;200&quot; height=&quot;100&quot;&gt;&lt;/stl:image&gt;
+        &lt;/stl:a&gt;
+    &lt;/stl:contents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例三：显示指定的图片文件</h3>
+<p>
+	下面的例子显示文件名称为"banner.jpg"的图片文件。
+</p>
+
+<div class="bs-docs-example">
+<stl:image src="@/images/banner.jpg" height="100"></stl:image>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:image src=&quot;@/images/banner.jpg&quot; height=&quot;100&quot;&gt;&lt;/stl:image&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

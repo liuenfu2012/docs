@@ -1,0 +1,34 @@
+﻿<h3>示例一：显示页面的当前位置</h3>
+<p>
+	下面的例子显示页面的当前位置，分隔符用属性表示。
+</p>
+
+<div class="bs-docs-example">
+  <stl:location separator=" - "></stl:location>
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:location separator=&quot; - &quot;&gt;&lt;/stl:location&gt;  
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：显示页面的当前位置</h3>
+<p>
+	下面的例子显示页面的当前位置，分隔符用子标签表示。
+</p>
+
+<div class="bs-docs-example">
+<stl:location> <span style="color:#ff0000"> >> </span> </stl:location> 
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:location&gt; &lt;span style=&quot;color:#ff0000&quot;&gt; &gt;&gt; &lt;/span&gt; &lt;/stl:location&gt;  
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>
+

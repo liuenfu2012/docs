@@ -472,7 +472,7 @@ module.exports = [
       },
       {
         text: "SiteServer CMS 5.0",
-        link: "https://stl.siteserver.cn/"
+        link: "https://www.siteserver.cn/docs/stl/5.0/"
       }
     ]
   },
@@ -484,15 +484,15 @@ module.exports = [
         items: [
           {
             text: "SiteServer CMS 产品介绍",
-            link: "https://docs.siteserver.cn/introduction/"
+            link: "https://www.siteserver.cn/docs/introduction/"
           },
           {
             text: "SiteServer CMS 新手入门",
-            link: "https://docs.siteserver.cn/getting-started/"
+            link: "https://www.siteserver.cn/docs/getting-started/"
           },
           {
             text: "SiteServer CMS 常见问题",
-            link: "https://docs.siteserver.cn/faq/"
+            link: "https://www.siteserver.cn/docs/faq/"
           }
         ]
       },
@@ -505,7 +505,7 @@ module.exports = [
           },
           {
             text: "插件开发参考手册",
-            link: "https://docs.siteserver.cn/plugins/"
+            link: "https://www.siteserver.cn/docs/plugins/"
           },
           {
             text: "CLI 命令行参考手册",
@@ -513,11 +513,11 @@ module.exports = [
           },
           {
             text: "REST API 参考手册",
-            link: "https://docs.siteserver.cn/api/"
+            link: "https://www.siteserver.cn/docs/api/"
           },
           {
             text: "数据结构参考手册",
-            link: "https://docs.siteserver.cn/model/"
+            link: "https://www.siteserver.cn/docs/model/"
           }
         ]
       },
@@ -530,27 +530,27 @@ module.exports = [
           },
           {
             text: "表单插件使用手册",
-            link: "http://plugins.siteserver.cn/ss.form/#/"
+            link: "http://www.siteserver.cn/docs/ss/form/#/"
           },
           {
             text: "内容点击量插件使用手册",
-            link: "http://plugins.siteserver.cn/ss.hits/#/"
+            link: "http://www.siteserver.cn/docs/ss/hits/#/"
           },
           {
             text: "后台访问限制插件使用手册",
-            link: "http://plugins.siteserver.cn/ss.restriction/#/"
+            link: "http://www.siteserver.cn/docs/ss/restriction/#/"
           },
           {
             text: "招聘插件使用手册",
-            link: "http://plugins.siteserver.cn/ss.jobs/#/"
+            link: "http://www.siteserver.cn/docs/ss/jobs/#/"
           },
           {
             text: "多图内容插件使用手册",
-            link: "http://plugins.siteserver.cn/ss.photo/#/"
+            link: "http://www.siteserver.cn/docs/ss/photo/#/"
           },
           {
             text: "依申请公开插件使用手册",
-            link: "http://plugins.siteserver.cn/ss.application/#/"
+            link: "http://www.siteserver.cn/docs/ss/application/#/"
           }
         ]
       }

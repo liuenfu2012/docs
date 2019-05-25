@@ -1,0 +1,31 @@
+<h3>示例一：显示最新添加的内容列表</h3>
+<p>
+	下面的例子显示按最新添加时间获取内容列表。
+</p>
+
+<div class="bs-docs-example">
+<stl:sqlContents connectionStringName="ConnectionString" pageNum="10" cellpadding="2">  
+  <stl:queryString>
+    SELECT TOP 6 * FROM {Stl.TableForContent} WHERE PublishmentSystemId = {Stl.SiteId} AND NodeId > 0 ORDER BY AddDate DESC
+  </stl:queryString>
+  <a href="{Stl.RootUrl}/sitefiles/services/wcm/utils.aspx?type=Redirect&channelId={sql.nodeId}&contentId={sql.Id}" target="_blank"><stl:sqlContent type="Title" wordnum="20"></stl:sqlContent></a>
+  (<stl:sqlContent type="AddDate" formatString="yyyy-MM-dd"></stl:sqlContent>)
+  <br>
+</stl:sqlContents>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:sqlContents connectionStringName=&quot;ConnectionString&quot; pageNum=&quot;10&quot; cellpadding=&quot;2&quot;&gt;  
+  &lt;stl:queryString&gt;
+    SELECT TOP 6 * FROM &#123;Stl.TableForContent&#125; WHERE PublishmentSystemId = &#123;Stl.SiteId&#125; ORDER BY AddDate DESC
+  &lt;/stl:queryString&gt;
+  &lt;a href=&quot;&#123;Stl.RootUrl&#125;/sitefiles/services/wcm/utils.aspx?type=Redirect&amp;channelId=&#123;sql.nodeId&#125;&amp;contentId=&#123;sql.Id&#125;&quot; target=&quot;_blank&quot;&gt;
+  	&lt;stl:sqlContent type=&quot;Title&quot; wordnum=&quot;20&quot;&gt;&lt;/stl:sqlContent&gt;
+  &lt;/a&gt;
+  (&lt;stl:sqlContent type=&quot;AddDate&quot; formatString=&quot;yyyy-MM-dd&quot;&gt;&lt;/stl:sqlContent&gt;)
+  &lt;br&gt;
+&lt;/stl:sqlContents&gt;
+</pre>
+<p>
+	解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

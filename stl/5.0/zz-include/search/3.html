@@ -1,0 +1,60 @@
+<h3>示例二：采用自定义方式显示搜索结果，搜索结果关键字高亮显示</h3>
+
+<div class="bs-docs-example">
+<stl:search isDefaultDisplay="true" isHighlight="true">
+    <stl:pageContents scope="All" pageNum="12">
+        <div>
+            <stl:a target="_blank"></stl:a><br />
+            <stl:content type="Content" isClearTags="true" wordNum="120"></stl:content>
+        </div>
+    </stl:pageContents>
+    <br />
+    <stl:pageItems>
+        <table cellpadding="0" cellspacing="0" width="90%" height="40" align="center">
+            <tr>
+                <td align="left">
+                    <stl:pageItem type="FirstPage" text="首页"></stl:pageItem> |
+                    <stl:pageItem type="PreviousPage" text="上一页"></stl:pageItem> |
+                    <stl:pageItem type="NextPage" text="下一页"></stl:pageItem> |
+                    <stl:pageItem type="LastPage" text="末页"></stl:pageItem>
+                </td>
+                <td align="right">
+                    <stl:pageItem type="CurrentPageIndex" text="当前页："></stl:pageItem>
+                    <stl:pageItem type="PageNavigation"></stl:pageItem>
+                </td>
+            </tr>
+        </table>
+    </stl:pageItems>
+</stl:search>
+</div>
+<pre class="prettyprint linenums">
+&lt;stl:search isDefaultDisplay=&quot;true&quot; isHighlight=&quot;true&quot;&gt;
+    &lt;stl:pageContents scope=&quot;All&quot; pageNum=&quot;12&quot;&gt;
+        &lt;div&gt;
+            &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt;&lt;br /&gt;
+            &lt;stl:content type=&quot;Content&quot; isClearTags=&quot;true&quot; wordNum=&quot;120&quot;&gt;&lt;/stl:content&gt;
+        &lt;/div&gt;
+    &lt;/stl:pageContents&gt;
+    &lt;br /&gt;
+    &lt;stl:pageItems&gt;
+        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;90%&quot; height=&quot;40&quot; align=&quot;center&quot;&gt;
+            &lt;tr&gt;
+                &lt;td align=&quot;left&quot;&gt;
+                    &lt;stl:pageItem type=&quot;FirstPage&quot; text=&quot;&#x9996;&#x9875;&quot;&gt;&lt;/stl:pageItem&gt; |
+                    &lt;stl:pageItem type=&quot;PreviousPage&quot; text=&quot;&#x4E0A;&#x4E00;&#x9875;&quot;&gt;&lt;/stl:pageItem&gt; |
+                    &lt;stl:pageItem type=&quot;NextPage&quot; text=&quot;&#x4E0B;&#x4E00;&#x9875;&quot;&gt;&lt;/stl:pageItem&gt; |
+                    &lt;stl:pageItem type=&quot;LastPage&quot; text=&quot;&#x672B;&#x9875;&quot;&gt;&lt;/stl:pageItem&gt;
+                &lt;/td&gt;
+                &lt;td align=&quot;right&quot;&gt;
+                    &lt;stl:pageItem type=&quot;CurrentPageIndex&quot; text=&quot;&#x5F53;&#x524D;&#x9875;&#xFF1A;&quot;&gt;&lt;/stl:pageItem&gt;
+                    &lt;stl:pageItem type=&quot;PageNavigation&quot;&gt;&lt;/stl:pageItem&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/stl:pageItems&gt;
+&lt;/stl:search&gt;
+</pre>
+<p>
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums"></pre>

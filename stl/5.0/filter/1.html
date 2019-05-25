@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>stl:filter 商品筛选值 · SiteServer STL 参考手册</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="/js/jquery-1.9.1.min.js"></script>
+<!-- Le styles -->
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/js/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/css/docs.css" rel="stylesheet">
+<link href="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="https://www.siteserver.cn/docs/stl/5.0/assets/ico/favicon.png">
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-target=".subnav" data-offset="50">
+  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a href="javascript:;" id="trigger" class="btn pull-right">STL 快速索引</a>
+
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+            <a href="https://www.siteserver.cn/docs/stl/5.0/">首页</a>
+          </li>
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/getting-started/">起步</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/108.html">STL基本标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/155.html">STL高级标签</a>
+                </li>
+              
+          
+            
+                <li class="">
+                  <a href="https://www.siteserver.cn/docs/stl/5.0/channels/189.html">STL实体标签</a>
+                </li>
+              
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>stl:filter 商品筛选值</h1>
+      <p class="lead">
+        
+      </p>
+      
+      <!-- Sub Navigation -->
+      
+          <div class="subnav">
+            <ul class="nav nav-pills">
+              
+
+                
+                    <li class="dropdown active">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">电子商务 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/filters/">stl:filters 商品筛选列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/filter/">stl:filter 商品筛选值</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/specs/">stl:specs 商品规格列表</a></li>
+                        
+                          <li><a href="https://www.siteserver.cn/docs/stl/5.0/spec/">stl:spec 商品规格值</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+
+                
+              
+            </ul>
+          </div>
+        
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="row">
+      <!-- Left Navigation -->
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix-top">
+            
+              <li><a href="https://www.siteserver.cn/docs/stl/5.0/filter/"><i class="icon-chevron-right"></i> stl:filter 标签用法</a></li>
+            
+              <li class="active"><a href="https://www.siteserver.cn/docs/stl/5.0/filter/1.html"><i class="icon-chevron-right"></i> stl:filter 标签示例</a></li>
+            
+        </ul>
+      </div>
+      <div class="span9">
+
+        <section>
+          <div class="page-header">
+            <h1>stl:filter 标签示例</h1>
+          </div>
+
+          <!-- Right Content -->
+          
+
+            
+
+          
+              <h3>示例一：在内容页面显示图片列表</h3>
+<p class="lead">
+    下面的例子显示内容的图片。
+</p>
+
+<div class="bs-docs-example">
+    <img src="/upload/images/2015/1/2815215385.png" />
+    <img src="/upload/images/2015/1/28152153146.png" />
+    <img src="/upload/images/2015/1/28152153213.png" />
+    <img src="/upload/images/2015/1/28152153293.png" />
+</div>
+
+<pre class="prettyprint linenums">
+    &lt;stl:each type="photo"&gt;
+        &lt;stl:photo type="largeUrl" width="50px"&gt;&lt;/stl:photo&gt;
+    &lt;/stl:each&gt;
+</pre>
+<p class="lead">
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums">
+</pre>
+
+<hr class="bs-docs-separator">
+
+<h3>示例二：在内容列表中显示内容图片列表</h3>
+<p class="lead">
+    下面的例子显示栏目索引为"新闻"的栏目的内容图片列表。
+</p>
+
+<div class="bs-docs-example">
+    新闻内容一
+
+    <img src="/upload/images/2015/1/281639917.png" />
+    图片描述111111
+
+    <img src="/upload/images/2015/1/281639998.png" />
+    图片描述222222
+
+    <img src="/upload/images/2015/1/2816310119.png" />
+    3
+
+    <img src="/upload/images/2015/1/2816310184.png" />
+    4
+
+
+    新闻内容二
+
+    <img src="/upload/images/2015/1/2815215385.png" />
+    21
+
+    <img src="/upload/images/2015/1/28152153146.png" />
+    22
+
+    <img src="/upload/images/2015/1/28152153213.png" />
+    23
+
+    <img src="/upload/images/2015/1/28152153293.png" />
+    24
+
+</div>
+<pre class="prettyprint linenums">
+    &lt;stl:contents channelIndex=&quot;新闻&quot;&gt;
+      &lt;stl:content type=&quot;Title&quot;&gt;&lt;/stl:content&gt;
+      &lt;stl:each type=&quot;photo&quot;&gt;
+        &lt;stl:photo type=&quot;largeUrl&quot;&gt;&lt;/stl:photo&gt;
+        &lt;stl:photo type=&quot;Description&quot;&gt;&lt;/stl:photo&gt;
+      &lt;/stl:each&gt;
+    &lt;/stl:contents&gt;
+</pre>
+<p class="lead">
+    解析后的HTML代码：
+</p>
+<pre class="prettyprint stlparsed linenums">
+      
+</pre>
+
+            
+
+          
+
+        </section>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+  <div class="container">
+    <p class="center">Powered by <a href="https://www.siteserver.cn" target="_blank">SiteServer CMS</a></p>
+
+    <ul class="footer-links">
+      <li><a href="http://www.siteservre.cn" target="_blank">SiteServer 官网</a></li>
+      <li><a href="https://github.com/siteserver/cms/issues/">SiteServer 论坛</a></li>
+      <li><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备10013847号</a></li>
+    </ul>
+
+  </div>
+</footer>
+
+<script src="/js/bootstrap/js/bootstrap.min.js" language="javascript" type="text/javascript"></script>
+<!-- <script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/holder/holder.js"></script> -->
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/google-code-prettify/prettify.js"></script>
+<script src="https://www.siteserver.cn/docs/stl/5.0/assets/js/application.js"></script>
+
+<a id="scrollUp" href="#top"></a>
+
+<!-- Modal -->
+<div id="listModal" class="modal hide fade" style="width:650px" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">STL 快速索引</h3>
+  </div>
+  <div class="modal-body">
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+  </div>
+</div>
+</body>
+</html>
+<script src="/SiteFiles/bairong/scripts/independent/tracker.js" type="text/javascript"></script>
+<script type="text/javascript">AddTrackerCount('/sitefiles/services/wcm/PageService.aspx?type=AddTrackerCount&publishmentSystemID=1&channelID=229&contentID=249', 1);</script>
+<script src="/sitefiles/services/wcm/PageService.aspx?type=AddCountHits&publishmentSystemID=1&channelID=229&contentID=249" type="text/javascript"></script>
+
+<!-- T_系统内容模板.html(内容模板) -->

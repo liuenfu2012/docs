@@ -1,0 +1,23 @@
+<h3>示例一：显示能够翻页的内容列表</h3>
+<p>
+	下面的例子显示当前栏目下的所有内容的列表，列表下方显示翻页导航。
+</p>
+
+<pre class="prettyprint linenums">
+    &lt;stl:pageContents channelIndex=&quot;新闻&quot; pageNum=&quot;20&quot; cellpadding=&quot;2&quot; cellspacing=&quot;2&quot;&gt;
+        &lt;stl:a target=&quot;_blank&quot;&gt;&lt;/stl:a&gt; &lt;stl:content type=&quot;AddDate&quot;&gt;&lt;/stl:content&gt;
+    &lt;/stl:pageContents&gt;
+    &lt;br /&gt;
+    &lt;stl:pageItems&gt;
+        &lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;90%&quot; height=&quot;40&quot; align=&quot;center&quot;&gt;
+        &lt;tr&gt;&lt;td align=&quot;left&quot;&gt;
+        &lt;stl:pageItem type=&quot;FirstPage&quot; text=&quot;首页&quot;&gt;&lt;/stl:pageItem&gt; |
+        &lt;stl:pageItem type=&quot;PreviousPage&quot; text=&quot;上一页&quot;&gt;&lt;/stl:pageItem&gt; |
+        &lt;stl:pageItem type=&quot;NextPage&quot; text=&quot;下一页&quot;&gt;&lt;/stl:pageItem&gt; |
+        &lt;stl:pageItem type=&quot;LastPage&quot; text=&quot;末页&quot;&gt;&lt;/stl:pageItem&gt;
+        &lt;/td&gt;&lt;td align=&quot;right&quot;&gt;
+        &lt;stl:pageItem type=&quot;CurrentPageIndex&quot; text=&quot;当前页：&quot;&gt;&lt;/stl:pageItem&gt;
+        &lt;stl:pageItem type=&quot;PageNavigation&quot;&gt;&lt;/stl:pageItem&gt;
+        &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    &lt;/stl:pageItems&gt;
+</pre>
