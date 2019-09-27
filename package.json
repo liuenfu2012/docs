@@ -4,6 +4,9 @@
   "name": "docs",
   "description": "docs of SiteServer CMS",
   "scripts": {
+    "api:dev": "vuepress dev api --temp .temp",
+    "api:build": "vuepress build api --temp .temp",
+
     "cli:dev": "vuepress dev cli --temp .temp",
     "cli:build": "vuepress build cli --temp .temp",
 
