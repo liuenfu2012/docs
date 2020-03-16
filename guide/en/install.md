@@ -1,9 +1,9 @@
 # Install
 
-System installation command to install the SiteServer CMS system to the specified database.
+System installation command to install the SS CMS system to the specified database.
 
 ::: tip
-Before running the system installation command, you need to ensure that the latest version of the SiteServer CMS system exists in the current folder, and the database type and database connection string are set in Web.config.
+Before running the system installation command, you need to ensure that the latest version of the SS CMS system exists in the current folder, and the database type and database connection string are set in Web.config.
 :::
 
 ## Usage
@@ -26,12 +26,12 @@ System installation command must include the installation of a new system of sup
 | --help        |  -h  |                             Command description |
 
 ::: tip
-The system installation command will detect the connection string in Web.config. If the SiteServer CMS data table already exists in the corresponding database, the command will terminate execution and prompt the system to be installed.
+The system installation command will detect the connection string in Web.config. If the SS CMS data table already exists in the corresponding database, the command will terminate execution and prompt the system to be installed.
 :::
 
 ## Example
 
-First download the latest version of the SiteServer CMS system, extract the Web.config file after unzipping,  `DatabaseType` and `ConnectionString` modify it to the database type and connection string that you need to install the system.
+First download the latest version of the SS CMS system, extract the Web.config file after unzipping,  `DatabaseType` and `ConnectionString` modify it to the database type and connection string that you need to install the system.
 
 ``` xml
 <add key="DatabaseType" value="SqlServer" />

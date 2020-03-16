@@ -1,6 +1,6 @@
 # Version
 
-View the current version command to view the SiteServer CLI/SiteServer CMS version and database information.
+View the current version command to view the SS CMS CLI/SS CMS version and database information.
 
 ## Usage
 
@@ -18,32 +18,32 @@ siteserver update
 | --help        |  -h  | Command description |
 
 ::: tip
-If the current directory is the SiteServer CMS root directory or the command uses **--config-file** to specify the configuration file Web.config, the version command displays the corresponding SiteServer CMS system version and database connection string information in addition to the SiteServer CLI version information.
+If the current directory is the SS CMS root directory or the command uses **--config-file** to specify the configuration file Web.config, the version command displays the corresponding SS CMS system version and database connection string information in addition to the SS CMS CLI version information.
 :::
 
 ## Example
 
 ### Basic
 
-Run the version command in the non-SiteServer CMS system root directory:
+Run the version command in the non-SS CMS system root directory:
 
 ``` sh
 PS C:\Windows\system32> siteserver version
-欢迎使用 SiteServer Cli 命令行工具
+欢迎使用 SS CMS Cli 命令行工具
 
-SiteServer CLI 版本号: 6.9.0
+SS CMS CLI 版本号: 6.9.0
 当前文件夹: C:\Windows\system32
 ```
 
-Run the version command in the SiteServer CMS system root directory:
+Run the version command in the SS CMS system root directory:
 
 ``` sh
-PS C:\Windows\system32> cd C:\github\cms\cms-staging\SiteServer.Web
-PS C:\github\cms\cms-staging\SiteServer.Web> siteserver version
-欢迎使用 SiteServer Cli 命令行工具
+PS C:\Windows\system32> cd C:\github\cms\cms-staging\SS CMS.Web
+PS C:\github\cms\cms-staging\SS CMS.Web> siteserver version
+欢迎使用 SS CMS Cli 命令行工具
 
-SiteServer CLI 版本号: 6.9.0
-当前文件夹: C:\github\cms\cms-staging\SiteServer.Web
+SS CMS CLI 版本号: 6.9.0
+当前文件夹: C:\github\cms\cms-staging\SS CMS.Web
 
 SitServer CMS Version: 6.9.3-beta
 数据库类型: SqlServer

@@ -2,15 +2,15 @@
 
 可以通过显示版本命令 **`siteserver version`** 同时显示非加密数据库连接字符串以及加密数据库连接字符串。
 
-在SiteServer CMS 系统根目录运行版本命令：
+在SS CMS 系统根目录运行版本命令：
 
 ``` sh
-PS C:\Windows\system32> cd C:\github\cms\cms-staging\SiteServer.Web
-PS C:\github\cms\cms-staging\SiteServer.Web> siteserver version
-欢迎使用 SiteServer Cli 命令行工具
+PS C:\Windows\system32> cd C:\github\cms\cms-staging\SS CMS.Web
+PS C:\github\cms\cms-staging\SS CMS.Web> siteserver version
+欢迎使用 SS CMS Cli 命令行工具
 
-SiteServer CLI 版本号: 6.9.0
-当前文件夹: C:\github\cms\cms-staging\SiteServer.Web
+SS CMS CLI 版本号: 6.9.0
+当前文件夹: C:\github\cms\cms-staging\SS CMS.Web
 
 SitServer CMS Version: 6.9.3-beta
 数据库类型: SqlServer

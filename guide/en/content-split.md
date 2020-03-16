@@ -2,13 +2,13 @@
 
 We recommend setting a separate table of contents for each site. This will make the data in each table of content not too large and affect system performance.
 
-For various reasons, the content table of all sites in the system may be the same content table. The data volume of the table has reached the level of affecting system performance. At this time, we should consider using the SiteServer CLI command line to split the content table to make each site. Have a separate table of contents.
+For various reasons, the content table of all sites in the system may be the same content table. The data volume of the table has reached the level of affecting system performance. At this time, we should consider using the SS CMS CLI command line to split the content table to make each site. Have a separate table of contents.
 
 ### 1. Run the database backup command
 
 First, using the database backup command **`siteserver backup`** to back up the database to the system folder.
 
-Switch the command line to the folder where the SiteServer CMS is located and run the backup command:
+Switch the command line to the folder where the SS CMS is located and run the backup command:
 
 ``` sh
 siteserver backup -d backup

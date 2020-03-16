@@ -3,7 +3,7 @@
 
 ## 1、如何发布内容？
 
-登录 SiteServer CMS 产品后台，进入SiteServer CMS 的主操作界面，如下图所示：
+登录 SS CMS 产品后台，进入SS CMS 的主操作界面，如下图所示：
 
 ![](/assets/214.jpg)
 

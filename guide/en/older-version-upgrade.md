@@ -1,23 +1,23 @@
 # Old Version Upgrade
 
-Older version can be upgraded to the latest version through the SiteServer CLI.
+Older version can be upgraded to the latest version through the SS CMS CLI.
 
 The currently supported versions of the upgrade command include:
 
-- `SiteServer CMS 3.6` Versions (3.6, 3.6.1, 3.6.2, 3.6.3, 3.6.4) are upgraded to the latest version
-- `SiteServer CMS 4.0` Upgrade to the latest version
-- `SiteServer CMS 4.1` Upgrade to the latest version
-- `SiteServer CMS 5.0` Upgrade to the latest version
+- `SS CMS 3.6` Versions (3.6, 3.6.1, 3.6.2, 3.6.3, 3.6.4) are upgraded to the latest version
+- `SS CMS 4.0` Upgrade to the latest version
+- `SS CMS 4.1` Upgrade to the latest version
+- `SS CMS 5.0` Upgrade to the latest version
 
-Upgrade to the latest version `SiteServer CMS 4.1` version as an example to explain how to use the upgrade command.
+Upgrade to the latest version `SS CMS 4.1` version as an example to explain how to use the upgrade command.
 
 ::: tip
-Online upgrades are supported in versions of SiteServer CMS 6.0 and later, this document is only available for pre-6.0 versions.
+Online upgrades are supported in versions of SS CMS 6.0 and later, this document is only available for pre-6.0 versions.
 :::
 
 ## 1. Run the database backup command
 
-The old version before upgrading need to use the database backup command **`siteserver backup`** to the old version of the database backup to folder, find the folder where the SiteServer CMS system:
+The old version before upgrading need to use the database backup command **`siteserver backup`** to the old version of the database backup to folder, find the folder where the SS CMS system:
 
 ![](/assets/update/01.png)
 
@@ -60,7 +60,7 @@ After the system upgrade command is executed, a folder named update will appear 
 
 With the backup and upgrade commands, we have prepared the data needed for the new version of the system, and then we need to prepare the runtime environment for the new version.
 
-First, we download the latest version of the SiteServer CMS system and place the new system in a `cms_new` folder:
+First, we download the latest version of the SS CMS system and place the new system in a `cms_new` folder:
 
 ![](/assets/update/08.png)
 

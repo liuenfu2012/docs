@@ -7,7 +7,7 @@
 :::
 
 ::: tip
-数据库恢复命令不仅可以用于恢复 SiteServer CMS 系统数据，还可用于任何需要恢复数据文件至数据库的场合。
+数据库恢复命令不仅可以用于恢复 SS CMS 系统数据，还可用于任何需要恢复数据文件至数据库的场合。
 :::
 
 ## 用法
@@ -35,7 +35,7 @@ siteserver restore --directory <string>
 | --help        |  -h  | 命令说明 |
 
 ::: tip
-恢复命令默认将检测数据库结构并将数据库结构设置为当前版本的SiteServer CMS数据结构，如果此命令用于非SiteServer CMS场合，请设置 **--data-only** 参数，命令将不再检测并同步SiteServer CMS数据库结构。
+恢复命令默认将检测数据库结构并将数据库结构设置为当前版本的SS CMS数据结构，如果此命令用于非SS CMS场合，请设置 **--data-only** 参数，命令将不再检测并同步SS CMS数据库结构。
 :::
 
 ## 示例
@@ -44,7 +44,7 @@ siteserver restore --directory <string>
 
 恢复命令默认读取当前目录下的 Web.config 文件，从中获取数据库连接字符串（ConnectionString），进而将指定的备份文件夹内的备份数据恢复到数据库中。
 
-需要注意的是，SiteServer 恢复命令目前还不支持增量恢复，只能将备份的数据一次性恢复到指定数据库中，故建议恢复命令使用新建的空数据库。
+需要注意的是，SS CMS 恢复命令目前还不支持增量恢复，只能将备份的数据一次性恢复到指定数据库中，故建议恢复命令使用新建的空数据库。
 
 在使用数据库恢复命令前，需要确保 Web.config中的连接字符串（ConnectionString）为需要恢复的新建数据库。
 
@@ -64,7 +64,7 @@ siteserver restore -d mydir
 
 ![](/assets/restore/04.png)
 
-打开restore.config，可以看到里面存在连接 SiteServer CMS 所用到的数据库类型 DatabaseType 以及连接字符串 ConnectionString。
+打开restore.config，可以看到里面存在连接 SS CMS 所用到的数据库类型 DatabaseType 以及连接字符串 ConnectionString。
 
 将命令行切换到此文件夹，运行：
 

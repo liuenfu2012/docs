@@ -1,21 +1,21 @@
-# 如何安装SiteServer CMS 
+# 如何安装SS CMS 
 
-在安装SiteServer CMS之前，需要确保已经完成了以下工作：
+在安装SS CMS之前，需要确保已经完成了以下工作：
 
 + 已经安装好了IIS6.0或以上版本；
 + 已经安装好了.net framework 4.5.2或以上版本；
 + 已经安装好了MySql、Sql Server、PostgreSQL或Oracle四种数据库的任何版本；
 
-安装SiteServer CMS系统可以按以下四步进行：
+安装SS CMS系统可以按以下四步进行：
 
-+ 1、下载SiteServer CMS系统安装包；
++ 1、下载SS CMS系统安装包；
 + 2、新建空数据库；
 + 3、新建IIS站点；
-+ 4、运行SiteServer CMS安装程序；
++ 4、运行SS CMS安装程序；
 
 下面就按照这四步展开来详细讲解。
 
-## 1、下载SiteServer CMS系统安装包
+## 1、下载SS CMS系统安装包
 
 可以通过官方产品网站去下载，官网地址为：[https://www.siteserver.cn](https://www.siteserver.cn)。
 
@@ -80,20 +80,20 @@
 
 到这，新建IIS站点就完成了。
 
-## 4、运行SiteServer CMS安装程序
+## 4、运行SS CMS安装程序
 
 打开浏览器（强烈建议Chrome或Firefox），因为刚才在第3步新建IIS站点时端口填写的是99，所以浏览器地址栏输入：
 http://localhost:99/siteserver/ 
-回车之后进入SiteServer CMS安装界面，如下图所示：
+回车之后进入SS CMS安装界面，如下图所示：
 
 ![](/assets/240.jpg)
 
-在这提醒一下，平时访问SiteServer CMS后台有时也会出现上面这个界面，最常见的三个原因： 
+在这提醒一下，平时访问SS CMS后台有时也会出现上面这个界面，最常见的三个原因： 
 + 数据库服务器没有连接不上了；或者数据库软件没有运行起来； 
 + 连接数据库的帐号被停用了或者密码被修改了导致连接不到数据库； 
-+ SiteServer CMS数据存储的这个数据库或表被删除了； 
++ SS CMS数据存储的这个数据库或表被删除了； 
 
-总之就是找不到数据库了，SiteServer CMS系统会判定还没有安装，所以就会跳到安装界面来。
+总之就是找不到数据库了，SS CMS系统会判定还没有安装，所以就会跳到安装界面来。
 
 点击继续，进入环境检测界面，如下图所示：
 
@@ -139,6 +139,6 @@ http://localhost:99/siteserver/
 
 ![](/assets/244.jpg)
 
-此帐号属于SiteServer CMS系统最高级别权限，所以帐号密码尽可能设置复杂一些，同时数据库连接字符串建议选择加密方式更安全。点击下一步，如果见到如下图所示界面表示SiteServer CMS安装成功。
+此帐号属于SS CMS系统最高级别权限，所以帐号密码尽可能设置复杂一些，同时数据库连接字符串建议选择加密方式更安全。点击下一步，如果见到如下图所示界面表示SS CMS安装成功。
 
 ![](/assets/245.jpg)

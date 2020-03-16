@@ -1,6 +1,6 @@
 module.exports = ctx => ({
   base: '/docs/stl/',
-  dest: './dist/docs/stl',
+  dest: './dist/stl',
   locales: {
     '/': {
       lang: 'zh-CN',

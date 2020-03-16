@@ -16,7 +16,7 @@
 
 ## 快速上手
 
-* [如何安装 SiteServer CMS？](how-to-install-siteserver-cms.md)
+* [如何安装 SS CMS？](how-to-install-siteserver-cms.md)
 * [如何登录CMS？](how-to-login-cms.md)
 * [如何创建站点？](how-to-create-website.md)
 * [如何切换站点？](how-to-switch-website.md)
@@ -28,7 +28,7 @@
 
 ## 附录
 
-* [附录一、SiteServer CMS 官方资源](official-resource.md)
+* [附录一、SS CMS 官方资源](official-resource.md)
 * [附录二、安装IIS](how-to-install-iis.md)
 * [附录三、安装.NET Framework](how-to-install-net-framework.md)
 * [附录四、安装SQLSERVER 数据库](how-to-install-sqlserver.md)

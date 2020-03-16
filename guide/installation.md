@@ -1,9 +1,9 @@
 # 系统安装
 
-系统安装命令，用于安装 SiteServer CMS 系统至指定数据库。
+系统安装命令，用于安装 SS CMS 系统至指定数据库。
 
 ::: tip
-运行系统安装命令之前，需要保证当前文件夹已存在最新版本的 SiteServer CMS 系统，同时 Web.config 中已设置好数据库类型及数据库连接字符串。
+运行系统安装命令之前，需要保证当前文件夹已存在最新版本的 SS CMS 系统，同时 Web.config 中已设置好数据库类型及数据库连接字符串。
 :::
 
 ## 用法
@@ -26,12 +26,12 @@ siteserver install --userName <string> --password <string>
 | --help        |  -h  |                             命令说明 |
 
 ::: tip
-系统安装命令将检测Web.config中的连接字符串，如果对应数据库已存在 SiteServer CMS 数据表，命令将终止执行并提示系统已安装。
+系统安装命令将检测Web.config中的连接字符串，如果对应数据库已存在 SS CMS 数据表，命令将终止执行并提示系统已安装。
 :::
 
 ## 示例
 
-首先下载 SiteServer CMS 系统最新版本，解压后修改Web.config文件，将`DatabaseType`以及`ConnectionString`修改为需要安装系统的数据库类型及连接字符串。
+首先下载 SS CMS 系统最新版本，解压后修改Web.config文件，将`DatabaseType`以及`ConnectionString`修改为需要安装系统的数据库类型及连接字符串。
 
 ``` xml
 <add key="DatabaseType" value="SqlServer" />

@@ -7,7 +7,7 @@ Database recovery commands support MySQL, SQLSERVER, PostgreSQL, and Oracle data
 :::
 
 ::: tip
-The database recovery command can be used not only to restore SiteServer CMS system data, but also to any occasion where data files need to be restored to the database.
+The database recovery command can be used not only to restore SS CMS system data, but also to any occasion where data files need to be restored to the database.
 :::
 
 ## Usage
@@ -35,7 +35,7 @@ Database Recovery Command must contain restore data from a specified folder `--d
 | --help        |  -h  | Command description |
 
 ::: tip
-By default, the recovery command will detect the database structure and set the database structure to the current version of the SiteServer CMS data structure. If this command is used for non-SiteServer CMS, set the **--data-only** parameter, the command will no longer detect and synchronize the SiteServer CMS database.
+By default, the recovery command will detect the database structure and set the database structure to the current version of the SS CMS data structure. If this command is used for non-SS CMS, set the **--data-only** parameter, the command will no longer detect and synchronize the SS CMS database.
 :::
 
 ## Example
@@ -44,7 +44,7 @@ By default, the recovery command will detect the database structure and set the 
 
 By default, the restore command reads the Web.config file in the current directory, obtains the database connection string (ConnectionString), and restores the backup data in the specified backup folder to the database.
 
-It is important to note that the SiteServer recovery command does not currently support incremental recovery. The backup data can only be restored to the specified database at one time. Therefore, it is recommended that the recovery command use the newly created empty database.
+It is important to note that the SS CMS recovery command does not currently support incremental recovery. The backup data can only be restored to the specified database at one time. Therefore, it is recommended that the recovery command use the newly created empty database.
 
 Before using the database recovery command, you need to ensure that the connection string (ConnectionString) in Web.config is a new database that needs to be restored.
 
@@ -64,7 +64,7 @@ The following figure shows two folders in the config file, backup.config and res
 
 ![](/assets/restore/04.png)
 
-Open restore.config, you can see that there is a database type DatabaseType used to connect to the SiteServer CMS and the connection string ConnectionString.
+Open restore.config, you can see that there is a database type DatabaseType used to connect to the SS CMS and the connection string ConnectionString.
 
 Switch the command line to this folder and run:
 

@@ -1,9 +1,9 @@
 # Update
 
-System upgrade command to upgrade the SiteServer CMS system to the latest version.
+System upgrade command to upgrade the SS CMS system to the latest version.
 
 ::: tip
-Versions of SiteServer CMS 6.0 and later support online upgrades, usually without the use of upgrade commands.
+Versions of SS CMS 6.0 and later support online upgrades, usually without the use of upgrade commands.
 :::
 
 ::: tip

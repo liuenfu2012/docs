@@ -6,7 +6,7 @@ module.exports = [
         text: '产品文档',
         items: [
           {
-            text: 'SiteServer CMS 教程',
+            text: 'SS CMS 教程',
             link: '/'
           },
           {
@@ -67,7 +67,7 @@ module.exports = [
     ]
   },
   {
-    text: 'SiteServer CMS',
+    text: 'SS CMS',
     link: 'https://www.siteserver.cn/'
   },
 ]

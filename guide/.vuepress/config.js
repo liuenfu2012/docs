@@ -4,12 +4,12 @@ module.exports = ctx => ({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'SiteServer CMS 教程',
+      title: 'SS CMS 教程',
       description: '开源、免费、企业级'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'SiteServer CMS Guide',
+      title: 'SS CMS Guide',
       description: 'Open Source, Free, Enterprise'
     }
   },
@@ -34,7 +34,7 @@ module.exports = ctx => ({
         lastUpdated: '上次更新',
         nav: require('./nav/zh'),
         sidebar: {
-          '/': getSidebar('指南', '命令', '深入')
+          '/': getSidebar('安装', '介绍', '深入')
         }
       },
       '/en/': {
@@ -67,26 +67,30 @@ function getSidebar (groupA, groupB, groupC) {
   return [
     {
       title: groupA,
-      collapsable: false,
+      collapsable: true,
       children: [
-        '',
-        'setup'
+        'installation',
+        'installation-win',
+        'installation-linux',
+        'installation-osx'
       ]
     },
     {
       title: groupB,
-      collapsable: false,
+      collapsable: true,
       children: [
-        'install',
-        'backup',
-        'restore',
-        'update',
-        'version'
+        'intro-what-is',
+        'intro-what-can-do',
+        'intro-features',
+        'intro-functional-list',
+        'intro-runtime-environment',
+        'intro-vip-service',
+        'intro-case'
       ]
     },
     {
       title: groupC,
-      collapsable: false,
+      collapsable: true,
       children: [
         'older-version-upgrade',
         'content-split',

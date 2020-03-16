@@ -2,15 +2,15 @@
 
 You can use **`siteserver version`** to display the non-encrypted and the encrypted database connection string.
 
-Run the version command in the SiteServer CMS system root directory:
+Run the version command in the SS CMS system root directory:
 
 ``` sh
-PS C:\Windows\system32> cd C:\github\cms\cms-staging\SiteServer.Web
-PS C:\github\cms\cms-staging\SiteServer.Web> siteserver version
-欢迎使用 SiteServer Cli 命令行工具
+PS C:\Windows\system32> cd C:\github\cms\cms-staging\SS CMS.Web
+PS C:\github\cms\cms-staging\SS CMS.Web> siteserver version
+欢迎使用 SS CMS Cli 命令行工具
 
-SiteServer CLI 版本号: 6.9.0
-当前文件夹: C:\github\cms\cms-staging\SiteServer.Web
+SS CMS CLI 版本号: 6.9.0
+当前文件夹: C:\github\cms\cms-staging\SS CMS.Web
 
 SitServer CMS Version: 6.9.3-beta
 数据库类型: SqlServer

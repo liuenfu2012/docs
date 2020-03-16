@@ -7,7 +7,7 @@ Database backup commands support MySQL, SQLSERVER, PostgreSQL, and Oracle databa
 :::
 
 ::: tip
-The database backup command can be used not only to back up the SiteServer CMS system data, but also to any occasion where you need to back up the database to a file.
+The database backup command can be used not only to back up the SS CMS system data, but also to any occasion where you need to back up the database to a file.
 :::
 
 ## Usage
@@ -43,7 +43,7 @@ By default, the backup command reads the Web.config file in the current director
 
 The backup command does not currently support incremental backup. It only supports full backup. That is, the backup command will back up all the data stored in the database to a folder. If the amount of data in the database is too large, please do not use the backup command frequently to avoid affecting the database. performance.
 
-For example, we want to back up the specified SiteServer CMS system, find the path to the folder where the system is located, switch the command line to this folder, and run the backup command:
+For example, we want to back up the specified SS CMS system, find the path to the folder where the system is located, switch the command line to this folder, and run the backup command:
 
 ```
 PS C:\Windows\system32> cd E:\wwwroot\
@@ -54,7 +54,7 @@ You can see the command to start the database backup operation, the interface wi
 
 ```
 PS E:\wwwroot> siteserver backup
-欢迎使用 SiteServer Cli 命令行工具
+欢迎使用 SS CMS Cli 命令行工具
 
 数据库类型: SqlServer
 连接字符串: Server=(local);Uid=sa;Pwd=123456;Database=cms;

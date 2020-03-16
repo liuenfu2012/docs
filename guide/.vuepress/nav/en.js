@@ -3,10 +3,10 @@ module.exports = [
     text: 'Docs',
     items: [
       {
-        text: 'SiteServer CMS',
+        text: 'SS CMS',
         items: [
           {
-            text: 'SiteServer CMS Guide',
+            text: 'SS CMS Guide',
             link: '/en/'
           },
           {
@@ -73,7 +73,7 @@ module.exports = [
     ]
   },
   {
-    text: 'SiteServer CMS',
+    text: 'SS CMS',
     link: 'https://www.siteserver.cn/'
   },
 ]

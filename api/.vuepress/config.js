@@ -80,13 +80,12 @@ function getGuideSidebar (group1, group2, group3, group4, group5, group6, group7
       collapsable: false,
       children: [
         'contents/',
+        'contents/list',
+        'contents/get',
         'contents/create',
         'contents/update',
         'contents/delete',
-        'contents/get',
-        'contents/listSite',
-        'contents/listChannel',
-        'contents/search',
+        'contents/check'
       ]
     },
     {

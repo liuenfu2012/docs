@@ -7,7 +7,7 @@
 :::
 
 ::: tip
-数据库备份命令不仅可以用于备份 SiteServer CMS 系统数据，还可用于任何需要备份数据库至文件的场合。
+数据库备份命令不仅可以用于备份 SS CMS 系统数据，还可用于任何需要备份数据库至文件的场合。
 :::
 
 ## 用法
@@ -43,7 +43,7 @@ siteserver backup
 
 备份命令目前还不支持增量备份，只支持完全备份，即备份命令将把数据库中所存的所有数据备份至文件夹中，如果数据库中数据量太大，请不要频繁使用备份命令，以免影响数据库性能。
 
-例如我们希望备份指定的 SiteServer CMS 系统，找到系统所在文件夹路径，将命令行切换到此文件夹，并运行备份命令：
+例如我们希望备份指定的 SS CMS 系统，找到系统所在文件夹路径，将命令行切换到此文件夹，并运行备份命令：
 
 ```
 PS C:\Windows\system32> cd E:\wwwroot\
@@ -54,7 +54,7 @@ PS E:\wwwroot> siteserver backup
 
 ```
 PS E:\wwwroot> siteserver backup
-欢迎使用 SiteServer Cli 命令行工具
+欢迎使用 SS CMS Cli 命令行工具
 
 数据库类型: SqlServer
 连接字符串: Server=(local);Uid=sa;Pwd=123456;Database=cms;
