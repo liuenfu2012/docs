@@ -6,19 +6,14 @@
   "scripts": {
     "api:dev": "vuepress dev api --temp .temp",
     "api:build": "vuepress build api --temp .temp",
-
     "cli:dev": "vuepress dev cli --temp .temp",
     "cli:build": "vuepress build cli --temp .temp",
-
     "guide:dev": "vuepress dev guide --temp .temp",
     "guide:build": "vuepress build guide --temp .temp",
-
     "plugins:dev": "vuepress dev plugins --temp .temp",
     "plugins:build": "vuepress build plugins --temp .temp",
-
     "stl:dev": "vuepress dev stl --temp .temp",
     "stl:build": "vuepress build stl --temp .temp",
-    
     "show-help": "vuepress --help"
   },
   "repository": {
