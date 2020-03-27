@@ -6,13 +6,13 @@ module.exports = ctx => ({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'SS CMS 向导',
-      description: '开源、免费、企业级'
+      title: 'SS CMS 7.0 向导',
+      description: '超过 50 万网站的选择 — 加入这个大家庭'
     },
     '/en/': {
       lang: 'en-US',
-      title: 'SS CMS Guide',
-      description: 'Open Source, Free, Enterprise'
+      title: 'SS CMS 7.0 Guide',
+      description: 'More than half a million websites using SS CMS - join the big family'
     }
   },
   head: [
@@ -31,10 +31,10 @@ module.exports = ctx => ({
     editLinks: true,
     docsDir: 'guide',
     // #697 Provided by the official algolia team.
-    algolia: ctx.isProd ? ({
-      apiKey: '3a539aab83105f01761a137c61004d85',
-      indexName: 'vuepress'
-    }) : null,
+    // algolia: ctx.isProd ? ({
+    //   apiKey: '3a539aab83105f01761a137c61004d85',
+    //   indexName: 'vuepress'
+    // }) : null,
     smoothScroll: true,
     locales: {
       '/': {
@@ -45,13 +45,13 @@ module.exports = ctx => ({
         lastUpdated: '上次更新',
         nav: require('./nav/zh'),
         sidebar: {
-          '/api/': getApiSidebar(),
-          '/getting-started/': getGuideSidebar('指南', '深入'),
-          '/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
-          '/theme/': getThemeSidebar('主题', '介绍')
+          // '/api/': getApiSidebar(),
+          '/getting-started/': getGuideSidebar('SS CMS 入门', '系统运行配置', '托管和部署'),
+          // '/plugin/': getPluginSidebar('插件', '介绍', '官方插件'),
+          // '/theme/': getThemeSidebar('主题', '介绍')
         }
       },
-      '/zh/': {
+      '/en/': {
         label: 'English',
         selectText: 'Languages',
         ariaLabel: 'Select language',
@@ -59,10 +59,10 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
         sidebar: {
-          '/en/api/': getApiSidebar(),
-          '/en/getting-started/': getGuideSidebar('Guide', 'Advanced'),
-          '/en/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
-          '/en/theme/': getThemeSidebar('Theme', 'Introduction')
+          // '/en/api/': getApiSidebar(),
+          '/en/getting-started/': getGuideSidebar('Introduction', 'Configuration', 'Host and deploy'),
+          // '/en/plugin/': getPluginSidebar('Plugin', 'Introduction', 'Official Plugins'),
+          // '/en/theme/': getThemeSidebar('Theme', 'Introduction')
         }
       }
     }
@@ -99,11 +99,11 @@ function getApiSidebar () {
   ]
 }
 
-function getGuideSidebar (groupA, groupB) {
+function getGuideSidebar (groupA, groupB, groupC) {
   return [
     {
       title: groupA,
-      collapsable: false,
+      collapsable: true,
       children: [
         '',
         'using-linux',
@@ -111,20 +111,27 @@ function getGuideSidebar (groupA, groupB) {
         'using-osx',
         'directory-structure',
         'glossary',
-        'easy-start',
-        'basic-config'
+        // 'easy-start'
       ]
     },
     {
       title: groupB,
-      collapsable: false,
+      collapsable: true,
       children: [
-        'db-mysql',
-        'db-sql-server',
-        'db-postgre-sql',
-        'db-oracle',
-        'db-sqlite',
-        'cache-redis'
+        'config',
+        'config-urls.md',
+        'config-database.md',
+        'config-cache.md'
+      ]
+    },
+    {
+      title: groupC,
+      collapsable: true,
+      children: [
+        'deploy',
+        'deploy-linux-nginx',
+        'deploy-linux-apache',
+        'deploy-windows-iis'
       ]
     }
   ]
@@ -139,7 +146,7 @@ function getPluginSidebar (pluginTitle, pluginIntro, officialPluginTitle) {
   return [
     {
       title: pluginTitle,
-      collapsable: false,
+      collapsable: true,
       children: [
         ['', pluginIntro],
         'using-a-plugin',
@@ -151,7 +158,7 @@ function getPluginSidebar (pluginTitle, pluginIntro, officialPluginTitle) {
     },
     {
       title: officialPluginTitle,
-      collapsable: false,
+      collapsable: true,
       children: officalPlugins
     }
   ]
@@ -161,7 +168,7 @@ function getThemeSidebar (groupA, introductionA) {
   return [
     {
       title: groupA,
-      collapsable: false,
+      collapsable: true,
       sidebarDepth: 2,
       children: [
         ['', introductionA],

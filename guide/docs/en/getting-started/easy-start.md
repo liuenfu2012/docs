@@ -8,7 +8,7 @@ SS CMS 在产品安装完成后，会出现进入后台的链接，如下图所�
 
 点击即可进入登录CMS后台界面，如果通过浏览器直接进入后台，需要在浏览器里输入以下地址：http://www.example.com/siteserver/ 或者输入IP：http://127.0.0.1/siteserver/
 
-::: warning 注意
+::: warning NOTE
 域名www.example.com或IP地址127.0.0.1需要替换成网站实际的域名或IP。
 :::
 

@@ -4,31 +4,33 @@
 
 ## 站点（Site）
 
-站点，即通俗意义上的网站，在 SS CMS 中，一个站点就是一个网站，包括网站栏目、网站内容、网站模板、CSS样式、JS脚本以及最终生成的静态页面。
+站点，即网站，在 SS CMS 中，一个站点就是一个网站，其中包括首页、栏目、内容、模板、图片、CSS样式、JS脚本以及最终生成的静态页面等。
 
-SS CMS 是一套站群管理系统，即多个站点可以在后台进行统一管理。所谓的统一管理，并不是简单的把多个网站放在一个后台这么简单，而是真正的做到统一技术架构、统一标准、统一部署，不同站点分设不同管理权限的管理员，每个站点既独立又统一。
+SS CMS 是一套站群管理系统，即多个站点可以在后台进行统一管理。统一管理并不是简单地把多个网站放在一个后台，而是需要将不同站点分设不同管理权限的管理员，每个站点既独立又统一。
 
-所谓独立，是指每个站点具有独立的栏目、内容、模板、管理员，可以独立的进行站点设置；所谓统一，是指每个站点的内容可以相互之间进行转移和转发。
+![](/docs/guide/images/getting-started/glossary/site-structure.png)
+
+系统将为每个站点创建一个文件夹，用于存放站点文件，站点可以通过统一的域名对外提供访问，也可以为每个站点设置独立的访问域名。
 
 ## 栏目（Channel）
 
-栏目是存放网站内容的地方，在后台添加网站内容时候，必须添加在某个具体的栏目下。通过栏目，可以将一个网站的内容进行分类，所以栏目还可以叫做站点内容的分类。对于前台网页来说，栏目也可以叫做网站的频道或者菜单。
-
-![](/images/getting-started/glossary/channel.jpg)
+栏目也叫频道或者导航，SS CMS 通过栏目来组织与管理内容，在后台添加内容时候，必须将内容添加在某个具体的栏目下。通过栏目，系统能够将一个网站的内容进行分类管理以及管理员权限设置。
 
 如果把一个网站比作一颗枝繁叶茂的大树的话，网站的栏目就是大树的枝干，网站的内容就是枝干上的树叶。可见，网站的栏目就是网站骨架，我们通常把整个网站的所有栏目称为“栏目架构”。如下图所示：
 
-![](/images/getting-started/glossary/channel-structure.png)
+![](/docs/guide/images/getting-started/glossary/channel-structure.png)
 
-网站栏目可以分成父栏目、子栏目，如果有需要的话，还可以一级一级的往下分，每个栏目都可以建自己的下级栏目。在SiteServer CMS中，“首页”是最高级别的栏目，可以在“首页”栏目下面建立无限级数的栏目。
+网站栏目可以分成父栏目、子栏目，如果有需要的话，还可以一级一级的往下分，每个栏目都可以建自己的下级栏目。在 SS CMS 中，“首页”是最高级别的栏目，可以在“首页”栏目下面建立无限级数的栏目。
+
+![](/docs/guide/images/getting-started/glossary/channel.jpg)
 
 ## 内容（Content）
 
-CMS中“内容”的概念通常来说指的就是网站文章（新闻）。SiteServer CMS 后台管理的“内容”是一切可结构化的数据，包括网站LOGO、新闻、图片、视频、投票、广告、招聘、评论等等，都可以被称为“内容”。
+内容是一切可结构化的数据，包括文章、新闻、商品、广告、招聘等等，在 SS CMS 均称之为内容。
 
-![](/images/getting-started/glossary/content.jpg)
+![](/docs/guide/images/getting-started/glossary/content.jpg)
 
-SiteServer CMS 的内容与显示分离，也就是说内容的管理与内容展现样式是相互独立、互不影响的，增加及修改内容的时候不需要考虑样式的问题。同样的，增加及修改样式的时候不需要考虑内容的问题，所以，负责内容维护的只负责内容，负责样式维护的只负责样式。至于后台的内容如何在展示在前台展示的，以及展示到前台的页面表现形式是怎么样的，可以参考“模板”相关章节进行了解。
+SS CMS 的内容与显示分离，也就是说内容的管理与内容的展现样式相互独立、互不影响，增加及修改内容的时候不需要考虑样式，同样的，增加及修改模板的时候不需要考虑内容，所以，负责内容维护的只负责内容本身，负责样式维护的只负责样式本身。
 
 ## 模板（Template）
 
@@ -44,13 +46,13 @@ SiteServer CMS 的内容与显示分离，也就是说内容的管理与内容�
 
 以内容模板为例，假设后台一个栏目下有两篇内容，如下图所示：
 
-![](/images/getting-started/glossary/template-content.jpg)
+![](/docs/guide/images/getting-started/glossary/template-content.jpg)
 
 这两篇内容使用了一个相同的内容模板，最后产生的两个前台页面分别如下两图：
 
-![](/images/getting-started/glossary/template-page1.jpg)
+![](/docs/guide/images/getting-started/glossary/template-page1.jpg)
 
-![](/images/getting-started/glossary/template-page2.jpg)
+![](/docs/guide/images/getting-started/glossary/template-page2.jpg)
 
 以上两个前台内容页面，除了文章的标题和文章内容不同之外，其他信息都是一样的。这就是模板的作用，把后台的内容以一定的表现形式组织起来从而形成前台页面。
 
@@ -58,74 +60,58 @@ SiteServer CMS 的内容与显示分离，也就是说内容的管理与内容�
 
 嵌套好的模板和静态页面（Html)并无差别，就是在Html中夹杂着STL标签语言。如下图所示：
 
-![](/images/getting-started/glossary/template-editor.jpg)
+![](/docs/guide/images/getting-started/glossary/template-editor.jpg)
 
 ## STL 语言
 
-STL 语言全称称为 SiteServer 模版语言（SiteServer Template Language），是一种您可以用来创建显示模版的服务器端语言。STL 通过标记符号（元素及实体）来标记要调取并显示的各种网站数据及功能，通过SiteServer 解析引擎将对应标记转换为HTML 语言并在服务器中生成对应的静态页面文件。
+STL 语言全称为 SS CMS 模版语言（SS CMS Template Language），SS CMS 解析引擎将负责把 STL 语言对应的标记转换为 HTML 标签。
 
-### 主要功能
+STL 语言能够在不需要程序开发人员的前提下，灵活调取 SS CMS 后台管理的各种数据，并解析成HTML，最终生成对应的静态页面文件。
 
-在不需要专业的程序开发人员的前提下，灵活调取SiteServer CMS 后台管理的各种数据，并解析成HTML，最终生成对应的静态页面文件。
+STL 语言是 SS CMS 系统的专用语言，和 HTML 语言一样，STL 语言也是一种标准通用标记语言（SGML），采用与HTML 语言一致的语法和规则。
 
-### 语言特色
+STL 模版语言并不复杂，但功能强大，其主要特点如下：
 
-STL 语言由百容千域创建，用来克服 HTML 语言的局限。和 HTML 语言一样，STL 语言也是一种标准通用标记语言（SGML），采用与HTML 语言一致的语法和规则。STL 模版语言制作并不复杂，但功能强大，其主要特点如下：
-
-+ 简易性： STL 语言版本升级采用超集方式，从而更加灵活方便。
-+ 可扩展性： STL 语言的广泛应用带来了加强功能，增加标识符等要求，STL 语言采取子类元素的方式，为系统扩展带来保证。
-+ 易学性： 和HTML 语言规则保持一致确保了STL 语言易于学习，便于使用。
-
-### 书写方式
-
-+ 基本文本、文档编辑软件： 使用微软自带的记事本或写字板即可编写，当然，通常采用Dreamweaver等HTML编辑软件进行编辑。
-+ SiteServer 软件的模板编辑器： SiteServer 软件中集成了STL 模板编辑器，能够显示行数、高亮、颜色标示以及对格式化代码等功能。
-+ 所见即所得模板插件： 这是我们推荐的方式，同时也是使用最广的方式，可以在无需记住STL 语言细节的情况下以最快速便捷的方式编写STL 语言，我们根据用户的习惯提供两款模板插件，包括Dreamweaver 模板插件以及Sublime Text 模板插件。采用模板插件方式，开发速度更快，效率更高，且直观的表现更强。
++ 简易： STL 语言版本升级采用超集方式，从而更加灵活方便。
++ 可扩展： STL 语言的广泛应用带来了加强功能，增加标识符等要求，STL 语言采取子类元素的方式，为系统扩展带来保证。
++ 易学： 和 HTML 语言规则保持一致确保了STL 语言易于学习，便于使用。
 
 ## 页面（Page）
 
-所谓页面，就是把CMS后台管理的内容展示到前台给用户访问的网页。页面一般分成网站首页、栏目页、内容页以及功能页，比如搜索、登录、问卷调查、表单提交等都属于功能页，也叫单页。
+页面又叫静态页面，是 SS CMS 系统通过模板生成并提供给用户访问的网页。页面一般分成网站首页、栏目页、内容页以及功能页（功能页也叫单页，如搜索、登录、问卷调查、表单提交等都属于功能页）。
 
 ### 首页
 
 首页，就是我们打开一个网站的时候，看到的第一个页面（有些网站会有一个过渡页，展示完之后才会进入首页）。下图展示的是一个典型的网站首页：
 
-![](/images/getting-started/glossary/page-index.jpg)
+![](/docs/guide/images/getting-started/glossary/page-index.jpg)
 
 ### 栏目页
 
 当点击某个具体的栏目，进入的就是栏目页。下图所示的就是一个典型的新闻栏目列表页：
 
-![](/images/getting-started/glossary/page-channel.jpg)
+![](/docs/guide/images/getting-started/glossary/page-channel.jpg)
 
 ### 内容页
 
 当点击某个具体的内容，进入的就是内容页。下图所示的就是一个典型的新闻内容页：
 
-![](/images/getting-started/glossary/page-content.jpg)
+![](/docs/guide/images/getting-started/glossary/page-content.jpg)
 
 ### 单页（功能页）
 
-除了首页、栏目页、内容页之外，SiteServer CMS 中还有一个特殊的页面概念，叫“单页”，这种页面通常是为了实现某一个具体的功能，比如搜索、问卷调查、表单提交、用户登录和注册等，所以又称之为功能页。这些页面和任何一个具体栏目都没有关系。下图展示的一个用户注册页面就是一个典型的单页（或功能页）：
+除了首页、栏目页、内容页之外，SS CMS 中还有一个特殊的页面概念，叫“单页”，这种页面通常是为了实现某一个具体的功能，比如搜索、问卷调查、表单提交、用户登录和注册等，所以又称之为功能页。这些页面和任何一个具体栏目都没有关系。下图展示的一个用户注册页面就是一个典型的单页（或功能页）：
 
-![](/images/getting-started/glossary/page-file.jpg)
+![](/docs/guide/images/getting-started/glossary/page-file.jpg)
 
 ## 插件（Plugin）
 
-SiteServer CMS 插件是扩展 SiteServer CMS 产品核心功能的代码包，SiteServer CMS 插件由.NET代码和其他文件(如图片、CSS和JavaScript等)组成。 通过制作你自己的插件，你可以扩展 SiteServer CMS，在 SiteServer CMS 已经提供的功能基础上构建额外的功能。
+SS CMS 插件是扩展 SS CMS 产品核心功能的代码包，SS CMS 插件由.NET代码和其他文件(如图片、CSS和JavaScript等)组成。 通过制作你自己的插件，你可以扩展 SS CMS，在 SS CMS 已经提供的功能基础上构建额外的功能。
 
-![](/images/getting-started/glossary/plugin.jpg)
+![](/docs/guide/images/getting-started/glossary/plugin.jpg)
 
-### 插件的作用
-
-SiteServer CMS 并非仅仅是一个简单的网站管理平台，同时也是一个功能极其强大并且有着无限扩展能力的 CMS 内容管理平台。SiteServer CMS 的无限扩展能力正是通过插件机制来实现的。借助于 SiteServer CMS 的模板和插件机制，你几乎可以把 SiteServer CMS 配置成任何类型的站点。
+SS CMS 并非仅仅是一个简单的网站管理平台，同时也是一个功能极其强大并且有着无限扩展能力的 CMS 内容管理平台。SS CMS 的无限扩展能力正是通过插件机制来实现的。借助于 SS CMS 的模板和插件机制，你几乎可以把 SS CMS 配置成任何类型的站点。
 
 因为插件的所有的功能都是通过灵活的模块和自定义配置开发出来的，可以说，通过插件你可以实现任何你希望在站点中实现的功能，插件的唯一限制就是你的想象力，插件的可能性是无限的！
 
 例如，你可以编写一个插件来控制对应栏目的内容模型，采用自定义的字段提交并显示内容文章；或者，你可以编写一个插件，创建一个带有短信通知、支持第三方支付的全功能票务系统。
-
-### 插件的组成
-
-大多数的 SiteServer CMS 插件都是由许多文件组成的，但是一个最简化的插件实际上只需要两个文件：一个主文件（插件名称.dll）以及一个插件配置文件（插件名称.nuspec）。
-
-作为 SiteServer CMS 插件的开发者，你可以创建插件并公开出来，插件将被展现到广大的 SiteServer CMS 用户面前，安装、使用并提交反馈。你所需要做的就是把你的好想法变成代码。

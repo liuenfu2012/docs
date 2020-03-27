@@ -1,90 +1,48 @@
-# 在 Linux 操作系统中使用 SS CMS
+# Run SS CMS in MacOS
 
-如果你在本机环境运行或者只是想体验一下 SS CMS 产品，您可以通过以下方式快速启动产品：
-
-Linux系统，主要分Debian系列版本和RedHat系列版本，除此之外还有其它自由的发布版本。
-
-1、RedHat系列主要有CentOS，RedHat，Fedora以及其他衍生版本；
-
-2、Debian系列主要有Ubuntu，Debian，Mint以及其他衍生版本；
-
-我们以用户最多的CentOS以及Ubuntu为主示范如何在Linux中安装 SS CMS 系统，其他 Linux 版本系统安装步骤基本一致。
-
-## 1、安装zip解压程序
-
-::: tip
-如已安装解压程序，请忽略此步骤。
+::: warning NOTE
+if you plan to deploy SS CMS in the official production environments, please refer to [Host SS CMS on Linux with Nginx](deploy-linux-nginx.html) or [Host SS CMS on Linux with Apache](deploy-linux-apache.html) or [Host SS CMS on Windows with IIS](deploy-windows-iis.html) for more.
 :::
 
-如果是 `CentOS` 系统，运行以下命令安装zip解压程序：
+## 1. Download and extract SS CMS
 
-``` bash
-sudo yum install -y unzip
-```
+Create and enter SS CMS root folder，Download the installation package zip file, unzip the installation package to the current location and delete the installation package.
 
-如果是 `Ubuntu` 系统，运行以下命令安装zip解压程序：
+## 2. Modify the configuration file
 
-``` bash
-sudo apt-get install -y unzip
-```
+SS CMS use default port 5000, if you want to change the default ports, such as port 80, open and modify the `sscms.json` file:
 
-## 2、下载并解压安装包至指定文件夹
-
-创建并进入 SS CMS 系统运行的文件夹，例如我们打算在 `/var/www` 中运行 SS CMS：
-
-创建文件夹：
-``` bash
-mkdir /var/www
-```
-
-下载安装包至 `/var/www` 文件夹中，其中最新的产品下载地址请进入产品官网获取：
-``` bash
-curl -o /var/www/sscms.zip 'https://siteserver.blob.core.chinacloudapi.cn/downloads/7.0.0/sscms-7.0.0-preview4-linux-x64.zip'
-```
-
-进入文件夹：
-``` bash
-cd /var/www
-```
-
-解压安装包：
-``` bash
-unzip sscms.zip
-```
-
-删除安装包：
-``` bash
-rm -fv sscms.zip
-```
-
-## 3、修改配置文件
-
-系统默认运行端口为 5000，如果希望修改默认端口，如80端口，请打开并修改 `appsettings.json` 文件：
-
-``` json
+``` json {2}
 {
-  "AllowedHosts": "*",
-  "Kestrel": {
-    "Endpoints": {
-      "Http": {
-        "Url": "http://0.0.0.0:5000"
-      }
-    }
-  }
+  "Urls": "http://*:5000"
 }
 ```
 
-将Url中的5000端口修改为需要的端口，如80端口。
+Modify the 5000 port in Url to the specified port.
 
-## 4、运行 SS CMS 系统
+You can set multiple endpoint, such as:
 
-进入解压后的文件夹，在命令行中运行：
+``` json {2}
+{
+  "Urls": "http://*:5000;http://localhost:5001;https://hostname:5002"
+}
+```
+
+## 3. Run SS CMS
+
+Run SS CMS in the command line:
 
 ``` bash
 ./sscms
 ```
 
-运行后命令行将提示如下信息：
+If you want to specify the endpoints on the command line, you can run:
+
+``` bash
+./sscms --urls="http://localhost:8000;http://localhost:8001"
+```
+
+After running, the command line will prompt the following information:
 
 ``` bash
 [12:44:44 INF] Executing ConfigureServices 'SS.CMS.Plugins.AddStaticFiles' <s:Microsoft.Extensions.DependencyInjection.IServiceCollection>
@@ -99,38 +57,36 @@ rm -fv sscms.zip
 [12:44:44 INF] Content root path: /var/www <s:Microsoft.Hosting.Lifetime>
 ```
 
-## 5、安装 SS CMS 系统
+## 4. Install SS CMS
 
-至此，我们可以开始正式安装 SS CMS 系统了。
+At this point, we can begin to install the SS CMS system.
 
 ::: tip
-如果在云服务器环境中安装，请先配置安全组，确保网站地址及端口能够被外网访问。
+If installing in a cloud environment, first configure a security group to ensure that the website address and port can be accessed by the external network.
 :::
 
-打开浏览器，访问地址 `http://<IP地址或域名>:<5000或其他端口>/siteserver/install`，进入 SS CMS 系统安装界面：
+Open your browser, access the address `http://<IP or Domain>:<5000 or others>/siteserver/install`, and enter the SS CMS system installation interface:
 
-![](/assets/installation-linux/01.png)
+![](/docs/guide/images/getting-started/using-osx/01.png)
 
-勾选我已经阅读并同意此协议，进入环境监测界面：
+Click Next to enter the environmental monitoring interface:
 
-![](/assets/installation-linux/02.png)
+![](/docs/guide/images/getting-started/using-osx/02.png)
 
-点击下一步，进入数据库设置界面：
+Click Next to enter the database setting interface:
 
-![](/assets/installation-linux/03.png)
+![](/docs/guide/images/getting-started/using-osx/03.png)
 
-在此，我们选择 `SQLite` 数据库，如果希望使用其他数据库，请根据需要选择，点击下一步，进入缓存设置界面：
+Here, we select the `SQLite` database, if you want to use another database, please choose according to need, click Next, enter the cache settings interface:
 
-![](/assets/installation-linux/04.png)
+![](/docs/guide/images/getting-started/using-osx/04.png)
 
-在此，我们选择 `默认缓存`，如果希望使用Redis 分布式缓存，请根据需要选择，点击下一步，进入管理员设置界面：
+Here, we choose `Default`, if you want to use Redis distributed cache, please choose according to your needs, and click Next to enter the administrator settings interface:
 
-![](/assets/installation-linux/05.png)
+![](/docs/guide/images/getting-started/using-osx/05.png)
 
-在管理员设置界面中设置超级管理员的用户名及密码，设置完成后点击下一步，系统将显示安装成功界面：
+In the administrator setting interface, set the username and password of the super administrator. After setting, click Next, and the system will display the installation success interface:
 
-![](/assets/installation-linux/06.png)
+![](/docs/guide/images/getting-started/using-osx/06.png)
 
-点击 `进入管理后台` 按钮进入后台，至此，SS CMS 系统安装完毕。
-
-正式的生产环境下安装与部署产品请参考 [部署](deploy.md) 来了解更多。
+Click the  button to go admin interface, so far, SS CMS system is installed.
