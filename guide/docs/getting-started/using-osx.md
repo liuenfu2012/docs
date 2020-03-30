@@ -69,7 +69,7 @@
 
 ![](/docs/guide/images/getting-started/using-osx/01.png)
 
-勾选我已经阅读并同意此协议，进入环境监测界面：
+勾选我已经阅读并同意此协议，进入环境检测界面：
 
 ![](/docs/guide/images/getting-started/using-osx/02.png)
 
